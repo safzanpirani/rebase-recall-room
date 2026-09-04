@@ -3,6 +3,7 @@
     {
       "key": "set-1",
       "name": "Set 1",
+      "subtitle": "The original deck. Start here.",
       "questions": [
         {
           "category": "Food & kitchen",

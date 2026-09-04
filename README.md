@@ -32,7 +32,7 @@ Progress lives in `localStorage`. You can also connect a file on disk and the ap
 
 ## Question format
 
-Decks 2 to 6 live in `sets/set-N.js` and register themselves on `window.REBASE_EXTRA_SETS`. Deck 1 is inline in `index.html`. Each question has the same shape:
+Each deck lives in `sets/set-N.js` and registers itself on `window.REBASE_EXTRA_SETS`. Each question has the same shape:
 
 ```js
 {

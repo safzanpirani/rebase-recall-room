@@ -419,93 +419,16 @@
 
   <footer><strong>Small facts. Sharp recall.</strong><span>Sources after every answer · Browser progress · Optional disk log</span></footer>
 
+  <script src="sets/set-1.js"></script>
   <script src="sets/set-2.js"></script>
   <script src="sets/set-3.js"></script>
   <script src="sets/set-4.js"></script>
   <script src="sets/set-5.js"></script>
   <script src="sets/set-6.js"></script>
   <script>
-    const Q = (category, question, options, answer, note, source, seed = false) => ({ category, question, options, answer, note, source, seed, id: question.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 64) });
-    const calibrationQuestions = [
-      Q('Food & kitchen','Which living ingredient makes bread dough rise?',['Yeast','Butter','Salt','Sugar'],0,'Yeast feeds on sugars and releases carbon dioxide, which inflates the dough.','https://www.britannica.com/science/yeast-fungus',true),
-      Q('Nature','What plant makes up most of a giant panda’s diet?',['Bamboo','Eucalyptus','Seaweed','Pine needles'],0,'Wild giant pandas spend much of the day eating bamboo.','https://nationalzoo.si.edu/animals/giant-panda',true),
-      Q('Sports','In tennis scoring, what does “love” mean?',['One point','A tied score','Match point','Zero'],3,'Love is the standard tennis term for a score of zero.','https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf',true),
-      Q('World','Which river flows beneath London’s Tower Bridge?',['Danube','Rhine','Thames','Seine'],2,'Tower Bridge crosses the River Thames in central London.','https://www.britannica.com/topic/Tower-Bridge',true),
-      Q('Screen & sound','Who sings lead on the Beatles’ 1966 single “Yellow Submarine”?',['Ringo Starr','George Harrison','Paul McCartney','John Lennon'],0,'Ringo Starr sings the lead vocal; the other Beatles join the choruses.','https://www.thebeatles.com/yellow-submarine',true),
-      Q('Science','After breathing normal air, we exhale mostly which gas?',['Oxygen','Water vapor','Nitrogen','Carbon dioxide'],2,'Nitrogen makes up about 78% of inhaled air and remains the largest part of exhaled air.','https://www.britannica.com/science/air',true),
-      Q('Food & kitchen','What is allspice made from?',['A blend of spices','Ground roots','Dried flower buds','Dried berries'],3,'Allspice is the dried, unripe berry of the Pimenta dioica tree.','https://www.britannica.com/plant/allspice',true),
-      Q('Nature','Penguins expel their salt glands’ secretions through what?',['Nostrils','Skin pores','Tear ducts','Ear canals'],0,'Their salt glands drain into the nasal passages, so excess salt leaves through the nostrils.','https://oceanservice.noaa.gov/facts/seabird.html',true),
-      Q('Books & games','In Carroll’s Alice in Wonderland, the Duchess’s baby turns into what?',['Frog','Pig','Rabbit','Mouse'],1,'Alice carries the baby away before it transforms into a pig.','https://www.gutenberg.org/files/11/11-h/11-h.htm',true),
-      Q('Nature','Ming, the animal dated to 507 years old, was what?',['Greenland shark','Bowhead whale','Ocean clam','Giant tortoise'],2,'Ming was an ocean quahog clam collected near Iceland.','https://www.bangor.ac.uk/news/archive/ocean-quahog-clam-at-least-507-years-old-16466',true),
-      Q('Food & kitchen','Margarine’s original French recipe got its main fat from what?',['Olive oil','Beef tallow','Coconut oil','Pork lard'],1,'Hippolyte Mège-Mouriès made early margarine largely from beef fat.','https://www.britannica.com/topic/margarine',true),
-      Q('Food & kitchen','At Heinz’s 1869 launch, what was its first bottled product?',['Mustard','Tomato ketchup','Horseradish','Pickle relish'],2,'Henry Heinz first sold his mother’s grated horseradish in clear bottles.','https://www.senatorjohnheinzhistorycenter.org/exhibits/heinz/',true),
-      Q('Screen & sound','What color are Dorothy’s magic slippers in the 1939 Wizard of Oz?',['Blue','Red','Silver','Green'],1,'The film changed the book’s silver shoes to ruby slippers to exploit Technicolor.','https://americanhistory.si.edu/collections/object/nmah_670130',true),
-      Q('World','A leaf from which tree appears on Canada’s national flag?',['Elm','Maple','Oak','Birch'],1,'The flag centers a stylized red maple leaf.','https://www.canada.ca/en/canadian-heritage/services/flag-canada-history.html',true),
-      Q('Everyday objects','The fuzzy side of a Velcro fastener is covered in tiny what?',['Loops','Hooks','Snaps','Teeth'],0,'One strip has hooks; the softer strip has loops for those hooks to catch.','https://www.britannica.com/technology/hook-and-loop-fastener',true),
-      Q('Science','Which part of your eye changes the size of your pupil?',['Retina','Cornea','Lens','Iris'],3,'Muscles in the iris constrict or dilate the pupil to control incoming light.','https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work',true),
-      Q('World','The Taj Mahal’s main white marble building was built as what?',['A courthouse','A mausoleum','A royal palace','A fortress'],1,'Shah Jahan commissioned the complex as a mausoleum for Mumtaz Mahal.','https://whc.unesco.org/en/list/252/',true),
-      Q('Screen & sound','What bird’s head forms the handle of Mary Poppins’ umbrella?',['Swan','Duck','Owl','Parrot'],3,'Mary Poppins carries an umbrella with a talking parrot-head handle.','https://d23.com/a-to-z/mary-poppins-film/',true),
-      Q('Screen & sound','In 1971’s Willy Wonka, the machine that rejects Veruca tests what?',['Eggs','Chocolate','Gum','Nuts'],0,'The Eggdicator judges golden chocolate eggs as good or bad.','https://catalog.afi.com/Catalog/moviedetails/54174',true),
-      Q('Books & games','In classic Clue, what must you still try to do after a wrong accusation?',['Reveal your whole hand','Make one suggestion','Roll on every turn','Disprove suggestions'],3,'You stop moving and suggesting, but must still show cards to disprove others’ suggestions.','https://instructions.hasbro.com/en-us/instruction/clue-game',true),
-      Q('Everyday objects','What does a tape measure’s sliding end hook compensate for?',['The case’s weight','Temperature changes','The tape’s curvature','The hook’s thickness'],3,'The hook slides by its own thickness so inside and outside measurements agree.','https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/tape-measure',true),
-      Q('Food & kitchen','What gives ordinary aluminum foil its shiny and dull sides?',['Polishing after cuts','Spraying one surface','Rolling paired sheets','Cooling at two speeds'],2,'Two sheets are rolled together at the final pass. The sides touching the rollers become shiny.','https://www.britannica.com/technology/aluminum-foil',true),
-      Q('Art','Which kitchen tool did Jackson Pollock use to squeeze paint onto canvas?',['A cookie press','A turkey baster','A potato ricer','A pastry bag'],1,'Pollock used hardened brushes, sticks, and even a kitchen baster to drip and pour paint.','https://www.moma.org/artists/4675',true),
-      Q('Sports','In soccer, a legal throw-in goes directly into your own goal. What next?',['A corner kick','Retake the throw-in','A goal kick','An own goal counts'],0,'A goal cannot be scored directly from a throw-in. Into your own goal means a corner kick.','https://www.theifab.com/laws/latest/the-throw-in/',true),
 
-      Q('Screen & sound','What was the fake blood in the shower scene of Psycho made from?',['Tomato soup','Chocolate syrup','Red paint','Coffee'],1,'The black-and-white film used chocolate syrup because its tone and flow read well on camera.','https://www.bfi.org.uk/features/psycho-shower-scene-alfred-hitchcock'),
-      Q('Screen & sound','Which candy did E.T. follow in E.T. the Extra-Terrestrial?',['M&Ms','Skittles','Reese’s Pieces','Jelly Babies'],2,'Elliott lays a trail of Reese’s Pieces to coax E.T. out of hiding.','https://catalog.afi.com/Catalog/moviedetails/56772'),
-      Q('Screen & sound','What make of car is the time machine in Back to the Future?',['Pontiac','DeLorean','Ferrari','Lotus'],1,'Doc Brown builds the time machine from a stainless-steel DeLorean DMC-12.','https://www.loc.gov/item/prn-07-254/'),
-      Q('Screen & sound','David Bowie was born with which surname?',['Bolton','Jones','Mercury','Stardust'],1,'He was born David Robert Jones and changed his stage name to avoid confusion with Davy Jones.','https://www.britannica.com/biography/David-Bowie'),
-      Q('Screen & sound','What was the working title of the Beatles song “Yesterday”?',['Boiled Eggs','Scrambled Eggs','Sunday Morning','Only Yesterday'],1,'McCartney used “Scrambled Eggs” as a placeholder while developing the melody.','https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Yesterday.pdf'),
-      Q('Screen & sound','The name ABBA is formed from what?',['Four home towns','Four surnames','Four first names','A Swedish phrase'],2,'ABBA takes one initial from Agnetha, Björn, Benny, and Anni-Frid.','https://www.britannica.com/topic/ABBA'),
-      Q('Screen & sound','Which actor provided Darth Vader’s speaking voice in the original Star Wars trilogy?',['David Prowse','James Earl Jones','Alec Guinness','Peter Cushing'],1,'David Prowse played Vader physically, while James Earl Jones supplied the voice.','https://www.britannica.com/biography/James-Earl-Jones'),
-      Q('Screen & sound','Toy Story was the first feature film made entirely with what?',['Stop-motion puppets','Computer animation','Digital cameras','Motion capture'],1,'Pixar’s 1995 release was the first fully computer-animated feature film.','https://www.pixar.com/feature-films/toy-story'),
-
-      Q('Sports','In golf, what does a birdie mean?',['One over par','One under par','Two under par','An even score'],1,'A birdie is a score of one stroke under par on a hole.','https://www.britannica.com/sports/golf'),
-      Q('Sports','How many feathers are traditionally used in a badminton shuttlecock?',['12','14','16','18'],2,'Competition feather shuttlecocks use 16 feathers fixed into the cork base.','https://corporate.bwfbadminton.com/statutes/'),
-      Q('Sports','What color jersey marks the overall leader of the Tour de France?',['Green','White','Polka-dot','Yellow'],3,'The race leader wears the yellow jersey, or maillot jaune.','https://www.letour.fr/en/the-jerseys-tour-de-france'),
-      Q('Sports','How many balls make up a standard over in modern cricket?',['Five','Six','Eight','Ten'],1,'An over consists of six valid deliveries by one bowler.','https://www.lords.org/mcc/the-laws-of-cricket/the-over'),
-      Q('Sports','Why does a volleyball libero wear a contrasting jersey?',['They are team captain','They cannot serve','Officials must identify them','They joined as a substitute'],2,'The different jersey lets officials track the libero’s special substitution and position rules.','https://www.fivb.com/volleyball/the-game/official-volleyball-rules/'),
-      Q('Sports','How many points is the black ball worth in snooker?',['Five','Six','Seven','Eight'],2,'The black is the highest-value color ball at seven points.','https://wpbsa.com/rules/'),
-      Q('Sports','The modern marathon distance is 26 miles plus how many yards?',['185','285','385','485'],2,'The official distance is 26 miles 385 yards, or 42.195 kilometers.','https://worldathletics.org/disciplines/road-running/marathon'),
-      Q('Sports','What is Wimbledon’s playing surface?',['Clay','Grass','Carpet','Hard court'],1,'Wimbledon is the only tennis Grand Slam still played on grass.','https://www.wimbledon.com/en_GB/about_wimbledon/grass_courts.html'),
-
-      Q('Food & kitchen','Botanically, peanuts belong to which family?',['Nuts','Legumes','Grasses','Berries'],1,'Peanuts grow in pods and belong to the legume family with peas and beans.','https://www.britannica.com/plant/peanut'),
-      Q('Food & kitchen','Capers are usually pickled parts of a plant. Which parts?',['Roots','Leaves','Flower buds','Seeds'],2,'Capers are unopened flower buds from the caper bush.','https://www.britannica.com/plant/caper'),
-      Q('Food & kitchen','Which spice is the dried stigma of a flower?',['Cumin','Saffron','Paprika','Turmeric'],1,'Saffron consists of hand-picked stigmas from the saffron crocus.','https://www.britannica.com/plant/saffron'),
-      Q('Food & kitchen','Nutmeg and mace come from what relationship?',['Two unrelated roots','One tree’s seed and seed covering','The same dried leaf','Two stages of one flower'],1,'Nutmeg is the seed; mace is the lacy red covering around that seed.','https://www.britannica.com/plant/nutmeg'),
-      Q('Food & kitchen','Traditional Worcestershire sauce contains which fish?',['Tuna','Sardines','Anchovies','Mackerel'],2,'Anchovies ferment with vinegar, molasses, tamarind, and seasonings in the classic sauce.','https://www.britannica.com/topic/Worcestershire-sauce'),
-      Q('Food & kitchen','What does the Italian name tiramisu roughly mean?',['Sweet morning','Pick me up','Layered cream','Coffee cake'],1,'The name comes from an Italian phrase meaning “pick me up” or “cheer me up.”','https://www.treccani.it/vocabolario/tiramisu/'),
-      Q('Food & kitchen','The modern chocolate chip cookie was created at which inn?',['Toll House Inn','Brown Derby','Savoy Inn','Palmer House'],0,'Ruth Wakefield developed the cookie at Massachusetts’s Toll House Inn.','https://www.smithsonianmag.com/smart-news/first-chocolate-chip-was-molasses-candy-180963206/'),
-      Q('Food & kitchen','Before small table forks caught on in Europe, forks were mainly used for what?',['Eating soup','Cooking and serving','Cutting bread','Measuring spices'],1,'Ancient forks were largely cooking tools; small personal eating forks spread much later.','https://www.smithsonianmag.com/arts-culture/a-history-of-western-eating-utensils-from-the-scandalous-fork-to-the-incredible-spork-64593179/'),
-
-      Q('Nature','How many hearts does an octopus have?',['One','Two','Three','Four'],2,'Two hearts pump blood to the gills and one pumps it around the body.','https://oceanservice.noaa.gov/facts/octopus.html'),
-      Q('Nature','What unusual shape are wombat droppings?',['Spiral','Cube','Ring','Pyramid'],1,'Wombats produce cube-shaped droppings due to the changing elasticity of their intestines.','https://www.science.org/content/article/how-do-wombats-poop-cubes-scientists-get-bottom-mystery'),
-      Q('Nature','What color is a polar bear’s skin under its fur?',['White','Pink','Black','Gray'],2,'Polar bears have black skin beneath translucent, light-scattering fur.','https://nationalzoo.si.edu/animals/polar-bear'),
-      Q('Nature','A giraffe has how many neck vertebrae?',['Seven','Twelve','Eighteen','Twenty-four'],0,'Like most mammals, a giraffe has seven neck vertebrae, each one greatly elongated.','https://www.britannica.com/animal/giraffe'),
-      Q('Nature','Flamingos get their pink color mainly from what?',['Sunlight','Carotenoid pigments in food','Salt water','A skin oil'],1,'Carotenoid pigments from algae and small crustaceans color their feathers.','https://nationalzoo.si.edu/animals/flamingo'),
-      Q('Science','Which planet has a day longer than its year?',['Mercury','Venus','Mars','Neptune'],1,'Venus rotates once in about 243 Earth days but orbits the Sun in about 225.','https://science.nasa.gov/venus/facts/'),
-      Q('Science','What color can sunsets appear on Mars?',['Green','Blue','Purple','White'],1,'Fine Martian dust scatters light so the sky near the setting Sun can look blue.','https://science.nasa.gov/resource/blue-sunset-on-mars/'),
-      Q('Science','Which planet is hottest, despite not being closest to the Sun?',['Mercury','Venus','Earth','Mars'],1,'Venus’s thick carbon-dioxide atmosphere traps enough heat to make it hotter than Mercury.','https://science.nasa.gov/venus/facts/'),
-
-      Q('Everyday objects','What does the “WD” in WD-40 stand for?',['Workshop Degreaser','Water Displacement','Weather Defense','Wax Dissolver'],1,'The product name records “Water Displacement” and the successful 40th formula.','https://www.wd40.com/history/'),
-      Q('Everyday objects','Pencil “lead” is actually made mainly from what?',['Lead','Charcoal','Graphite','Zinc'],2,'Pencil cores use graphite mixed with clay, not metallic lead.','https://www.britannica.com/technology/pencil-writing-implement'),
-      Q('Everyday objects','Bubble Wrap was first marketed as what?',['Insulation','Wallpaper','Pool lining','Packing material'],1,'Its inventors first tried selling the sealed-air plastic sheets as textured wallpaper.','https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/'),
-      Q('Everyday objects','What does ZIP in ZIP Code stand for?',['Zonal Index Post','Zone Improvement Plan','Zero Interruption Post','Zoned Information Path'],1,'The U.S. Postal Service introduced the Zone Improvement Plan code in 1963.','https://facts.usps.com/decoding-the-zip-code/'),
-      Q('World','Big Ben is properly the nickname of what?',['The whole palace','The clock face','The Great Bell','The tower'],2,'Big Ben names the Great Bell; the tower itself is Elizabeth Tower.','https://www.parliament.uk/about/living-heritage/building/palace/big-ben/'),
-      Q('World','Which country lies in all four hemispheres?',['Brazil','Indonesia','Kenya','Kiribati'],3,'Kiribati crosses both the equator and the 180-degree meridian.','https://www.britannica.com/place/Kiribati'),
-      Q('World','What is the world’s deepest lake?',['Lake Superior','Lake Tanganyika','Lake Baikal','Caspian Sea'],2,'Siberia’s Lake Baikal reaches about 1,620 meters at its deepest point.','https://www.britannica.com/place/Lake-Baikal'),
-      Q('World','The Statue of Liberty’s outer skin is made from what metal?',['Bronze','Copper','Iron','Zinc'],1,'Thin copper sheets form the exterior; oxidation created the green patina.','https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm')
-    ];
-
-    const setData = {
-      'set-1': {
-        name: 'Set 1 · Calibration',
-        subtitle: 'Your original 24 plus the first 40. Start here.',
-        questions: calibrationQuestions
-      },
-      ...(window.REBASE_EXTRA_SETS || {})
-    };
+    // Decks are loaded from sets/set-N.js and register on window.REBASE_EXTRA_SETS.
+    const setData = { ...(window.REBASE_EXTRA_SETS || {}) };
     let currentSetKey = localStorage.getItem('rebase-current-set') || 'set-1';
     if (!setData[currentSetKey]) currentSetKey = 'set-1';
     let questions = [];
@@ -620,10 +543,12 @@
     }
 
     function normalizeSet(key) {
+      // Set 1 keeps unprefixed ids so progress saved before decks moved to files still matches.
+      const slug = q => q.question.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 64);
       return setData[key].questions.map(q => q.id ? q : {
         ...q,
-        seed: false,
-        id: `${key}-${q.question.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 64)}`
+        seed: key === 'set-1',
+        id: key === 'set-1' ? slug(q) : `${key}-${slug(q)}`
       });
     }
 
