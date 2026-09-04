@@ -1,0 +1,7 @@
+node_modules/
+rebase-progress.json
+.env
+.DS_Store
+proofshot-artifacts/
+.hallmark/
+PAPERCUTS.md

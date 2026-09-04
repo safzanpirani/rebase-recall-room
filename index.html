@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4e8c8">
+  <title>Rebase Recall Room</title>
+  <script>document.documentElement.dataset.theme = localStorage.getItem('rebase-theme') || 'dark';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Figtree:wght@500;650;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Audience: trivia contestants doing rapid recall practice. Tone: playful game show. */
+    :root {
+      --color-paper: #f4e8c8;
+      --color-paper-deep: #e8d8ae;
+      --color-ink: #191714;
+      --color-muted: #655e53;
+      --color-accent: #e84d2f;
+      --color-accent-dark: #b92e18;
+      --color-blue: #2d61d4;
+      --color-blue-soft: #dce6ff;
+      --color-green: #19724b;
+      --color-green-soft: #d9efdf;
+      --color-red-soft: #f7d8cf;
+      --color-white: #fffdf7;
+      --color-shadow: #191714;
+      --color-focus: #2d61d4;
+      --color-solid-text: #fffdf7;
+      --color-on-accent: #191714;
+      --color-header: #e84d2f;
+      --color-footer-bg: #191714;
+      --color-footer-text: #f4e8c8;
+      --font-display: "Figtree", Arial, sans-serif;
+      --font-body: "Figtree", Arial, sans-serif;
+      --font-mono: "DM Mono", monospace;
+      --border: 2px solid var(--color-ink);
+      --shadow: 5px 5px 0 var(--color-shadow);
+      --radius: 8px;
+    }
+
+    [data-theme="dark"] {
+      --color-paper: #171614;
+      --color-paper-deep: #302b24;
+      --color-ink: #f3ead8;
+      --color-muted: #b9ae9e;
+      --color-accent: #f16a4d;
+      --color-accent-dark: #ff8a70;
+      --color-blue: #6f96f5;
+      --color-blue-soft: #26375c;
+      --color-green: #66c994;
+      --color-green-soft: #193c2b;
+      --color-red-soft: #512a24;
+      --color-white: #211f1c;
+      --color-shadow: #050505;
+      --color-focus: #8aabff;
+      --color-solid-text: #191714;
+      --color-on-accent: #191714;
+      --color-header: #8f3f30;
+      --color-footer-bg: #0d0c0b;
+      --color-footer-text: #f3ead8;
+      color-scheme: dark;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; overflow-x: clip; }
+    body {
+      background: var(--color-paper);
+      color: var(--color-ink);
+      font-family: var(--font-body);
+      background-image: radial-gradient(var(--color-paper-deep) 1px, transparent 1px);
+      background-size: 14px 14px;
+    }
+    button, input, select { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 3px;
+    }
+    button { color: inherit; }
+
+    .topbar {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px clamp(16px, 4vw, 56px);
+      border-bottom: var(--border);
+      background: var(--color-header);
+      color: var(--color-on-accent);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 42px;
+      aspect-ratio: 1;
+      border: var(--border);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      font: 900 21px var(--font-display);
+      transform: rotate(-3deg);
+      flex: 0 0 auto;
+    }
+    .brand-name { font-size: clamp(17px, 2vw, 24px); font-weight: 900; line-height: .95; }
+    .brand-sub { font: 500 10px var(--font-mono); text-transform: uppercase; letter-spacing: .08em; }
+    .top-stats { display: flex; gap: 8px; }
+    .stat-chip {
+      min-width: 64px;
+      padding: 6px 10px;
+      border: var(--border);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      text-align: center;
+      font: 500 11px var(--font-mono);
+      white-space: nowrap;
+    }
+    .stat-chip strong { display: block; font: 900 17px var(--font-display); }
+    .theme-toggle {
+      min-width: 66px;
+      border: var(--border);
+      background: var(--color-paper);
+      color: var(--color-ink);
+      padding: 6px 10px;
+      cursor: pointer;
+      font: 800 11px var(--font-mono);
+      white-space: nowrap;
+    }
+
+    .shell {
+      width: min(1220px, calc(100% - 32px));
+      margin: 28px auto 54px;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 28px;
+      align-items: start;
+    }
+    .rail { position: sticky; top: 18px; display: grid; gap: 14px; }
+    .rail-card, .stage, .library { border: var(--border); background: var(--color-white); box-shadow: var(--shadow); }
+    .rail-card { padding: 16px; }
+    .eyebrow { margin: 0 0 8px; font: 500 10px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--color-muted); }
+    .rail h2 { margin: 0 0 12px; font-size: 21px; line-height: 1; }
+    .deck-select {
+      width: 100%;
+      min-height: 44px;
+      border: 2px solid var(--color-ink);
+      background: var(--color-white);
+      padding: 8px 10px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    .deck-subtitle { min-height: 34px; margin: 8px 0 0; color: var(--color-muted); font-size: 11px; line-height: 1.4; }
+    .rail-rule { height: 2px; margin: 14px -16px; background: var(--color-ink); }
+    .disk-btn { width: 100%; min-height: 42px; border: 2px solid var(--color-ink); background: var(--color-green); color: var(--color-solid-text); padding: 8px 10px; cursor: pointer; font-weight: 900; white-space: nowrap; }
+    .disk-btn.connected { background: var(--color-blue); }
+    .disk-status { margin: 7px 0 0; color: var(--color-muted); font: 400 10px/1.4 var(--font-mono); }
+    .mode-list { display: grid; gap: 8px; }
+    .mode-btn, .small-btn, .filter-btn {
+      border: 2px solid var(--color-ink);
+      background: var(--color-paper);
+      min-height: 42px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-weight: 800;
+      white-space: nowrap;
+      transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+    }
+    .mode-btn { text-align: left; width: 100%; }
+    .mode-btn:hover, .small-btn:hover, .filter-btn:hover { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--color-shadow); }
+    .mode-btn:active, .small-btn:active, .filter-btn:active { transform: translate(0); box-shadow: none; }
+    .mode-btn.active { background: var(--color-blue); color: var(--color-solid-text); }
+    .mode-btn small { display: block; margin-top: 2px; font: 400 10px var(--font-mono); opacity: .8; }
+    .category-pips { display: grid; gap: 9px; }
+    .pip-row { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: center; font: 500 11px var(--font-mono); }
+    .pip-track { height: 7px; border: 1px solid var(--color-ink); background: var(--color-paper); }
+    .pip-fill { display: block; height: 100%; background: var(--color-accent); width: 0; }
+    .tip { margin: 0; color: var(--color-muted); font-size: 12px; line-height: 1.45; }
+    kbd { border: 1px solid var(--color-ink); background: var(--color-paper); padding: 1px 4px; font: 500 10px var(--font-mono); }
+
+    .work { min-width: 0; }
+    .intro { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 16px; margin: 0 0 18px; }
+    .intro h1 { margin: 0; max-width: 780px; font-size: clamp(38px, 7vw, 84px); line-height: .84; letter-spacing: -.065em; overflow-wrap: anywhere; min-width: 0; }
+    .intro h1 span { color: var(--accent-word, var(--color-accent)); }
+    .intro p { max-width: 300px; margin: 0; color: var(--color-muted); font-size: 14px; line-height: 1.45; }
+
+    .stage { min-height: 540px; position: relative; }
+    .stage-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-bottom: var(--border); background: var(--color-paper); }
+    .round-label { font: 500 11px var(--font-mono); text-transform: uppercase; letter-spacing: .08em; }
+    .progress-wrap { display: flex; align-items: center; gap: 10px; min-width: min(270px, 46%); }
+    .progress { height: 10px; flex: 1; border: 1px solid var(--color-ink); background: var(--color-white); }
+    .progress-bar { height: 100%; width: 0; background: var(--color-blue); transition: width 220ms ease; }
+    .progress-text { font: 500 10px var(--font-mono); white-space: nowrap; }
+    .timer-text { display: none; min-width: 48px; color: var(--color-accent-dark); font: 900 13px var(--font-mono); text-align: right; }
+    .timer-text.visible { display: inline; }
+    .question-wrap { padding: clamp(22px, 5vw, 52px); }
+    .question-meta { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+    .category-tag, .difficulty {
+      border: 1px solid var(--color-ink);
+      padding: 5px 8px;
+      font: 500 10px var(--font-mono);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      background: var(--color-paper);
+      white-space: nowrap;
+    }
+    .question { margin: 0 0 28px; max-width: 850px; font-size: clamp(25px, 4vw, 43px); line-height: 1.05; letter-spacing: -.035em; overflow-wrap: anywhere; }
+    .answers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .answer {
+      min-height: 76px;
+      display: grid;
+      grid-template-columns: 30px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      border: 2px solid var(--color-ink);
+      background: var(--color-white);
+      text-align: left;
+      cursor: pointer;
+      font-weight: 800;
+      line-height: 1.2;
+      transition: transform 100ms ease, box-shadow 100ms ease, background 100ms ease;
+    }
+    .answer:hover:not(:disabled) { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--color-shadow); background: var(--color-blue-soft); }
+    .answer:disabled { cursor: default; opacity: 1; }
+    .answer.correct { background: var(--color-green-soft); border-color: var(--color-green); }
+    .answer.wrong { background: var(--color-red-soft); border-color: var(--color-accent-dark); }
+    .answer-key { display: grid; place-items: center; width: 30px; height: 30px; border: 1px solid currentColor; font: 500 12px var(--font-mono); }
+    .feedback { display: none; margin-top: 20px; padding-top: 18px; border-top: 2px dashed var(--color-paper-deep); }
+    .feedback.visible { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px; align-items: end; }
+    .verdict { margin: 0 0 6px; font-size: 20px; font-weight: 900; }
+    .explain { margin: 0; max-width: 700px; color: var(--color-muted); line-height: 1.5; font-size: 14px; }
+    .source { display: inline-block; margin-top: 8px; color: var(--color-blue); font: 500 11px var(--font-mono); text-underline-offset: 3px; }
+    .feedback-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .explain-btn { margin-top: 8px; border: 0; padding: 0; background: transparent; color: var(--color-blue); cursor: pointer; font: 500 11px var(--font-mono); text-decoration: underline; text-underline-offset: 3px; }
+    .ai-explanation { display: none; margin-top: 14px; padding: 14px; border-left: 4px solid var(--color-blue); background: var(--color-blue-soft); color: var(--color-ink); font-size: 14px; line-height: 1.55; white-space: pre-line; }
+    .ai-explanation.visible { display: block; }
+    .next-btn { min-width: 132px; min-height: 48px; border: var(--border); background: var(--color-accent); color: var(--color-on-accent); font-weight: 900; cursor: pointer; box-shadow: 3px 3px 0 var(--color-shadow); white-space: nowrap; }
+    .next-btn:hover { background: var(--color-accent-dark); }
+
+    .complete { display: none; padding: clamp(28px, 7vw, 70px); text-align: center; }
+    .complete.visible { display: block; }
+    .complete .big-score { font-size: clamp(78px, 16vw, 160px); font-weight: 900; line-height: .8; letter-spacing: -.08em; color: var(--color-accent); }
+    .complete h2 { font-size: clamp(28px, 5vw, 50px); margin: 20px 0 8px; }
+    .complete p { color: var(--color-muted); }
+    .complete-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
+    .simulation-review { display: none; max-width: 720px; margin: 24px auto 0; text-align: left; }
+    .simulation-review.visible { display: grid; gap: 8px; }
+    .review-line { padding: 10px 12px; border: 1px solid var(--color-ink); background: var(--color-paper); font-size: 12px; line-height: 1.4; }
+
+    .readout { margin-top: 28px; border: var(--border); background: var(--color-white); box-shadow: var(--shadow); }
+    .readout-head { padding: 18px 20px; border-bottom: var(--border); display: flex; justify-content: space-between; align-items: end; gap: 16px; }
+    .readout-head h2 { margin: 0; font-size: clamp(24px, 4vw, 38px); }
+    .readout-head p { margin: 4px 0 0; color: var(--color-muted); font-size: 13px; }
+    .readout-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .readout-card { min-height: 116px; padding: 16px; border-right: 1px solid var(--color-ink); }
+    .readout-card:last-child { border-right: 0; }
+    .readout-value { display: block; margin-top: 7px; font-size: clamp(24px, 4vw, 38px); font-weight: 900; line-height: 1; }
+    .readout-note { display: block; margin-top: 7px; color: var(--color-muted); font-size: 11px; line-height: 1.35; }
+
+    .library { margin-top: 28px; }
+    .library-head { padding: 20px; border-bottom: var(--border); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 14px; align-items: end; }
+    .library h2 { margin: 0; font-size: clamp(25px, 4vw, 38px); }
+    .library p { margin: 4px 0 0; color: var(--color-muted); font-size: 13px; }
+    .library-tools { display: flex; gap: 8px; }
+    .search, .category-select { min-height: 42px; border: 2px solid var(--color-ink); background: var(--color-white); padding: 8px 10px; }
+    .search { width: min(250px, 38vw); }
+    .deck { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .fact-card { padding: 18px; border-bottom: 1px solid var(--color-ink); min-width: 0; }
+    .fact-card:nth-child(odd) { border-right: 1px solid var(--color-ink); }
+    .fact-card h3 { margin: 8px 0; font-size: 17px; line-height: 1.15; }
+    .fact-answer { margin: 0; color: var(--color-green); font-weight: 900; }
+    .fact-note { margin: 6px 0 0; color: var(--color-muted); font-size: 12px; line-height: 1.4; }
+    .fact-card.missed { box-shadow: inset 5px 0 0 var(--color-accent); }
+    .empty { padding: 30px; color: var(--color-muted); }
+    footer { padding: 22px clamp(16px, 4vw, 56px); border-top: var(--border); background: var(--color-footer-bg); color: var(--color-footer-text); display: flex; justify-content: space-between; gap: 20px; font: 500 11px var(--font-mono); }
+    footer strong { font-family: var(--font-display); font-size: 16px; }
+
+    @media (max-width: 880px) {
+      .shell { grid-template-columns: 1fr; }
+      .rail { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .rail-card:first-child { grid-column: 1 / -1; }
+      .mode-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .mode-btn { text-align: center; }
+      .intro { grid-template-columns: 1fr; align-items: start; }
+      .intro p { max-width: 560px; }
+      .readout-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .readout-card:nth-child(2) { border-right: 0; }
+      .readout-card:nth-child(-n+2) { border-bottom: 1px solid var(--color-ink); }
+    }
+    @media (max-width: 620px) {
+      .topbar { align-items: flex-start; }
+      .brand-sub { display: none; }
+      .stat-chip { min-width: 54px; padding: 5px 7px; }
+      .stat-chip:first-child { display: none; }
+      .shell { width: min(100% - 20px, 1220px); margin-top: 18px; }
+      .rail { grid-template-columns: 1fr; }
+      .rail-card:nth-child(n+2) { display: none; }
+      .mode-list { grid-template-columns: 1fr 1fr; }
+      .mode-btn { padding: 7px 4px; font-size: 12px; }
+      .mode-btn small { display: none; }
+      .intro h1 { font-size: clamp(42px, 16vw, 67px); }
+      .stage-head { align-items: flex-start; }
+      .progress-wrap { min-width: 48%; }
+      .question-wrap { padding: 20px 16px; }
+      .question { font-size: clamp(25px, 8.5vw, 34px); }
+      .answers { grid-template-columns: 1fr; }
+      .answer { min-height: 60px; }
+      .feedback.visible { grid-template-columns: 1fr; }
+      .next-btn { width: 100%; }
+      .library-head { grid-template-columns: 1fr; }
+      .library-tools { width: 100%; }
+      .search { width: 100%; min-width: 0; }
+      .category-select { max-width: 42%; }
+      .deck { grid-template-columns: 1fr; }
+      .fact-card:nth-child(odd) { border-right: 0; }
+      .readout-head { display: block; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">R</div>
+      <div><div class="brand-name">REBASE RECALL ROOM</div><div class="brand-sub">Six general decks · 384 cards</div></div>
+    </div>
+    <div class="top-stats" aria-label="Lifetime statistics">
+      <div class="stat-chip">Accuracy<strong id="accuracy">0%</strong></div>
+      <div class="stat-chip">Correct<strong id="correctTotal">0</strong></div>
+      <div class="stat-chip">Missed<strong id="missedTotal">0</strong></div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch color theme">Light</button>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="rail">
+      <section class="rail-card">
+        <p class="eyebrow">Choose a deck</p>
+        <select class="deck-select" id="setSelect" aria-label="Choose a question deck"></select>
+        <p class="deck-subtitle" id="setSubtitle"></p>
+        <div class="rail-rule"></div>
+        <p class="eyebrow">Choose a drill</p>
+        <div class="mode-list">
+          <button class="mode-btn active" data-mode="quick">Adaptive 12<small>Weak · unseen · mastered</small></button>
+          <button class="mode-btn" data-mode="full">Full deck<small>All 64 questions</small></button>
+          <button class="mode-btn" data-mode="review">Due review<small id="dueModeCopy">Due + missed cards</small></button>
+          <button class="mode-btn" data-mode="simulation">Simulation<small>12 questions · 15 sec</small></button>
+        </div>
+        <div class="rail-rule"></div>
+        <button class="disk-btn" id="connectFileBtn">Connect progress file</button>
+        <p class="disk-status" id="diskStatus">Choose this project folder once. Every later answer will save to disk.</p>
+      </section>
+      <section class="rail-card">
+        <p class="eyebrow">Category accuracy</p>
+        <div class="category-pips" id="categoryPips"></div>
+      </section>
+      <section class="rail-card">
+        <p class="eyebrow">Fast controls</p>
+        <p class="tip"><kbd>1</kbd> to <kbd>4</kbd> answer. <kbd>Enter</kbd> advances. Wrong answers return in the Misses drill.</p>
+      </section>
+    </aside>
+
+    <div class="work">
+      <section class="intro">
+        <h1>TRAIN THE <span>ODD DETAIL.</span></h1>
+        <p>Rebase questions hide a precise fact inside a familiar subject. Guess first. Read the one-line reason. Recycle every miss.</p>
+      </section>
+
+      <section class="stage" aria-live="polite">
+        <div class="stage-head">
+          <span class="round-label" id="roundLabel">Quick 12</span>
+          <div class="progress-wrap"><div class="progress"><div class="progress-bar" id="progressBar"></div></div><span class="progress-text" id="progressText">1 / 12</span><span class="timer-text" id="timerText">15s</span></div>
+        </div>
+        <div class="question-wrap" id="questionWrap">
+          <div class="question-meta"><span class="category-tag" id="categoryTag"></span><span class="difficulty" id="difficulty"></span></div>
+          <h2 class="question" id="question"></h2>
+          <div class="answers" id="answers"></div>
+          <div class="feedback" id="feedback">
+            <div>
+              <p class="verdict" id="verdict"></p><p class="explain" id="explain"></p>
+              <div class="feedback-links"><a class="source" id="source" target="_blank" rel="noreferrer">Check the source</a><button class="explain-btn" id="explainFurtherBtn">Explain further with AI</button></div>
+              <div class="ai-explanation" id="aiExplanation"></div>
+            </div>
+            <button class="next-btn" id="nextBtn">Next question</button>
+          </div>
+        </div>
+        <div class="complete" id="complete">
+          <div class="big-score" id="sessionScore">0%</div>
+          <h2 id="completeTitle">Round complete.</h2>
+          <p id="completeCopy"></p>
+          <div class="complete-actions"><button class="small-btn" id="againBtn">Another adaptive 12</button><button class="small-btn" id="reviewBtn">Review due cards</button></div>
+          <div class="simulation-review" id="simulationReview"></div>
+        </div>
+      </section>
+
+      <section class="readout">
+        <div class="readout-head"><div><p class="eyebrow">Learning diagnosis</p><h2>Your readout</h2><p>Updates after every answer across the full 384-card library.</p></div></div>
+        <div class="readout-grid">
+          <div class="readout-card"><span class="eyebrow">Coverage</span><strong class="readout-value" id="coverageValue">0 / 384</strong><span class="readout-note" id="coverageNote">Unseen cards stay in rotation.</span></div>
+          <div class="readout-card"><span class="eyebrow">Due now</span><strong class="readout-value" id="dueValue">0</strong><span class="readout-note">Wrong cards return quickly; correct cards spread out.</span></div>
+          <div class="readout-card"><span class="eyebrow">Weakest topic</span><strong class="readout-value" id="weakValue">—</strong><span class="readout-note" id="weakNote">Answer a few cards to diagnose.</span></div>
+          <div class="readout-card"><span class="eyebrow">Next move</span><strong class="readout-value" id="nextMoveValue">Start</strong><span class="readout-note" id="nextMoveNote">Adaptive 12 begins with unseen cards.</span></div>
+        </div>
+      </section>
+
+      <section class="library">
+        <div class="library-head">
+          <div><p class="eyebrow">Open-book review</p><h2>The answer wall</h2><p>Search facts after a round. Missed cards get a red edge.</p></div>
+          <div class="library-tools"><input class="search" id="search" type="search" placeholder="Search questions" aria-label="Search questions"><select class="category-select" id="categorySelect" aria-label="Filter category"><option value="all">All topics</option></select></div>
+        </div>
+        <div class="deck" id="deck"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer><strong>Small facts. Sharp recall.</strong><span>Sources after every answer · Browser progress · Optional disk log</span></footer>
+
+  <script src="sets/set-2.js"></script>
+  <script src="sets/set-3.js"></script>
+  <script src="sets/set-4.js"></script>
+  <script src="sets/set-5.js"></script>
+  <script src="sets/set-6.js"></script>
+  <script>
+    const Q = (category, question, options, answer, note, source, seed = false) => ({ category, question, options, answer, note, source, seed, id: question.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 64) });
+    const calibrationQuestions = [
+      Q('Food & kitchen','Which living ingredient makes bread dough rise?',['Yeast','Butter','Salt','Sugar'],0,'Yeast feeds on sugars and releases carbon dioxide, which inflates the dough.','https://www.britannica.com/science/yeast-fungus',true),
+      Q('Nature','What plant makes up most of a giant panda’s diet?',['Bamboo','Eucalyptus','Seaweed','Pine needles'],0,'Wild giant pandas spend much of the day eating bamboo.','https://nationalzoo.si.edu/animals/giant-panda',true),
+      Q('Sports','In tennis scoring, what does “love” mean?',['One point','A tied score','Match point','Zero'],3,'Love is the standard tennis term for a score of zero.','https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf',true),
+      Q('World','Which river flows beneath London’s Tower Bridge?',['Danube','Rhine','Thames','Seine'],2,'Tower Bridge crosses the River Thames in central London.','https://www.britannica.com/topic/Tower-Bridge',true),
+      Q('Screen & sound','Who sings lead on the Beatles’ 1966 single “Yellow Submarine”?',['Ringo Starr','George Harrison','Paul McCartney','John Lennon'],0,'Ringo Starr sings the lead vocal; the other Beatles join the choruses.','https://www.thebeatles.com/yellow-submarine',true),
+      Q('Science','After breathing normal air, we exhale mostly which gas?',['Oxygen','Water vapor','Nitrogen','Carbon dioxide'],2,'Nitrogen makes up about 78% of inhaled air and remains the largest part of exhaled air.','https://www.britannica.com/science/air',true),
+      Q('Food & kitchen','What is allspice made from?',['A blend of spices','Ground roots','Dried flower buds','Dried berries'],3,'Allspice is the dried, unripe berry of the Pimenta dioica tree.','https://www.britannica.com/plant/allspice',true),
+      Q('Nature','Penguins expel their salt glands’ secretions through what?',['Nostrils','Skin pores','Tear ducts','Ear canals'],0,'Their salt glands drain into the nasal passages, so excess salt leaves through the nostrils.','https://oceanservice.noaa.gov/facts/seabird.html',true),
+      Q('Books & games','In Carroll’s Alice in Wonderland, the Duchess’s baby turns into what?',['Frog','Pig','Rabbit','Mouse'],1,'Alice carries the baby away before it transforms into a pig.','https://www.gutenberg.org/files/11/11-h/11-h.htm',true),
+      Q('Nature','Ming, the animal dated to 507 years old, was what?',['Greenland shark','Bowhead whale','Ocean clam','Giant tortoise'],2,'Ming was an ocean quahog clam collected near Iceland.','https://www.bangor.ac.uk/news/archive/ocean-quahog-clam-at-least-507-years-old-16466',true),
+      Q('Food & kitchen','Margarine’s original French recipe got its main fat from what?',['Olive oil','Beef tallow','Coconut oil','Pork lard'],1,'Hippolyte Mège-Mouriès made early margarine largely from beef fat.','https://www.britannica.com/topic/margarine',true),
+      Q('Food & kitchen','At Heinz’s 1869 launch, what was its first bottled product?',['Mustard','Tomato ketchup','Horseradish','Pickle relish'],2,'Henry Heinz first sold his mother’s grated horseradish in clear bottles.','https://www.senatorjohnheinzhistorycenter.org/exhibits/heinz/',true),
+      Q('Screen & sound','What color are Dorothy’s magic slippers in the 1939 Wizard of Oz?',['Blue','Red','Silver','Green'],1,'The film changed the book’s silver shoes to ruby slippers to exploit Technicolor.','https://americanhistory.si.edu/collections/object/nmah_670130',true),
+      Q('World','A leaf from which tree appears on Canada’s national flag?',['Elm','Maple','Oak','Birch'],1,'The flag centers a stylized red maple leaf.','https://www.canada.ca/en/canadian-heritage/services/flag-canada-history.html',true),
+      Q('Everyday objects','The fuzzy side of a Velcro fastener is covered in tiny what?',['Loops','Hooks','Snaps','Teeth'],0,'One strip has hooks; the softer strip has loops for those hooks to catch.','https://www.britannica.com/technology/hook-and-loop-fastener',true),
+      Q('Science','Which part of your eye changes the size of your pupil?',['Retina','Cornea','Lens','Iris'],3,'Muscles in the iris constrict or dilate the pupil to control incoming light.','https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work',true),
+      Q('World','The Taj Mahal’s main white marble building was built as what?',['A courthouse','A mausoleum','A royal palace','A fortress'],1,'Shah Jahan commissioned the complex as a mausoleum for Mumtaz Mahal.','https://whc.unesco.org/en/list/252/',true),
+      Q('Screen & sound','What bird’s head forms the handle of Mary Poppins’ umbrella?',['Swan','Duck','Owl','Parrot'],3,'Mary Poppins carries an umbrella with a talking parrot-head handle.','https://d23.com/a-to-z/mary-poppins-film/',true),
+      Q('Screen & sound','In 1971’s Willy Wonka, the machine that rejects Veruca tests what?',['Eggs','Chocolate','Gum','Nuts'],0,'The Eggdicator judges golden chocolate eggs as good or bad.','https://catalog.afi.com/Catalog/moviedetails/54174',true),
+      Q('Books & games','In classic Clue, what must you still try to do after a wrong accusation?',['Reveal your whole hand','Make one suggestion','Roll on every turn','Disprove suggestions'],3,'You stop moving and suggesting, but must still show cards to disprove others’ suggestions.','https://instructions.hasbro.com/en-us/instruction/clue-game',true),
+      Q('Everyday objects','What does a tape measure’s sliding end hook compensate for?',['The case’s weight','Temperature changes','The tape’s curvature','The hook’s thickness'],3,'The hook slides by its own thickness so inside and outside measurements agree.','https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/tape-measure',true),
+      Q('Food & kitchen','What gives ordinary aluminum foil its shiny and dull sides?',['Polishing after cuts','Spraying one surface','Rolling paired sheets','Cooling at two speeds'],2,'Two sheets are rolled together at the final pass. The sides touching the rollers become shiny.','https://www.britannica.com/technology/aluminum-foil',true),
+      Q('Art','Which kitchen tool did Jackson Pollock use to squeeze paint onto canvas?',['A cookie press','A turkey baster','A potato ricer','A pastry bag'],1,'Pollock used hardened brushes, sticks, and even a kitchen baster to drip and pour paint.','https://www.moma.org/artists/4675',true),
+      Q('Sports','In soccer, a legal throw-in goes directly into your own goal. What next?',['A corner kick','Retake the throw-in','A goal kick','An own goal counts'],0,'A goal cannot be scored directly from a throw-in. Into your own goal means a corner kick.','https://www.theifab.com/laws/latest/the-throw-in/',true),
+
+      Q('Screen & sound','What was the fake blood in the shower scene of Psycho made from?',['Tomato soup','Chocolate syrup','Red paint','Coffee'],1,'The black-and-white film used chocolate syrup because its tone and flow read well on camera.','https://www.bfi.org.uk/features/psycho-shower-scene-alfred-hitchcock'),
+      Q('Screen & sound','Which candy did E.T. follow in E.T. the Extra-Terrestrial?',['M&Ms','Skittles','Reese’s Pieces','Jelly Babies'],2,'Elliott lays a trail of Reese’s Pieces to coax E.T. out of hiding.','https://catalog.afi.com/Catalog/moviedetails/56772'),
+      Q('Screen & sound','What make of car is the time machine in Back to the Future?',['Pontiac','DeLorean','Ferrari','Lotus'],1,'Doc Brown builds the time machine from a stainless-steel DeLorean DMC-12.','https://www.loc.gov/item/prn-07-254/'),
+      Q('Screen & sound','David Bowie was born with which surname?',['Bolton','Jones','Mercury','Stardust'],1,'He was born David Robert Jones and changed his stage name to avoid confusion with Davy Jones.','https://www.britannica.com/biography/David-Bowie'),
+      Q('Screen & sound','What was the working title of the Beatles song “Yesterday”?',['Boiled Eggs','Scrambled Eggs','Sunday Morning','Only Yesterday'],1,'McCartney used “Scrambled Eggs” as a placeholder while developing the melody.','https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Yesterday.pdf'),
+      Q('Screen & sound','The name ABBA is formed from what?',['Four home towns','Four surnames','Four first names','A Swedish phrase'],2,'ABBA takes one initial from Agnetha, Björn, Benny, and Anni-Frid.','https://www.britannica.com/topic/ABBA'),
+      Q('Screen & sound','Which actor provided Darth Vader’s speaking voice in the original Star Wars trilogy?',['David Prowse','James Earl Jones','Alec Guinness','Peter Cushing'],1,'David Prowse played Vader physically, while James Earl Jones supplied the voice.','https://www.britannica.com/biography/James-Earl-Jones'),
+      Q('Screen & sound','Toy Story was the first feature film made entirely with what?',['Stop-motion puppets','Computer animation','Digital cameras','Motion capture'],1,'Pixar’s 1995 release was the first fully computer-animated feature film.','https://www.pixar.com/feature-films/toy-story'),
+
+      Q('Sports','In golf, what does a birdie mean?',['One over par','One under par','Two under par','An even score'],1,'A birdie is a score of one stroke under par on a hole.','https://www.britannica.com/sports/golf'),
+      Q('Sports','How many feathers are traditionally used in a badminton shuttlecock?',['12','14','16','18'],2,'Competition feather shuttlecocks use 16 feathers fixed into the cork base.','https://corporate.bwfbadminton.com/statutes/'),
+      Q('Sports','What color jersey marks the overall leader of the Tour de France?',['Green','White','Polka-dot','Yellow'],3,'The race leader wears the yellow jersey, or maillot jaune.','https://www.letour.fr/en/the-jerseys-tour-de-france'),
+      Q('Sports','How many balls make up a standard over in modern cricket?',['Five','Six','Eight','Ten'],1,'An over consists of six valid deliveries by one bowler.','https://www.lords.org/mcc/the-laws-of-cricket/the-over'),
+      Q('Sports','Why does a volleyball libero wear a contrasting jersey?',['They are team captain','They cannot serve','Officials must identify them','They joined as a substitute'],2,'The different jersey lets officials track the libero’s special substitution and position rules.','https://www.fivb.com/volleyball/the-game/official-volleyball-rules/'),
+      Q('Sports','How many points is the black ball worth in snooker?',['Five','Six','Seven','Eight'],2,'The black is the highest-value color ball at seven points.','https://wpbsa.com/rules/'),
+      Q('Sports','The modern marathon distance is 26 miles plus how many yards?',['185','285','385','485'],2,'The official distance is 26 miles 385 yards, or 42.195 kilometers.','https://worldathletics.org/disciplines/road-running/marathon'),
+      Q('Sports','What is Wimbledon’s playing surface?',['Clay','Grass','Carpet','Hard court'],1,'Wimbledon is the only tennis Grand Slam still played on grass.','https://www.wimbledon.com/en_GB/about_wimbledon/grass_courts.html'),
+
+      Q('Food & kitchen','Botanically, peanuts belong to which family?',['Nuts','Legumes','Grasses','Berries'],1,'Peanuts grow in pods and belong to the legume family with peas and beans.','https://www.britannica.com/plant/peanut'),
+      Q('Food & kitchen','Capers are usually pickled parts of a plant. Which parts?',['Roots','Leaves','Flower buds','Seeds'],2,'Capers are unopened flower buds from the caper bush.','https://www.britannica.com/plant/caper'),
+      Q('Food & kitchen','Which spice is the dried stigma of a flower?',['Cumin','Saffron','Paprika','Turmeric'],1,'Saffron consists of hand-picked stigmas from the saffron crocus.','https://www.britannica.com/plant/saffron'),
+      Q('Food & kitchen','Nutmeg and mace come from what relationship?',['Two unrelated roots','One tree’s seed and seed covering','The same dried leaf','Two stages of one flower'],1,'Nutmeg is the seed; mace is the lacy red covering around that seed.','https://www.britannica.com/plant/nutmeg'),
+      Q('Food & kitchen','Traditional Worcestershire sauce contains which fish?',['Tuna','Sardines','Anchovies','Mackerel'],2,'Anchovies ferment with vinegar, molasses, tamarind, and seasonings in the classic sauce.','https://www.britannica.com/topic/Worcestershire-sauce'),
+      Q('Food & kitchen','What does the Italian name tiramisu roughly mean?',['Sweet morning','Pick me up','Layered cream','Coffee cake'],1,'The name comes from an Italian phrase meaning “pick me up” or “cheer me up.”','https://www.treccani.it/vocabolario/tiramisu/'),
+      Q('Food & kitchen','The modern chocolate chip cookie was created at which inn?',['Toll House Inn','Brown Derby','Savoy Inn','Palmer House'],0,'Ruth Wakefield developed the cookie at Massachusetts’s Toll House Inn.','https://www.smithsonianmag.com/smart-news/first-chocolate-chip-was-molasses-candy-180963206/'),
+      Q('Food & kitchen','Before small table forks caught on in Europe, forks were mainly used for what?',['Eating soup','Cooking and serving','Cutting bread','Measuring spices'],1,'Ancient forks were largely cooking tools; small personal eating forks spread much later.','https://www.smithsonianmag.com/arts-culture/a-history-of-western-eating-utensils-from-the-scandalous-fork-to-the-incredible-spork-64593179/'),
+
+      Q('Nature','How many hearts does an octopus have?',['One','Two','Three','Four'],2,'Two hearts pump blood to the gills and one pumps it around the body.','https://oceanservice.noaa.gov/facts/octopus.html'),
+      Q('Nature','What unusual shape are wombat droppings?',['Spiral','Cube','Ring','Pyramid'],1,'Wombats produce cube-shaped droppings due to the changing elasticity of their intestines.','https://www.science.org/content/article/how-do-wombats-poop-cubes-scientists-get-bottom-mystery'),
+      Q('Nature','What color is a polar bear’s skin under its fur?',['White','Pink','Black','Gray'],2,'Polar bears have black skin beneath translucent, light-scattering fur.','https://nationalzoo.si.edu/animals/polar-bear'),
+      Q('Nature','A giraffe has how many neck vertebrae?',['Seven','Twelve','Eighteen','Twenty-four'],0,'Like most mammals, a giraffe has seven neck vertebrae, each one greatly elongated.','https://www.britannica.com/animal/giraffe'),
+      Q('Nature','Flamingos get their pink color mainly from what?',['Sunlight','Carotenoid pigments in food','Salt water','A skin oil'],1,'Carotenoid pigments from algae and small crustaceans color their feathers.','https://nationalzoo.si.edu/animals/flamingo'),
+      Q('Science','Which planet has a day longer than its year?',['Mercury','Venus','Mars','Neptune'],1,'Venus rotates once in about 243 Earth days but orbits the Sun in about 225.','https://science.nasa.gov/venus/facts/'),
+      Q('Science','What color can sunsets appear on Mars?',['Green','Blue','Purple','White'],1,'Fine Martian dust scatters light so the sky near the setting Sun can look blue.','https://science.nasa.gov/resource/blue-sunset-on-mars/'),
+      Q('Science','Which planet is hottest, despite not being closest to the Sun?',['Mercury','Venus','Earth','Mars'],1,'Venus’s thick carbon-dioxide atmosphere traps enough heat to make it hotter than Mercury.','https://science.nasa.gov/venus/facts/'),
+
+      Q('Everyday objects','What does the “WD” in WD-40 stand for?',['Workshop Degreaser','Water Displacement','Weather Defense','Wax Dissolver'],1,'The product name records “Water Displacement” and the successful 40th formula.','https://www.wd40.com/history/'),
+      Q('Everyday objects','Pencil “lead” is actually made mainly from what?',['Lead','Charcoal','Graphite','Zinc'],2,'Pencil cores use graphite mixed with clay, not metallic lead.','https://www.britannica.com/technology/pencil-writing-implement'),
+      Q('Everyday objects','Bubble Wrap was first marketed as what?',['Insulation','Wallpaper','Pool lining','Packing material'],1,'Its inventors first tried selling the sealed-air plastic sheets as textured wallpaper.','https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/'),
+      Q('Everyday objects','What does ZIP in ZIP Code stand for?',['Zonal Index Post','Zone Improvement Plan','Zero Interruption Post','Zoned Information Path'],1,'The U.S. Postal Service introduced the Zone Improvement Plan code in 1963.','https://facts.usps.com/decoding-the-zip-code/'),
+      Q('World','Big Ben is properly the nickname of what?',['The whole palace','The clock face','The Great Bell','The tower'],2,'Big Ben names the Great Bell; the tower itself is Elizabeth Tower.','https://www.parliament.uk/about/living-heritage/building/palace/big-ben/'),
+      Q('World','Which country lies in all four hemispheres?',['Brazil','Indonesia','Kenya','Kiribati'],3,'Kiribati crosses both the equator and the 180-degree meridian.','https://www.britannica.com/place/Kiribati'),
+      Q('World','What is the world’s deepest lake?',['Lake Superior','Lake Tanganyika','Lake Baikal','Caspian Sea'],2,'Siberia’s Lake Baikal reaches about 1,620 meters at its deepest point.','https://www.britannica.com/place/Lake-Baikal'),
+      Q('World','The Statue of Liberty’s outer skin is made from what metal?',['Bronze','Copper','Iron','Zinc'],1,'Thin copper sheets form the exterior; oxidation created the green patina.','https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm')
+    ];
+
+    const setData = {
+      'set-1': {
+        name: 'Set 1 · Calibration',
+        subtitle: 'Your original 24 plus the first 40. Start here.',
+        questions: calibrationQuestions
+      },
+      ...(window.REBASE_EXTRA_SETS || {})
+    };
+    let currentSetKey = localStorage.getItem('rebase-current-set') || 'set-1';
+    if (!setData[currentSetKey]) currentSetKey = 'set-1';
+    let questions = [];
+    let categories = [];
+    const state = JSON.parse(localStorage.getItem('rebase-recall-state') || '{"attempts":{},"misses":[],"history":[],"review":{},"explanations":{}}');
+    state.history ||= [];
+    state.review ||= {};
+    state.explanations ||= {};
+    let mode = 'quick', queue = [], index = 0, sessionCorrect = 0, answered = false, questionTimer = null, sessionAnswers = [];
+    const $ = id => document.getElementById(id);
+    const shuffle = items => [...items].sort(() => Math.random() - .5);
+    let progressFileHandle = null;
+    let diskWriteQueue = Promise.resolve();
+    const save = () => {
+      localStorage.setItem('rebase-recall-state', JSON.stringify(state));
+      if (progressFileHandle) diskWriteQueue = diskWriteQueue.then(writeProgressFile).catch(showDiskError);
+    };
+
+    function applyTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      localStorage.setItem('rebase-theme', theme);
+      $('themeToggle').textContent = theme === 'dark' ? 'Light' : 'Dark';
+      document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#171614' : '#f4e8c8';
+    }
+
+    function progressPayload() {
+      const attempts = Object.values(state.attempts);
+      const total = attempts.reduce((sum, item) => sum + item.total, 0);
+      const correct = attempts.reduce((sum, item) => sum + item.correct, 0);
+      return {
+        format: 'rebase-recall-progress-v1',
+        updatedAt: new Date().toISOString(),
+        activeDeck: currentSetKey,
+        summary: { totalAnswers: total, correct, wrong: total - correct, accuracy: total ? Math.round(correct / total * 100) : 0 },
+        missedQuestionIds: state.misses,
+        attempts: state.attempts,
+        reviewSchedule: state.review,
+        history: state.history
+      };
+    }
+
+    async function openProgressDb() {
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open('rebase-recall', 1);
+        request.onupgradeneeded = () => request.result.createObjectStore('files');
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function rememberFileHandle(handle) {
+      const db = await openProgressDb();
+      db.transaction('files', 'readwrite').objectStore('files').put(handle, 'progress');
+    }
+
+    async function restoreFileHandle() {
+      try {
+        const db = await openProgressDb();
+        const handle = await new Promise((resolve, reject) => {
+          const request = db.transaction('files').objectStore('files').get('progress');
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error);
+        });
+        if (handle && await handle.queryPermission({ mode: 'readwrite' }) === 'granted') setConnectedHandle(handle);
+        else if (handle) $('diskStatus').textContent = 'Click to reconnect disk saving for this session.';
+      } catch (_) { /* Browser-local progress still works without file handles. */ }
+    }
+
+    function setConnectedHandle(handle) {
+      progressFileHandle = handle;
+      $('connectFileBtn').textContent = 'Progress file connected';
+      $('connectFileBtn').classList.add('connected');
+      $('diskStatus').textContent = `Saving every answer to ${handle.name}`;
+    }
+
+    async function writeProgressFile() {
+      const writable = await progressFileHandle.createWritable();
+      await writable.write(JSON.stringify(progressPayload(), null, 2));
+      await writable.close();
+      $('diskStatus').textContent = `Saved ${state.history.length} answers to ${progressFileHandle.name}`;
+    }
+
+    function showDiskError(error) {
+      $('diskStatus').textContent = `Disk save paused: ${error.message}`;
+      $('connectFileBtn').textContent = 'Reconnect progress file';
+      $('connectFileBtn').classList.remove('connected');
+      progressFileHandle = null;
+    }
+
+    function downloadProgressFallback() {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(new Blob([JSON.stringify(progressPayload(), null, 2)], { type: 'application/json' }));
+      link.download = 'rebase-progress.json';
+      link.click();
+      URL.revokeObjectURL(link.href);
+      $('diskStatus').textContent = 'A progress snapshot was downloaded. Reconnect after more answers.';
+    }
+
+    async function connectProgressFile() {
+      if (!window.showSaveFilePicker) return downloadProgressFallback();
+      try {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: 'rebase-progress.json',
+          types: [{ description: 'JSON progress file', accept: { 'application/json': ['.json'] } }]
+        });
+        await rememberFileHandle(handle);
+        setConnectedHandle(handle);
+        await writeProgressFile();
+      } catch (error) {
+        if (error.name !== 'AbortError') showDiskError(error);
+      }
+    }
+
+    function normalizeSet(key) {
+      return setData[key].questions.map(q => q.id ? q : {
+        ...q,
+        seed: false,
+        id: `${key}-${q.question.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 64)}`
+      });
+    }
+
+    function allQuestions() {
+      return Object.keys(setData).flatMap(normalizeSet);
+    }
+
+    function isDue(q) {
+      const scheduled = state.review[q.id];
+      if (scheduled?.dueAt) return scheduled.dueAt <= Date.now();
+      return state.misses.includes(q.id);
+    }
+
+    function buildAdaptiveQueue() {
+      const weak = shuffle(questions.filter(q => {
+        const attempt = state.attempts[q.id];
+        const coolingDown = state.review[q.id]?.dueAt > Date.now();
+        return isDue(q) || (!coolingDown && attempt && attempt.correct / attempt.total < 0.8);
+      }));
+      const unseen = shuffle(questions.filter(q => !state.attempts[q.id]));
+      const mastered = shuffle(questions.filter(q => state.attempts[q.id] && !weak.includes(q) && !(state.review[q.id]?.dueAt > Date.now())));
+      const result = [];
+      const add = items => items.forEach(q => { if (result.length < 12 && !result.includes(q)) result.push(q); });
+      add(weak.slice(0, 7));
+      add(unseen.slice(0, 3));
+      add(mastered.slice(0, 2));
+      add([...unseen, ...weak, ...mastered]);
+      return result;
+    }
+
+    function studyStatus(q) {
+      if (isDue(q)) return 'Due';
+      const attempt = state.attempts[q.id];
+      if (!attempt) return q.seed ? 'Calibration' : 'New';
+      return attempt.correct / attempt.total < 0.8 ? 'Weak' : 'Review';
+    }
+
+    function selectSet(key, start = true) {
+      currentSetKey = key;
+      localStorage.setItem('rebase-current-set', key);
+      questions = normalizeSet(key);
+      categories = [...new Set(questions.map(q => q.category))];
+      $('setSelect').value = key;
+      $('setSubtitle').textContent = setData[key].subtitle;
+      $('categorySelect').innerHTML = '<option value="all">All topics</option>' + categories.map(c => `<option value="${c}">${c}</option>`).join('');
+      $('search').value = '';
+      updateStats();
+      renderDeck();
+      if (start) buildQueue('quick');
+    }
+
+    function buildQueue(nextMode = mode) {
+      clearInterval(questionTimer);
+      mode = nextMode;
+      const due = questions.filter(isDue).sort((a, b) => (state.review[a.id]?.dueAt || 0) - (state.review[b.id]?.dueAt || 0));
+      queue = mode === 'full' ? shuffle(questions) : mode === 'review' ? due : mode === 'simulation' ? shuffle(questions).slice(0, 12) : buildAdaptiveQueue();
+      index = 0; sessionCorrect = 0; answered = false; sessionAnswers = [];
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
+      $('roundLabel').textContent = mode === 'full' ? 'Full deck' : mode === 'review' ? 'Due review' : mode === 'simulation' ? 'Rebase simulation' : 'Adaptive 12';
+      $('questionWrap').style.display = '';
+      $('complete').classList.remove('visible');
+      $('simulationReview').classList.remove('visible');
+      if (!queue.length) showEmptyReview(); else renderQuestion();
+    }
+
+    function showEmptyReview() {
+      $('questionWrap').style.display = 'none';
+      $('complete').classList.add('visible');
+      $('sessionScore').textContent = '0';
+      $('completeTitle').textContent = mode === 'review' ? 'Nothing due right now.' : 'This deck is cooling down.';
+      $('completeCopy').textContent = mode === 'review' ? 'Take an Adaptive 12. Wrong cards return in ten minutes; correct cards return on a widening schedule.' : 'Every card in this deck has a future review time. Try another deck or run a simulation.';
+      $('reviewBtn').style.display = 'none';
+    }
+
+    function renderQuestion() {
+      clearInterval(questionTimer);
+      answered = false;
+      const q = queue[index];
+      $('questionWrap').style.display = '';
+      $('categoryTag').textContent = q.category;
+      $('difficulty').textContent = studyStatus(q);
+      $('question').textContent = q.question;
+      $('answers').innerHTML = q.options.map((option, i) => `<button class="answer" data-answer="${i}"><span class="answer-key">${i + 1}</span><span>${option}</span></button>`).join('');
+      $('answers').querySelectorAll('button').forEach(button => button.addEventListener('click', () => answer(Number(button.dataset.answer))));
+      $('feedback').classList.remove('visible');
+      $('aiExplanation').classList.remove('visible');
+      $('aiExplanation').textContent = '';
+      $('explainFurtherBtn').disabled = false;
+      $('explainFurtherBtn').textContent = 'Explain further with AI';
+      $('progressText').textContent = `${index + 1} / ${queue.length}`;
+      $('progressBar').style.width = `${(index / queue.length) * 100}%`;
+      $('nextBtn').textContent = index === queue.length - 1 ? 'See my score' : 'Next question';
+      $('timerText').classList.toggle('visible', mode === 'simulation');
+      if (mode === 'simulation') startQuestionTimer();
+    }
+
+    function startQuestionTimer() {
+      let remaining = 15;
+      $('timerText').textContent = `${remaining}s`;
+      questionTimer = setInterval(() => {
+        remaining--;
+        $('timerText').textContent = `${remaining}s`;
+        if (remaining <= 0) {
+          clearInterval(questionTimer);
+          answer(-1);
+        }
+      }, 1000);
+    }
+
+    function answer(choice) {
+      if (answered) return;
+      answered = true;
+      clearInterval(questionTimer);
+      const q = queue[index], correct = choice >= 0 && choice === q.answer;
+      if (mode !== 'simulation') {
+        document.querySelectorAll('.answer').forEach((button, i) => {
+          button.disabled = true;
+          if (i === q.answer) button.classList.add('correct');
+          if (i === choice && !correct) button.classList.add('wrong');
+        });
+      }
+      state.attempts[q.id] ||= { correct: 0, total: 0, category: q.category };
+      state.attempts[q.id].total++;
+      const previousStreak = state.review[q.id]?.streak || 0;
+      if (correct) {
+        state.attempts[q.id].correct++;
+        sessionCorrect++;
+        state.misses = state.misses.filter(id => id !== q.id);
+      } else if (!state.misses.includes(q.id)) state.misses.push(q.id);
+      const streak = correct ? previousStreak + 1 : 0;
+      const intervals = [1, 3, 7, 14, 30, 60];
+      state.review[q.id] = {
+        streak,
+        lastResult: correct ? 'correct' : 'wrong',
+        lastAnsweredAt: Date.now(),
+        dueAt: correct ? Date.now() + intervals[Math.min(streak - 1, intervals.length - 1)] * 86400000 : Date.now() + 600000
+      };
+      state.history.push({
+        answeredAt: new Date().toISOString(),
+        deck: currentSetKey,
+        deckName: setData[currentSetKey].name,
+        questionId: q.id,
+        category: q.category,
+        question: q.question,
+        selectedAnswer: choice >= 0 ? q.options[choice] : null,
+        correctAnswer: q.options[q.answer],
+        correct,
+        mode
+      });
+      sessionAnswers.push({ q, choice, correct });
+      save(); updateStats(); renderDeck();
+      if (mode === 'simulation') {
+        if (index < queue.length - 1) { index++; renderQuestion(); }
+        else finish();
+        return;
+      }
+      $('verdict').textContent = correct ? 'Right. Lock it in.' : choice < 0 ? `Time. It’s ${q.options[q.answer]}.` : `Not quite. It’s ${q.options[q.answer]}.`;
+      $('verdict').style.color = correct ? 'var(--color-green)' : 'var(--color-accent-dark)';
+      $('explain').textContent = q.note;
+      $('source').href = q.source;
+      $('feedback').classList.add('visible');
+    }
+
+    function next() {
+      if (!answered) return;
+      if (index < queue.length - 1) { index++; renderQuestion(); }
+      else finish();
+    }
+
+    function finish() {
+      clearInterval(questionTimer);
+      $('timerText').classList.remove('visible');
+      const pct = Math.round(sessionCorrect / queue.length * 100);
+      $('questionWrap').style.display = 'none';
+      $('complete').classList.add('visible');
+      $('sessionScore').textContent = `${pct}%`;
+      $('completeTitle').textContent = mode === 'simulation' ? (pct >= 85 ? 'Game-show ready.' : 'Pressure found the gaps.') : pct >= 85 ? 'Ready for the buzzer.' : pct >= 65 ? 'Good base. Tighten the misses.' : 'The misses are the useful part.';
+      const currentIds = new Set(questions.map(q => q.id));
+      const missedCount = state.misses.filter(id => currentIds.has(id)).length;
+      $('completeCopy').textContent = `${sessionCorrect} right out of ${queue.length}. This deck has ${missedCount} card${missedCount === 1 ? '' : 's'} in the misses drill.`;
+      $('reviewBtn').style.display = questions.some(isDue) ? '' : 'none';
+      $('progressBar').style.width = '100%';
+      if (mode === 'simulation') {
+        const wrong = sessionAnswers.filter(item => !item.correct);
+        $('simulationReview').innerHTML = wrong.length ? wrong.map(({ q, choice }) => `<div class="review-line"><strong>${q.question}</strong><br>Your answer: ${choice >= 0 ? q.options[choice] : 'No answer'} · Correct: ${q.options[q.answer]}</div>`).join('') : '<div class="review-line"><strong>Perfect round.</strong> No corrections needed.</div>';
+        $('simulationReview').classList.add('visible');
+      }
+    }
+
+    function updateStats() {
+      const currentIds = new Set(questions.map(q => q.id));
+      const attempts = Object.entries(state.attempts).filter(([id]) => currentIds.has(id)).map(([, attempt]) => attempt);
+      const total = attempts.reduce((n, x) => n + x.total, 0);
+      const correct = attempts.reduce((n, x) => n + x.correct, 0);
+      $('accuracy').textContent = total ? `${Math.round(correct / total * 100)}%` : '0%';
+      $('correctTotal').textContent = correct;
+      $('missedTotal').textContent = state.misses.filter(id => currentIds.has(id)).length;
+      $('categoryPips').innerHTML = categories.map(category => {
+        const rows = attempts.filter(a => a.category === category);
+        const ct = rows.reduce((n, x) => n + x.total, 0), cc = rows.reduce((n, x) => n + x.correct, 0);
+        const pct = ct ? Math.round(cc / ct * 100) : 0;
+        return `<div class="pip-row"><div>${category}<div class="pip-track"><span class="pip-fill" style="width:${pct}%"></span></div></div><span>${ct ? pct + '%' : '—'}</span></div>`;
+      }).join('');
+      const dueInDeck = questions.filter(isDue).length;
+      $('dueModeCopy').textContent = dueInDeck ? `${dueInDeck} due in this deck` : 'Nothing due right now';
+      updateReadout();
+    }
+
+    function updateReadout() {
+      const library = allQuestions();
+      const ids = new Set(library.map(q => q.id));
+      const covered = Object.keys(state.attempts).filter(id => ids.has(id)).length;
+      const due = library.filter(isDue).length;
+      const byCategory = new Map();
+      Object.entries(state.attempts).forEach(([id, attempt]) => {
+        if (!ids.has(id)) return;
+        const row = byCategory.get(attempt.category) || { correct: 0, total: 0 };
+        row.correct += attempt.correct;
+        row.total += attempt.total;
+        byCategory.set(attempt.category, row);
+      });
+      const ranked = [...byCategory.entries()].filter(([, row]) => row.total >= 2).sort((a, b) => a[1].correct / a[1].total - b[1].correct / b[1].total);
+      const weakest = ranked[0];
+      $('coverageValue').textContent = `${covered} / ${library.length}`;
+      $('coverageNote').textContent = covered === library.length ? 'Every card has been seen at least once.' : `${library.length - covered} unseen cards remain.`;
+      $('dueValue').textContent = due;
+      $('weakValue').textContent = weakest ? weakest[0] : '—';
+      $('weakNote').textContent = weakest ? `${Math.round(weakest[1].correct / weakest[1].total * 100)}% across ${weakest[1].total} answers.` : 'Answer a few cards to diagnose.';
+      $('nextMoveValue').textContent = due ? 'Review' : covered < library.length ? 'Explore' : 'Maintain';
+      $('nextMoveNote').textContent = due ? `${due} scheduled card${due === 1 ? '' : 's'} are ready now.` : covered < library.length ? 'Adaptive 12 will prioritize unseen and weak cards.' : 'No cards are due; take a simulation round.';
+    }
+
+    async function explainFurther() {
+      const q = queue[index];
+      if (!q || !answered) return;
+      const panel = $('aiExplanation');
+      panel.classList.add('visible');
+      if (state.explanations[q.id]) {
+        panel.textContent = state.explanations[q.id];
+        return;
+      }
+      $('explainFurtherBtn').disabled = true;
+      $('explainFurtherBtn').textContent = 'Asking the AI…';
+      panel.textContent = 'Building a clearer explanation…';
+      const endpoint = location.protocol === 'file:' ? 'http://localhost:4173/api/explain' : '/api/explain';
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ question: q.question, correctAnswer: q.options[q.answer], note: q.note, category: q.category })
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error || 'The explanation request failed.');
+        state.explanations[q.id] = data.text;
+        panel.textContent = data.text;
+        save();
+      } catch (error) {
+        panel.textContent = location.protocol === 'file:' ? `AI is offline. Run “bun run start” in the project, then open http://localhost:4173. ${error.message}` : `AI explanation failed: ${error.message}`;
+      } finally {
+        $('explainFurtherBtn').disabled = false;
+        $('explainFurtherBtn').textContent = 'Explain further with AI';
+      }
+    }
+
+    function renderDeck() {
+      const term = $('search').value.trim().toLowerCase();
+      const selected = $('categorySelect').value;
+      const matches = questions.filter(q => (selected === 'all' || q.category === selected) && (!term || `${q.question} ${q.options[q.answer]} ${q.note}`.toLowerCase().includes(term)));
+      $('deck').innerHTML = matches.length ? matches.map(q => `<article class="fact-card ${state.misses.includes(q.id) ? 'missed' : ''}"><span class="category-tag">${q.category}</span><h3>${q.question}</h3><p class="fact-answer">${q.options[q.answer]}</p><p class="fact-note">${q.note}</p></article>`).join('') : '<p class="empty">No cards match that search.</p>';
+    }
+
+    $('setSelect').innerHTML = Object.entries(setData).map(([key, set]) => `<option value="${key}">${set.name}</option>`).join('');
+    $('setSelect').addEventListener('change', event => selectSet(event.target.value));
+    $('connectFileBtn').addEventListener('click', connectProgressFile);
+    $('themeToggle').addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));
+    $('explainFurtherBtn').addEventListener('click', explainFurther);
+    document.querySelectorAll('.mode-btn').forEach(button => button.addEventListener('click', () => buildQueue(button.dataset.mode)));
+    $('nextBtn').addEventListener('click', next);
+    $('againBtn').addEventListener('click', () => buildQueue('quick'));
+    $('reviewBtn').addEventListener('click', () => buildQueue('review'));
+    $('search').addEventListener('input', renderDeck);
+    $('categorySelect').addEventListener('change', renderDeck);
+    document.addEventListener('keydown', event => {
+      if (event.target.matches('input, select')) return;
+      if (['1','2','3','4'].includes(event.key) && !answered) answer(Number(event.key) - 1);
+      if (event.key === 'Enter' && answered) next();
+    });
+    applyTheme(document.documentElement.dataset.theme); selectSet(currentSetKey, false); buildQueue('quick'); restoreFileHandle();
+  </script>
+</body>
+</html>

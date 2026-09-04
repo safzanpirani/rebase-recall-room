@@ -1,0 +1,5038 @@
+{
+  "decks": [
+    {
+      "key": "set-1",
+      "name": "Set 1",
+      "questions": [
+        {
+          "category": "Food & kitchen",
+          "question": "Which living ingredient makes bread dough rise?",
+          "options": [
+            "Yeast",
+            "Butter",
+            "Salt",
+            "Sugar"
+          ],
+          "answer": 0,
+          "note": "Yeast feeds on sugars and releases carbon dioxide, which inflates the dough.",
+          "source": "https://www.britannica.com/science/yeast-fungus"
+        },
+        {
+          "category": "Nature",
+          "question": "What plant makes up most of a giant panda’s diet?",
+          "options": [
+            "Bamboo",
+            "Eucalyptus",
+            "Seaweed",
+            "Pine needles"
+          ],
+          "answer": 0,
+          "note": "Wild giant pandas spend much of the day eating bamboo.",
+          "source": "https://nationalzoo.si.edu/animals/giant-panda"
+        },
+        {
+          "category": "Sports",
+          "question": "In tennis scoring, what does “love” mean?",
+          "options": [
+            "One point",
+            "A tied score",
+            "Match point",
+            "Zero"
+          ],
+          "answer": 3,
+          "note": "Love is the standard tennis term for a score of zero.",
+          "source": "https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf"
+        },
+        {
+          "category": "World",
+          "question": "Which river flows beneath London’s Tower Bridge?",
+          "options": [
+            "Danube",
+            "Rhine",
+            "Thames",
+            "Seine"
+          ],
+          "answer": 2,
+          "note": "Tower Bridge crosses the River Thames in central London.",
+          "source": "https://www.britannica.com/topic/Tower-Bridge"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Who sings lead on the Beatles’ 1966 single “Yellow Submarine”?",
+          "options": [
+            "Ringo Starr",
+            "George Harrison",
+            "Paul McCartney",
+            "John Lennon"
+          ],
+          "answer": 0,
+          "note": "Ringo Starr sings the lead vocal; the other Beatles join the choruses.",
+          "source": "https://www.thebeatles.com/yellow-submarine"
+        },
+        {
+          "category": "Science",
+          "question": "After breathing normal air, we exhale mostly which gas?",
+          "options": [
+            "Oxygen",
+            "Water vapor",
+            "Nitrogen",
+            "Carbon dioxide"
+          ],
+          "answer": 2,
+          "note": "Nitrogen makes up about 78% of inhaled air and remains the largest part of exhaled air.",
+          "source": "https://www.britannica.com/science/air"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What is allspice made from?",
+          "options": [
+            "A blend of spices",
+            "Ground roots",
+            "Dried flower buds",
+            "Dried berries"
+          ],
+          "answer": 3,
+          "note": "Allspice is the dried, unripe berry of the Pimenta dioica tree.",
+          "source": "https://www.britannica.com/plant/allspice"
+        },
+        {
+          "category": "Nature",
+          "question": "Penguins expel their salt glands’ secretions through what?",
+          "options": [
+            "Nostrils",
+            "Skin pores",
+            "Tear ducts",
+            "Ear canals"
+          ],
+          "answer": 0,
+          "note": "Their salt glands drain into the nasal passages, so excess salt leaves through the nostrils.",
+          "source": "https://oceanservice.noaa.gov/facts/seabird.html"
+        },
+        {
+          "category": "Books & games",
+          "question": "In Carroll’s Alice in Wonderland, the Duchess’s baby turns into what?",
+          "options": [
+            "Frog",
+            "Pig",
+            "Rabbit",
+            "Mouse"
+          ],
+          "answer": 1,
+          "note": "Alice carries the baby away before it transforms into a pig.",
+          "source": "https://www.gutenberg.org/files/11/11-h/11-h.htm"
+        },
+        {
+          "category": "Nature",
+          "question": "Ming, the animal dated to 507 years old, was what?",
+          "options": [
+            "Greenland shark",
+            "Bowhead whale",
+            "Ocean clam",
+            "Giant tortoise"
+          ],
+          "answer": 2,
+          "note": "Ming was an ocean quahog clam collected near Iceland.",
+          "source": "https://www.bangor.ac.uk/news/archive/ocean-quahog-clam-at-least-507-years-old-16466"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Margarine’s original French recipe got its main fat from what?",
+          "options": [
+            "Olive oil",
+            "Beef tallow",
+            "Coconut oil",
+            "Pork lard"
+          ],
+          "answer": 1,
+          "note": "Hippolyte Mège-Mouriès made early margarine largely from beef fat.",
+          "source": "https://www.britannica.com/topic/margarine"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "At Heinz’s 1869 launch, what was its first bottled product?",
+          "options": [
+            "Mustard",
+            "Tomato ketchup",
+            "Horseradish",
+            "Pickle relish"
+          ],
+          "answer": 2,
+          "note": "Henry Heinz first sold his mother’s grated horseradish in clear bottles.",
+          "source": "https://www.senatorjohnheinzhistorycenter.org/exhibits/heinz/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What color are Dorothy’s magic slippers in the 1939 Wizard of Oz?",
+          "options": [
+            "Blue",
+            "Red",
+            "Silver",
+            "Green"
+          ],
+          "answer": 1,
+          "note": "The film changed the book’s silver shoes to ruby slippers to exploit Technicolor.",
+          "source": "https://americanhistory.si.edu/collections/object/nmah_670130"
+        },
+        {
+          "category": "World",
+          "question": "A leaf from which tree appears on Canada’s national flag?",
+          "options": [
+            "Elm",
+            "Maple",
+            "Oak",
+            "Birch"
+          ],
+          "answer": 1,
+          "note": "The flag centers a stylized red maple leaf.",
+          "source": "https://www.canada.ca/en/canadian-heritage/services/flag-canada-history.html"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "The fuzzy side of a Velcro fastener is covered in tiny what?",
+          "options": [
+            "Loops",
+            "Hooks",
+            "Snaps",
+            "Teeth"
+          ],
+          "answer": 0,
+          "note": "One strip has hooks; the softer strip has loops for those hooks to catch.",
+          "source": "https://www.britannica.com/technology/hook-and-loop-fastener"
+        },
+        {
+          "category": "Science",
+          "question": "Which part of your eye changes the size of your pupil?",
+          "options": [
+            "Retina",
+            "Cornea",
+            "Lens",
+            "Iris"
+          ],
+          "answer": 3,
+          "note": "Muscles in the iris constrict or dilate the pupil to control incoming light.",
+          "source": "https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work"
+        },
+        {
+          "category": "World",
+          "question": "The Taj Mahal’s main white marble building was built as what?",
+          "options": [
+            "A courthouse",
+            "A mausoleum",
+            "A royal palace",
+            "A fortress"
+          ],
+          "answer": 1,
+          "note": "Shah Jahan commissioned the complex as a mausoleum for Mumtaz Mahal.",
+          "source": "https://whc.unesco.org/en/list/252/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What bird’s head forms the handle of Mary Poppins’ umbrella?",
+          "options": [
+            "Swan",
+            "Duck",
+            "Owl",
+            "Parrot"
+          ],
+          "answer": 3,
+          "note": "Mary Poppins carries an umbrella with a talking parrot-head handle.",
+          "source": "https://d23.com/a-to-z/mary-poppins-film/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "In 1971’s Willy Wonka, the machine that rejects Veruca tests what?",
+          "options": [
+            "Eggs",
+            "Chocolate",
+            "Gum",
+            "Nuts"
+          ],
+          "answer": 0,
+          "note": "The Eggdicator judges golden chocolate eggs as good or bad.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/54174"
+        },
+        {
+          "category": "Books & games",
+          "question": "In classic Clue, what must you still try to do after a wrong accusation?",
+          "options": [
+            "Reveal your whole hand",
+            "Make one suggestion",
+            "Roll on every turn",
+            "Disprove suggestions"
+          ],
+          "answer": 3,
+          "note": "You stop moving and suggesting, but must still show cards to disprove others’ suggestions.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/clue-game"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What does a tape measure’s sliding end hook compensate for?",
+          "options": [
+            "The case’s weight",
+            "Temperature changes",
+            "The tape’s curvature",
+            "The hook’s thickness"
+          ],
+          "answer": 3,
+          "note": "The hook slides by its own thickness so inside and outside measurements agree.",
+          "source": "https://www.uspto.gov/learning-and-resources/journeys-innovation/historical-stories/tape-measure"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What gives ordinary aluminum foil its shiny and dull sides?",
+          "options": [
+            "Polishing after cuts",
+            "Spraying one surface",
+            "Rolling paired sheets",
+            "Cooling at two speeds"
+          ],
+          "answer": 2,
+          "note": "Two sheets are rolled together at the final pass. The sides touching the rollers become shiny.",
+          "source": "https://www.britannica.com/technology/aluminum-foil"
+        },
+        {
+          "category": "Art",
+          "question": "Which kitchen tool did Jackson Pollock use to squeeze paint onto canvas?",
+          "options": [
+            "A cookie press",
+            "A turkey baster",
+            "A potato ricer",
+            "A pastry bag"
+          ],
+          "answer": 1,
+          "note": "Pollock used hardened brushes, sticks, and even a kitchen baster to drip and pour paint.",
+          "source": "https://www.moma.org/artists/4675"
+        },
+        {
+          "category": "Sports",
+          "question": "In soccer, a legal throw-in goes directly into your own goal. What next?",
+          "options": [
+            "A corner kick",
+            "Retake the throw-in",
+            "A goal kick",
+            "An own goal counts"
+          ],
+          "answer": 0,
+          "note": "A goal cannot be scored directly from a throw-in. Into your own goal means a corner kick.",
+          "source": "https://www.theifab.com/laws/latest/the-throw-in/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What was the fake blood in the shower scene of Psycho made from?",
+          "options": [
+            "Tomato soup",
+            "Chocolate syrup",
+            "Red paint",
+            "Coffee"
+          ],
+          "answer": 1,
+          "note": "The black-and-white film used chocolate syrup because its tone and flow read well on camera.",
+          "source": "https://www.bfi.org.uk/features/psycho-shower-scene-alfred-hitchcock"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which candy did E.T. follow in E.T. the Extra-Terrestrial?",
+          "options": [
+            "M&Ms",
+            "Skittles",
+            "Reese’s Pieces",
+            "Jelly Babies"
+          ],
+          "answer": 2,
+          "note": "Elliott lays a trail of Reese’s Pieces to coax E.T. out of hiding.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/56772"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What make of car is the time machine in Back to the Future?",
+          "options": [
+            "Pontiac",
+            "DeLorean",
+            "Ferrari",
+            "Lotus"
+          ],
+          "answer": 1,
+          "note": "Doc Brown builds the time machine from a stainless-steel DeLorean DMC-12.",
+          "source": "https://www.loc.gov/item/prn-07-254/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "David Bowie was born with which surname?",
+          "options": [
+            "Bolton",
+            "Jones",
+            "Mercury",
+            "Stardust"
+          ],
+          "answer": 1,
+          "note": "He was born David Robert Jones and changed his stage name to avoid confusion with Davy Jones.",
+          "source": "https://www.britannica.com/biography/David-Bowie"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What was the working title of the Beatles song “Yesterday”?",
+          "options": [
+            "Boiled Eggs",
+            "Scrambled Eggs",
+            "Sunday Morning",
+            "Only Yesterday"
+          ],
+          "answer": 1,
+          "note": "McCartney used “Scrambled Eggs” as a placeholder while developing the melody.",
+          "source": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/Yesterday.pdf"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "The name ABBA is formed from what?",
+          "options": [
+            "Four home towns",
+            "Four surnames",
+            "Four first names",
+            "A Swedish phrase"
+          ],
+          "answer": 2,
+          "note": "ABBA takes one initial from Agnetha, Björn, Benny, and Anni-Frid.",
+          "source": "https://www.britannica.com/topic/ABBA"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which actor provided Darth Vader’s speaking voice in the original Star Wars trilogy?",
+          "options": [
+            "David Prowse",
+            "James Earl Jones",
+            "Alec Guinness",
+            "Peter Cushing"
+          ],
+          "answer": 1,
+          "note": "David Prowse played Vader physically, while James Earl Jones supplied the voice.",
+          "source": "https://www.britannica.com/biography/James-Earl-Jones"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Toy Story was the first feature film made entirely with what?",
+          "options": [
+            "Stop-motion puppets",
+            "Computer animation",
+            "Digital cameras",
+            "Motion capture"
+          ],
+          "answer": 1,
+          "note": "Pixar’s 1995 release was the first fully computer-animated feature film.",
+          "source": "https://www.pixar.com/feature-films/toy-story"
+        },
+        {
+          "category": "Sports",
+          "question": "In golf, what does a birdie mean?",
+          "options": [
+            "One over par",
+            "One under par",
+            "Two under par",
+            "An even score"
+          ],
+          "answer": 1,
+          "note": "A birdie is a score of one stroke under par on a hole.",
+          "source": "https://www.britannica.com/sports/golf"
+        },
+        {
+          "category": "Sports",
+          "question": "How many feathers are traditionally used in a badminton shuttlecock?",
+          "options": [
+            "12",
+            "14",
+            "16",
+            "18"
+          ],
+          "answer": 2,
+          "note": "Competition feather shuttlecocks use 16 feathers fixed into the cork base.",
+          "source": "https://corporate.bwfbadminton.com/statutes/"
+        },
+        {
+          "category": "Sports",
+          "question": "What color jersey marks the overall leader of the Tour de France?",
+          "options": [
+            "Green",
+            "White",
+            "Polka-dot",
+            "Yellow"
+          ],
+          "answer": 3,
+          "note": "The race leader wears the yellow jersey, or maillot jaune.",
+          "source": "https://www.letour.fr/en/the-jerseys-tour-de-france"
+        },
+        {
+          "category": "Sports",
+          "question": "How many balls make up a standard over in modern cricket?",
+          "options": [
+            "Five",
+            "Six",
+            "Eight",
+            "Ten"
+          ],
+          "answer": 1,
+          "note": "An over consists of six valid deliveries by one bowler.",
+          "source": "https://www.lords.org/mcc/the-laws-of-cricket/the-over"
+        },
+        {
+          "category": "Sports",
+          "question": "Why does a volleyball libero wear a contrasting jersey?",
+          "options": [
+            "They are team captain",
+            "They cannot serve",
+            "Officials must identify them",
+            "They joined as a substitute"
+          ],
+          "answer": 2,
+          "note": "The different jersey lets officials track the libero’s special substitution and position rules.",
+          "source": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"
+        },
+        {
+          "category": "Sports",
+          "question": "How many points is the black ball worth in snooker?",
+          "options": [
+            "Five",
+            "Six",
+            "Seven",
+            "Eight"
+          ],
+          "answer": 2,
+          "note": "The black is the highest-value color ball at seven points.",
+          "source": "https://wpbsa.com/rules/"
+        },
+        {
+          "category": "Sports",
+          "question": "The modern marathon distance is 26 miles plus how many yards?",
+          "options": [
+            "185",
+            "285",
+            "385",
+            "485"
+          ],
+          "answer": 2,
+          "note": "The official distance is 26 miles 385 yards, or 42.195 kilometers.",
+          "source": "https://worldathletics.org/disciplines/road-running/marathon"
+        },
+        {
+          "category": "Sports",
+          "question": "What is Wimbledon’s playing surface?",
+          "options": [
+            "Clay",
+            "Grass",
+            "Carpet",
+            "Hard court"
+          ],
+          "answer": 1,
+          "note": "Wimbledon is the only tennis Grand Slam still played on grass.",
+          "source": "https://www.wimbledon.com/en_GB/about_wimbledon/grass_courts.html"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Botanically, peanuts belong to which family?",
+          "options": [
+            "Nuts",
+            "Legumes",
+            "Grasses",
+            "Berries"
+          ],
+          "answer": 1,
+          "note": "Peanuts grow in pods and belong to the legume family with peas and beans.",
+          "source": "https://www.britannica.com/plant/peanut"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Capers are usually pickled parts of a plant. Which parts?",
+          "options": [
+            "Roots",
+            "Leaves",
+            "Flower buds",
+            "Seeds"
+          ],
+          "answer": 2,
+          "note": "Capers are unopened flower buds from the caper bush.",
+          "source": "https://www.britannica.com/plant/caper"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which spice is the dried stigma of a flower?",
+          "options": [
+            "Cumin",
+            "Saffron",
+            "Paprika",
+            "Turmeric"
+          ],
+          "answer": 1,
+          "note": "Saffron consists of hand-picked stigmas from the saffron crocus.",
+          "source": "https://www.britannica.com/plant/saffron"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Nutmeg and mace come from what relationship?",
+          "options": [
+            "Two unrelated roots",
+            "One tree’s seed and seed covering",
+            "The same dried leaf",
+            "Two stages of one flower"
+          ],
+          "answer": 1,
+          "note": "Nutmeg is the seed; mace is the lacy red covering around that seed.",
+          "source": "https://www.britannica.com/plant/nutmeg"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Traditional Worcestershire sauce contains which fish?",
+          "options": [
+            "Tuna",
+            "Sardines",
+            "Anchovies",
+            "Mackerel"
+          ],
+          "answer": 2,
+          "note": "Anchovies ferment with vinegar, molasses, tamarind, and seasonings in the classic sauce.",
+          "source": "https://www.britannica.com/topic/Worcestershire-sauce"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What does the Italian name tiramisu roughly mean?",
+          "options": [
+            "Sweet morning",
+            "Pick me up",
+            "Layered cream",
+            "Coffee cake"
+          ],
+          "answer": 1,
+          "note": "The name comes from an Italian phrase meaning “pick me up” or “cheer me up.”",
+          "source": "https://www.treccani.it/vocabolario/tiramisu/"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "The modern chocolate chip cookie was created at which inn?",
+          "options": [
+            "Toll House Inn",
+            "Brown Derby",
+            "Savoy Inn",
+            "Palmer House"
+          ],
+          "answer": 0,
+          "note": "Ruth Wakefield developed the cookie at Massachusetts’s Toll House Inn.",
+          "source": "https://www.smithsonianmag.com/smart-news/first-chocolate-chip-was-molasses-candy-180963206/"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Before small table forks caught on in Europe, forks were mainly used for what?",
+          "options": [
+            "Eating soup",
+            "Cooking and serving",
+            "Cutting bread",
+            "Measuring spices"
+          ],
+          "answer": 1,
+          "note": "Ancient forks were largely cooking tools; small personal eating forks spread much later.",
+          "source": "https://www.smithsonianmag.com/arts-culture/a-history-of-western-eating-utensils-from-the-scandalous-fork-to-the-incredible-spork-64593179/"
+        },
+        {
+          "category": "Nature",
+          "question": "How many hearts does an octopus have?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 2,
+          "note": "Two hearts pump blood to the gills and one pumps it around the body.",
+          "source": "https://oceanservice.noaa.gov/facts/octopus.html"
+        },
+        {
+          "category": "Nature",
+          "question": "What unusual shape are wombat droppings?",
+          "options": [
+            "Spiral",
+            "Cube",
+            "Ring",
+            "Pyramid"
+          ],
+          "answer": 1,
+          "note": "Wombats produce cube-shaped droppings due to the changing elasticity of their intestines.",
+          "source": "https://www.science.org/content/article/how-do-wombats-poop-cubes-scientists-get-bottom-mystery"
+        },
+        {
+          "category": "Nature",
+          "question": "What color is a polar bear’s skin under its fur?",
+          "options": [
+            "White",
+            "Pink",
+            "Black",
+            "Gray"
+          ],
+          "answer": 2,
+          "note": "Polar bears have black skin beneath translucent, light-scattering fur.",
+          "source": "https://nationalzoo.si.edu/animals/polar-bear"
+        },
+        {
+          "category": "Nature",
+          "question": "A giraffe has how many neck vertebrae?",
+          "options": [
+            "Seven",
+            "Twelve",
+            "Eighteen",
+            "Twenty-four"
+          ],
+          "answer": 0,
+          "note": "Like most mammals, a giraffe has seven neck vertebrae, each one greatly elongated.",
+          "source": "https://www.britannica.com/animal/giraffe"
+        },
+        {
+          "category": "Nature",
+          "question": "Flamingos get their pink color mainly from what?",
+          "options": [
+            "Sunlight",
+            "Carotenoid pigments in food",
+            "Salt water",
+            "A skin oil"
+          ],
+          "answer": 1,
+          "note": "Carotenoid pigments from algae and small crustaceans color their feathers.",
+          "source": "https://nationalzoo.si.edu/animals/flamingo"
+        },
+        {
+          "category": "Science",
+          "question": "Which planet has a day longer than its year?",
+          "options": [
+            "Mercury",
+            "Venus",
+            "Mars",
+            "Neptune"
+          ],
+          "answer": 1,
+          "note": "Venus rotates once in about 243 Earth days but orbits the Sun in about 225.",
+          "source": "https://science.nasa.gov/venus/facts/"
+        },
+        {
+          "category": "Science",
+          "question": "What color can sunsets appear on Mars?",
+          "options": [
+            "Green",
+            "Blue",
+            "Purple",
+            "White"
+          ],
+          "answer": 1,
+          "note": "Fine Martian dust scatters light so the sky near the setting Sun can look blue.",
+          "source": "https://science.nasa.gov/resource/blue-sunset-on-mars/"
+        },
+        {
+          "category": "Science",
+          "question": "Which planet is hottest, despite not being closest to the Sun?",
+          "options": [
+            "Mercury",
+            "Venus",
+            "Earth",
+            "Mars"
+          ],
+          "answer": 1,
+          "note": "Venus’s thick carbon-dioxide atmosphere traps enough heat to make it hotter than Mercury.",
+          "source": "https://science.nasa.gov/venus/facts/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What does the “WD” in WD-40 stand for?",
+          "options": [
+            "Workshop Degreaser",
+            "Water Displacement",
+            "Weather Defense",
+            "Wax Dissolver"
+          ],
+          "answer": 1,
+          "note": "The product name records “Water Displacement” and the successful 40th formula.",
+          "source": "https://www.wd40.com/history/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "Pencil “lead” is actually made mainly from what?",
+          "options": [
+            "Lead",
+            "Charcoal",
+            "Graphite",
+            "Zinc"
+          ],
+          "answer": 2,
+          "note": "Pencil cores use graphite mixed with clay, not metallic lead.",
+          "source": "https://www.britannica.com/technology/pencil-writing-implement"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "Bubble Wrap was first marketed as what?",
+          "options": [
+            "Insulation",
+            "Wallpaper",
+            "Pool lining",
+            "Packing material"
+          ],
+          "answer": 1,
+          "note": "Its inventors first tried selling the sealed-air plastic sheets as textured wallpaper.",
+          "source": "https://www.smithsonianmag.com/innovation/accidental-invention-bubble-wrap-180971325/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What does ZIP in ZIP Code stand for?",
+          "options": [
+            "Zonal Index Post",
+            "Zone Improvement Plan",
+            "Zero Interruption Post",
+            "Zoned Information Path"
+          ],
+          "answer": 1,
+          "note": "The U.S. Postal Service introduced the Zone Improvement Plan code in 1963.",
+          "source": "https://facts.usps.com/decoding-the-zip-code/"
+        },
+        {
+          "category": "World",
+          "question": "Big Ben is properly the nickname of what?",
+          "options": [
+            "The whole palace",
+            "The clock face",
+            "The Great Bell",
+            "The tower"
+          ],
+          "answer": 2,
+          "note": "Big Ben names the Great Bell; the tower itself is Elizabeth Tower.",
+          "source": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/"
+        },
+        {
+          "category": "World",
+          "question": "Which country lies in all four hemispheres?",
+          "options": [
+            "Brazil",
+            "Indonesia",
+            "Kenya",
+            "Kiribati"
+          ],
+          "answer": 3,
+          "note": "Kiribati crosses both the equator and the 180-degree meridian.",
+          "source": "https://www.britannica.com/place/Kiribati"
+        },
+        {
+          "category": "World",
+          "question": "What is the world’s deepest lake?",
+          "options": [
+            "Lake Superior",
+            "Lake Tanganyika",
+            "Lake Baikal",
+            "Caspian Sea"
+          ],
+          "answer": 2,
+          "note": "Siberia’s Lake Baikal reaches about 1,620 meters at its deepest point.",
+          "source": "https://www.britannica.com/place/Lake-Baikal"
+        },
+        {
+          "category": "World",
+          "question": "The Statue of Liberty’s outer skin is made from what metal?",
+          "options": [
+            "Bronze",
+            "Copper",
+            "Iron",
+            "Zinc"
+          ],
+          "answer": 1,
+          "note": "Thin copper sheets form the exterior; oxidation created the green patina.",
+          "source": "https://www.nps.gov/stli/learn/historyculture/statue-statistics.htm"
+        }
+      ]
+    },
+    {
+      "key": "set-2",
+      "name": "Set 2",
+      "subtitle": "Familiar subjects, oddly exact answers",
+      "questions": [
+        {
+          "category": "Screen & sound",
+          "question": "What was the first music video shown on MTV?",
+          "options": [
+            "Money for Nothing",
+            "Video Killed the Radio Star",
+            "Take on Me",
+            "You Better Run"
+          ],
+          "answer": 1,
+          "note": "MTV launched on August 1, 1981, with the Buggles video Video Killed the Radio Star.",
+          "source": "https://www.smithsonianmag.com/smart-news/first-music-video-played-mtv-video-killed-radio-star-180978319/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "The film sound-effect technique called Foley is named after a person with what first name?",
+          "options": [
+            "Jack",
+            "Frank",
+            "Walter",
+            "George"
+          ],
+          "answer": 0,
+          "note": "Sound-effects artist Jack Foley pioneered the synchronized performance technique that bears his name.",
+          "source": "https://www.oscars.org/collection-highlights/foley"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "How tall is an Oscar statuette?",
+          "options": [
+            "10.5 inches",
+            "11.75 inches",
+            "13.5 inches",
+            "15 inches"
+          ],
+          "answer": 2,
+          "note": "The Academy Award statuette stands 13.5 inches tall and weighs 8.5 pounds.",
+          "source": "https://www.oscars.org/oscars/statuette"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which film first used the famous Wilhelm scream sound effect?",
+          "options": [
+            "Distant Drums",
+            "The Charge at Feather River",
+            "King Kong",
+            "The Wild Bunch"
+          ],
+          "answer": 0,
+          "note": "The scream was originally recorded for the 1951 film Distant Drums before later receiving its nickname.",
+          "source": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/wilhelm-scream.pdf"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What song does Sam repeatedly play in Casablanca?",
+          "options": [
+            "Blue Moon",
+            "As Time Goes By",
+            "It Had to Be You",
+            "Moonlight Becomes You"
+          ],
+          "answer": 1,
+          "note": "Sam plays Herman Hupfeld's As Time Goes By for Ilsa and later for Rick.",
+          "source": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/casablanca.pdf"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which 1983 film was the first theatrical release to use the THX sound system?",
+          "options": [
+            "Scarface",
+            "Flashdance",
+            "Return of the Jedi",
+            "WarGames"
+          ],
+          "answer": 2,
+          "note": "THX debuted with Return of the Jedi at the film's 1983 premiere.",
+          "source": "https://www.lucasfilm.com/news/thx-40-years/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What nickname did the crew give the mechanical shark in Jaws?",
+          "options": [
+            "Bruce",
+            "Buster",
+            "Mako",
+            "George"
+          ],
+          "answer": 0,
+          "note": "The Jaws crew called its troublesome mechanical shark Bruce.",
+          "source": "https://www.oscars.org/collection-highlights/jaws"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which Disney animated feature was the first released in CinemaScope?",
+          "options": [
+            "Peter Pan",
+            "Lady and the Tramp",
+            "Sleeping Beauty",
+            "One Hundred and One Dalmatians"
+          ],
+          "answer": 1,
+          "note": "Lady and the Tramp became Disney's first animated feature produced in the widescreen CinemaScope format.",
+          "source": "https://d23.com/a-to-z/lady-and-the-tramp-film/"
+        },
+        {
+          "category": "Sports",
+          "question": "How far is a soccer penalty mark from the goal line?",
+          "options": [
+            "10 yards",
+            "11 yards",
+            "12 yards",
+            "15 yards"
+          ],
+          "answer": 2,
+          "note": "The penalty mark sits 12 yards from the midpoint between the goalposts.",
+          "source": "https://www.theifab.com/laws/latest/the-field-of-play/"
+        },
+        {
+          "category": "Sports",
+          "question": "How many double stitches are on a regulation Major League baseball?",
+          "options": [
+            "88",
+            "96",
+            "108",
+            "120"
+          ],
+          "answer": 2,
+          "note": "A regulation baseball has 108 double stitches sewn into its cover.",
+          "source": "https://www.mlb.com/glossary/rules/baseball"
+        },
+        {
+          "category": "Sports",
+          "question": "How high is the top edge of a regulation basketball rim?",
+          "options": [
+            "8 feet",
+            "9 feet",
+            "10 feet",
+            "12 feet"
+          ],
+          "answer": 2,
+          "note": "Basketball rules place the rim 10 feet above the playing floor.",
+          "source": "https://official.nba.com/rule-no-1-court-dimensions-equipment/"
+        },
+        {
+          "category": "Sports",
+          "question": "What is the official height of a table-tennis net?",
+          "options": [
+            "12.25 cm",
+            "15.25 cm",
+            "17.5 cm",
+            "20 cm"
+          ],
+          "answer": 1,
+          "note": "The net assembly must be 15.25 centimeters high along its entire length.",
+          "source": "https://www.ittf.com/handbook/"
+        },
+        {
+          "category": "Sports",
+          "question": "How many sides does baseball's home plate have?",
+          "options": [
+            "Four",
+            "Five",
+            "Six",
+            "Eight"
+          ],
+          "answer": 1,
+          "note": "Home plate is a five-sided slab with a 17-inch edge facing the pitcher.",
+          "source": "https://www.mlb.com/official-information/official-rules"
+        },
+        {
+          "category": "Sports",
+          "question": "How long may a golfer search for a lost ball under the current rules?",
+          "options": [
+            "Two minutes",
+            "Three minutes",
+            "Five minutes",
+            "Ten minutes"
+          ],
+          "answer": 1,
+          "note": "A ball is lost if it is not found within three minutes after the search begins.",
+          "source": "https://www.randa.org/rog/the-rules-of-golf/rule-18"
+        },
+        {
+          "category": "Sports",
+          "question": "What is the maximum number of clubs a golfer may carry during a round?",
+          "options": [
+            "10",
+            "12",
+            "14",
+            "16"
+          ],
+          "answer": 2,
+          "note": "The Rules of Golf limit a player to 14 clubs during a round.",
+          "source": "https://www.randa.org/rog/the-rules-of-golf/rule-4"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "A pineapple develops from roughly what structure?",
+          "options": [
+            "One enlarged berry",
+            "Many fused flowers",
+            "A swollen root",
+            "A hollow stem"
+          ],
+          "answer": 1,
+          "note": "A pineapple is a multiple fruit formed as many individual flowers fuse together.",
+          "source": "https://www.britannica.com/plant/pineapple"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Vanilla beans are the fruits of what kind of plant?",
+          "options": [
+            "A palm",
+            "An orchid",
+            "A grass",
+            "A cactus"
+          ],
+          "answer": 1,
+          "note": "Commercial vanilla comes from the cured fruits of climbing orchids in the genus Vanilla.",
+          "source": "https://www.britannica.com/plant/vanilla-plant"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Where does a cashew nut grow on its fruit?",
+          "options": [
+            "Inside the core",
+            "Under the soil",
+            "On the outside end",
+            "In a cluster of pits"
+          ],
+          "answer": 2,
+          "note": "The cashew seed hangs in a shell from the bottom of the fleshy cashew apple.",
+          "source": "https://www.britannica.com/plant/cashew"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Cream of tartar is a crystalline by-product of making what?",
+          "options": [
+            "Cheese",
+            "Wine",
+            "Bread",
+            "Vinegar"
+          ],
+          "answer": 1,
+          "note": "Cream of tartar is purified potassium bitartrate deposited during wine fermentation and aging.",
+          "source": "https://www.britannica.com/science/cream-of-tartar"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What physical test is traditionally used to sort ripe cranberries?",
+          "options": [
+            "They float in oil",
+            "They bounce",
+            "They ring when tapped",
+            "They stick to steel"
+          ],
+          "answer": 1,
+          "note": "Sound cranberries bounce, allowing damaged berries to be separated by bounce-board sorters.",
+          "source": "https://www.si.edu/stories/why-do-cranberries-bounce"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What gives tonic water its characteristic bitterness?",
+          "options": [
+            "Tannin",
+            "Quinine",
+            "Citric acid",
+            "Juniper oil"
+          ],
+          "answer": 1,
+          "note": "Tonic water is flavored with the bitter alkaloid quinine.",
+          "source": "https://www.britannica.com/science/quinine"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which fruit supplies the enzyme bromelain used as a meat tenderizer?",
+          "options": [
+            "Papaya",
+            "Pineapple",
+            "Kiwi",
+            "Fig"
+          ],
+          "answer": 1,
+          "note": "Pineapple tissues contain bromelain, a mixture of protein-digesting enzymes.",
+          "source": "https://www.britannica.com/science/bromelain"
+        },
+        {
+          "category": "Nature",
+          "question": "An owl's eyes are shaped more like what than balls?",
+          "options": [
+            "Tubes",
+            "Discs",
+            "Cones",
+            "Cubes"
+          ],
+          "answer": 0,
+          "note": "An owl has elongated, tube-shaped eyes held rigidly in bony structures called sclerotic rings.",
+          "source": "https://nationalzoo.si.edu/animals/news/why-owls-turn-their-heads-so-far-around"
+        },
+        {
+          "category": "Nature",
+          "question": "Which marine mammal has the densest fur?",
+          "options": [
+            "Harbor seal",
+            "Sea otter",
+            "Walrus",
+            "Polar bear"
+          ],
+          "answer": 1,
+          "note": "Sea otters can have up to about one million hairs per square inch of fur.",
+          "source": "https://www.fisheries.noaa.gov/species/sea-otter"
+        },
+        {
+          "category": "Nature",
+          "question": "Butterflies primarily taste with receptors located where?",
+          "options": [
+            "On their antennae",
+            "On their wings",
+            "On their feet",
+            "Inside their proboscis"
+          ],
+          "answer": 2,
+          "note": "Taste receptors on a butterfly's feet help it identify suitable food and host plants.",
+          "source": "https://www.si.edu/stories/14-fun-facts-about-butterflies"
+        },
+        {
+          "category": "Nature",
+          "question": "What color can reindeer eyes turn during the Arctic winter?",
+          "options": [
+            "Blue",
+            "Red",
+            "Green",
+            "White"
+          ],
+          "answer": 0,
+          "note": "Reindeer tapeta change from gold in summer to deep blue in winter to improve low-light sensitivity.",
+          "source": "https://www.ucl.ac.uk/news/2013/oct/reindeer-eyes-change-colour-seasons"
+        },
+        {
+          "category": "Nature",
+          "question": "How often does a typical three-toed sloth descend from its tree to defecate?",
+          "options": [
+            "About daily",
+            "About weekly",
+            "About monthly",
+            "Only after rain"
+          ],
+          "answer": 1,
+          "note": "Three-toed sloths usually make a risky descent to the forest floor about once a week.",
+          "source": "https://www.si.edu/stories/why-do-sloths-leave-trees-poop"
+        },
+        {
+          "category": "Nature",
+          "question": "Which bird has nostrils located near the tip of its bill?",
+          "options": [
+            "Kiwi",
+            "Toucan",
+            "Pelican",
+            "Albatross"
+          ],
+          "answer": 0,
+          "note": "Unlike most birds, kiwis have nostrils near the tip of their long bills.",
+          "source": "https://www.doc.govt.nz/nature/native-animals/birds/birds-a-z/kiwi/facts/"
+        },
+        {
+          "category": "Nature",
+          "question": "What is the only venomous primate known to science?",
+          "options": [
+            "Tarsier",
+            "Slow loris",
+            "Mandrill",
+            "Aye-aye"
+          ],
+          "answer": 1,
+          "note": "Slow lorises produce venom from a gland on the upper arm and deliver it through a bite.",
+          "source": "https://nationalzoo.si.edu/animals/pygmy-slow-loris"
+        },
+        {
+          "category": "Science",
+          "question": "At sea-level pressure, how hot can a lightning channel become?",
+          "options": [
+            "About 3,000 C",
+            "About 10,000 C",
+            "About 30,000 C",
+            "About 100,000 C"
+          ],
+          "answer": 2,
+          "note": "A lightning channel can heat surrounding air to roughly 30,000 degrees Celsius.",
+          "source": "https://www.weather.gov/safety/lightning-temperature"
+        },
+        {
+          "category": "Science",
+          "question": "Which element was detected in the Sun before it was found on Earth?",
+          "options": [
+            "Neon",
+            "Helium",
+            "Argon",
+            "Lithium"
+          ],
+          "answer": 1,
+          "note": "Helium was identified in the Sun's spectrum in 1868 before terrestrial helium was isolated.",
+          "source": "https://science.nasa.gov/universe/stars/helium/"
+        },
+        {
+          "category": "Science",
+          "question": "What is the smallest bone in the human body?",
+          "options": [
+            "Incus",
+            "Stapes",
+            "Patella",
+            "Coccyx"
+          ],
+          "answer": 1,
+          "note": "The stirrup-shaped stapes in the middle ear is the body's smallest bone.",
+          "source": "https://www.nidcd.nih.gov/health/how-do-we-hear"
+        },
+        {
+          "category": "Science",
+          "question": "What is absolute zero on the Celsius scale?",
+          "options": [
+            "-100 C",
+            "-212.15 C",
+            "-273.15 C",
+            "-459.67 C"
+          ],
+          "answer": 2,
+          "note": "Absolute zero is exactly 0 kelvin, equivalent to -273.15 degrees Celsius.",
+          "source": "https://www.nist.gov/pml/owm/si-units-temperature"
+        },
+        {
+          "category": "Science",
+          "question": "What is the temperature of water's triple point?",
+          "options": [
+            "0 C",
+            "0.01 C",
+            "1 C",
+            "3.98 C"
+          ],
+          "answer": 1,
+          "note": "Pure water's solid, liquid, and vapor phases coexist at 0.01 degrees Celsius at the triple point.",
+          "source": "https://www.bipm.org/en/measurement-units/si-defining-constants"
+        },
+        {
+          "category": "Science",
+          "question": "Why can no ordinary sound be heard in a vacuum?",
+          "options": [
+            "Sound becomes ultraviolet",
+            "Sound needs matter to carry vibrations",
+            "Vacuum absorbs every frequency",
+            "Sound travels too quickly"
+          ],
+          "answer": 1,
+          "note": "Sound is a mechanical wave and needs particles in a medium to transmit its vibrations.",
+          "source": "https://science.nasa.gov/universe/black-holes/sound-of-a-black-hole/"
+        },
+        {
+          "category": "Science",
+          "question": "Roughly how much DNA do humans and chimpanzees share?",
+          "options": [
+            "About 75 percent",
+            "About 88 percent",
+            "About 98.8 percent",
+            "Exactly 100 percent"
+          ],
+          "answer": 2,
+          "note": "Comparisons of directly alignable DNA sequences put human-chimpanzee similarity at about 98.8 percent.",
+          "source": "https://humanorigins.si.edu/evidence/genetics"
+        },
+        {
+          "category": "World",
+          "question": "Which country has the world's only national flag not shaped as a quadrilateral?",
+          "options": [
+            "Bhutan",
+            "Nepal",
+            "Switzerland",
+            "Vatican City"
+          ],
+          "answer": 1,
+          "note": "Nepal's flag consists of two joined triangular pennants rather than a four-sided field.",
+          "source": "https://www.britannica.com/topic/flag-of-Nepal"
+        },
+        {
+          "category": "World",
+          "question": "Which sea has no land coastline?",
+          "options": [
+            "Arabian Sea",
+            "Sargasso Sea",
+            "Coral Sea",
+            "Tasman Sea"
+          ],
+          "answer": 1,
+          "note": "The Sargasso Sea is bounded by rotating Atlantic currents rather than by land.",
+          "source": "https://oceanservice.noaa.gov/facts/sargassosea.html"
+        },
+        {
+          "category": "World",
+          "question": "Which country has three official capital cities?",
+          "options": [
+            "Bolivia",
+            "Sri Lanka",
+            "South Africa",
+            "Tanzania"
+          ],
+          "answer": 2,
+          "note": "South Africa divides its executive, legislative, and judicial seats among Pretoria, Cape Town, and Bloemfontein.",
+          "source": "https://www.gov.za/about-sa/south-africa-glance"
+        },
+        {
+          "category": "World",
+          "question": "What is Bolivia's constitutional capital?",
+          "options": [
+            "La Paz",
+            "Sucre",
+            "Santa Cruz",
+            "Cochabamba"
+          ],
+          "answer": 1,
+          "note": "Sucre is Bolivia's constitutional capital, while La Paz is the seat of government.",
+          "source": "https://www.britannica.com/place/Bolivia"
+        },
+        {
+          "category": "World",
+          "question": "Which sovereign country is entirely above 1,000 meters in elevation?",
+          "options": [
+            "Bhutan",
+            "Lesotho",
+            "Nepal",
+            "Andorra"
+          ],
+          "answer": 1,
+          "note": "Every part of Lesotho lies above 1,000 meters, giving it the world's highest lowest point.",
+          "source": "https://www.britannica.com/place/Lesotho"
+        },
+        {
+          "category": "World",
+          "question": "Which European country shares its longest land border with Brazil?",
+          "options": [
+            "Portugal",
+            "Spain",
+            "France",
+            "Netherlands"
+          ],
+          "answer": 2,
+          "note": "French Guiana makes France's border with Brazil longer than any of France's European borders.",
+          "source": "https://www.cia.gov/the-world-factbook/countries/france/"
+        },
+        {
+          "category": "World",
+          "question": "Ecuador takes its name from which geographic feature?",
+          "options": [
+            "The Andes",
+            "The equator",
+            "The Amazon",
+            "The Pacific Ocean"
+          ],
+          "answer": 1,
+          "note": "The country's Spanish name means equator, the line that crosses its territory.",
+          "source": "https://www.britannica.com/place/Ecuador"
+        },
+        {
+          "category": "Books & games",
+          "question": "How many letter tiles are in an English-language Scrabble set?",
+          "options": [
+            "96",
+            "98",
+            "100",
+            "104"
+          ],
+          "answer": 2,
+          "note": "The standard English Scrabble distribution contains 100 tiles, including two blanks.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/scrabble-game"
+        },
+        {
+          "category": "Books & games",
+          "question": "How many possible arrangements does a standard 3-by-3 Rubik's Cube have?",
+          "options": [
+            "About 43 million",
+            "About 43 billion",
+            "About 43 trillion",
+            "About 43 quintillion"
+          ],
+          "answer": 3,
+          "note": "A standard Rubik's Cube has 43,252,003,274,489,856,000 possible configurations.",
+          "source": "https://www.rubiks.com/history"
+        },
+        {
+          "category": "Books & games",
+          "question": "Green Eggs and Ham was written using how many different words?",
+          "options": [
+            "25",
+            "50",
+            "100",
+            "225"
+          ],
+          "answer": 1,
+          "note": "Dr. Seuss wrote Green Eggs and Ham with a vocabulary of only 50 different words.",
+          "source": "https://www.seussville.com/green-eggs-and-ham/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Who illustrated the original published edition of Alice's Adventures in Wonderland?",
+          "options": [
+            "Arthur Rackham",
+            "John Tenniel",
+            "Edward Lear",
+            "Lewis Carroll"
+          ],
+          "answer": 1,
+          "note": "John Tenniel supplied the 42 illustrations for the 1865 published edition.",
+          "source": "https://www.bl.uk/collection-items/alices-adventures-in-wonderland-by-lewis-carroll"
+        },
+        {
+          "category": "Books & games",
+          "question": "In standard Monopoly, what happens when a player rolls doubles three times in one turn?",
+          "options": [
+            "They collect $200",
+            "They lose one property",
+            "They go directly to Jail",
+            "They roll a fourth time"
+          ],
+          "answer": 2,
+          "note": "Three consecutive doubles in one turn send the player immediately to Jail.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/monopoly-game"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which chess piece may jump over other pieces?",
+          "options": [
+            "Bishop",
+            "Knight",
+            "Rook",
+            "Queen"
+          ],
+          "answer": 1,
+          "note": "The knight is the only standard chess piece whose move can pass over intervening pieces.",
+          "source": "https://handbook.fide.com/chapter/E012023"
+        },
+        {
+          "category": "Books & games",
+          "question": "What shape is the original Pac-Man character based on?",
+          "options": [
+            "A pizza missing a slice",
+            "A crescent moon",
+            "A yellow clock",
+            "A cheese wheel"
+          ],
+          "answer": 0,
+          "note": "Creator Toru Iwatani said the character's shape was inspired by a pizza with one slice removed.",
+          "source": "https://www.museumofplay.org/games/pac-man/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "Why do many ballpoint pen caps have a hole through the top?",
+          "options": [
+            "To keep ink cool",
+            "To reduce choking risk",
+            "To stop ink leaking",
+            "To clip onto string"
+          ],
+          "answer": 1,
+          "note": "The hole allows some airflow if the cap is accidentally swallowed and blocks the airway.",
+          "source": "https://www.bicworld.com/en/about-us/our-heritage"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What was the tiny fifth pocket on blue jeans originally designed to hold?",
+          "options": [
+            "Coins",
+            "A pocket watch",
+            "Matches",
+            "A penknife"
+          ],
+          "answer": 1,
+          "note": "Levi Strauss describes the small pocket as a watch pocket made for pocket watches.",
+          "source": "https://www.levistrauss.com/2017/01/20/5-things-you-didnt-know-about-the-watch-pocket/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What was the first product scanned with a UPC barcode in a store?",
+          "options": [
+            "Campbell's soup",
+            "Wrigley's gum",
+            "Coca-Cola",
+            "Tide detergent"
+          ],
+          "answer": 1,
+          "note": "A pack of Wrigley's Juicy Fruit gum became the first retail item scanned by UPC in 1974.",
+          "source": "https://americanhistory.si.edu/collections/object/nmah_1191369"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "Post-it Notes resulted from an attempt to invent what?",
+          "options": [
+            "A permanent marker",
+            "A very strong adhesive",
+            "Carbonless paper",
+            "A waterproof label"
+          ],
+          "answer": 1,
+          "note": "3M scientist Spencer Silver was trying to make a strong adhesive when he created a weak reusable one.",
+          "source": "https://www.3m.com/3M/en_US/post-it/contact-us/about-us/"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "The raised bumps on the F and J keyboard keys identify what?",
+          "options": [
+            "The widest letters",
+            "The home-row position",
+            "The oldest keys",
+            "The spell-check shortcut"
+          ],
+          "answer": 1,
+          "note": "The tactile marks let touch typists locate the home-row index-finger keys without looking.",
+          "source": "https://www.microsoft.com/en-us/accessibility/keyboard-guide"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What prevents microwaves from escaping through an oven door's viewing window?",
+          "options": [
+            "Tinted glass",
+            "A grounded metal mesh",
+            "A vacuum layer",
+            "A magnetic film"
+          ],
+          "answer": 1,
+          "note": "The perforated metal screen blocks microwave wavelengths while its smaller holes pass visible light.",
+          "source": "https://www.fda.gov/radiation-emitting-products/resources-you-radiation-emitting-products/microwave-oven-radiation"
+        },
+        {
+          "category": "Everyday objects",
+          "question": "What kind of machine was the QWERTY keyboard layout developed for?",
+          "options": [
+            "A telegraph",
+            "A typewriter",
+            "A player piano",
+            "A printing press"
+          ],
+          "answer": 1,
+          "note": "Christopher Latham Sholes developed QWERTY for his early practical typewriter.",
+          "source": "https://americanhistory.si.edu/collections/object/nmah_850125"
+        },
+        {
+          "category": "Art & history",
+          "question": "The Bayeux Tapestry is technically what kind of textile?",
+          "options": [
+            "A woven tapestry",
+            "An embroidery",
+            "A printed linen",
+            "A knotted carpet"
+          ],
+          "answer": 1,
+          "note": "Its scenes are stitched in wool thread onto linen, making it an embroidery rather than a true tapestry.",
+          "source": "https://www.bayeuxmuseum.com/en/the-bayeux-tapestry/discover-the-bayeux-tapestry/"
+        },
+        {
+          "category": "Art & history",
+          "question": "George Washington's dentures were never made from which commonly claimed material?",
+          "options": [
+            "Ivory",
+            "Human teeth",
+            "Metal",
+            "Wood"
+          ],
+          "answer": 3,
+          "note": "Washington's dentures used materials including ivory, metal, and human or animal teeth, but not wood.",
+          "source": "https://www.mountvernon.org/george-washington/health/washingtons-teeth"
+        },
+        {
+          "category": "Art & history",
+          "question": "Ancient Tyrian purple dye came mainly from what animals?",
+          "options": [
+            "Beetles",
+            "Sea snails",
+            "Squid",
+            "Coral polyps"
+          ],
+          "answer": 1,
+          "note": "Mediterranean craftspeople extracted Tyrian purple from secretions of predatory murex sea snails.",
+          "source": "https://www.metmuseum.org/toah/hd/typu/hd_typu.htm"
+        },
+        {
+          "category": "Art & history",
+          "question": "What covered the Great Pyramid's rough core when it was new?",
+          "options": [
+            "Painted brick",
+            "Smooth white limestone",
+            "Polished granite",
+            "Glazed blue tile"
+          ],
+          "answer": 1,
+          "note": "Smooth white Tura limestone casing blocks originally covered the pyramid's core masonry.",
+          "source": "https://www.britannica.com/topic/Pyramids-of-Giza"
+        },
+        {
+          "category": "Art & history",
+          "question": "Where is the sling on Michelangelo's David?",
+          "options": [
+            "Across his back and left hand",
+            "Around his waist",
+            "At his right ankle",
+            "Under his left foot"
+          ],
+          "answer": 0,
+          "note": "David holds the sling over his left shoulder and down through his left hand.",
+          "source": "https://www.galleriaaccademiafirenze.it/en/artworks/david-michelangelo/"
+        },
+        {
+          "category": "Art & history",
+          "question": "How tall was Napoleon Bonaparte according to a French medical measurement at his death?",
+          "options": [
+            "About 5 ft 2 in",
+            "About 5 ft 6 in",
+            "About 5 ft 10 in",
+            "About 6 ft 1 in"
+          ],
+          "answer": 1,
+          "note": "Converting the old French measurement puts Napoleon near 5 feet 6 inches in modern British units.",
+          "source": "https://www.britannica.com/story/was-napoleon-short"
+        },
+        {
+          "category": "Art & history",
+          "question": "The Liberty Bell's visible crack grew beyond repair during what event?",
+          "options": [
+            "The signing of the Declaration",
+            "A Washington birthday observance",
+            "The Civil War",
+            "The Centennial Exposition"
+          ],
+          "answer": 1,
+          "note": "The bell's final major crack widened while it rang for Washington's birthday in 1846.",
+          "source": "https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+        }
+      ]
+    },
+    {
+      "key": "set-3",
+      "name": "Set 3",
+      "subtitle": "Familiar territory, hidden details: 64 fresh facts across culture, play, nature, and daily life.",
+      "questions": [
+        {
+          "category": "Media & music",
+          "question": "What is the figure on an Academy Award statuette holding?",
+          "options": [
+            "A scroll",
+            "A sword",
+            "A torch",
+            "A film reel"
+          ],
+          "answer": 1,
+          "note": "The statuette depicts a knight holding a crusader sword while standing on a film reel.",
+          "source": "https://www.oscars.org/oscars/statuette"
+        },
+        {
+          "category": "Media & music",
+          "question": "At the 1939 Academy Awards, how was Walt Disney honored for Snow White and the Seven Dwarfs?",
+          "options": [
+            "With one full-size statuette",
+            "With one full-size and seven miniature statuettes",
+            "With seven full-size statuettes",
+            "With a painted plaque"
+          ],
+          "answer": 1,
+          "note": "Shirley Temple presented Disney with one standard Oscar accompanied by seven miniature statuettes.",
+          "source": "https://www.oscars.org/oscars/ceremonies/1939"
+        },
+        {
+          "category": "Media & music",
+          "question": "Which member of Queen wrote \"Another One Bites the Dust\"?",
+          "options": [
+            "Freddie Mercury",
+            "Brian May",
+            "Roger Taylor",
+            "John Deacon"
+          ],
+          "answer": 3,
+          "note": "Queen bassist John Deacon wrote the song and its famous bass line.",
+          "source": "https://www.queenonline.com/news/on-this-day-another-one-bites-the-dust-released-in-the-usa"
+        },
+        {
+          "category": "Media & music",
+          "question": "The THX cinema sound heard before films is officially called what?",
+          "options": [
+            "Deep Note",
+            "Big Screen",
+            "Sound Wave",
+            "Silver Chord"
+          ],
+          "answer": 0,
+          "note": "THX calls its swelling audio trademark the Deep Note.",
+          "source": "https://www.thx.com/deepnote/"
+        },
+        {
+          "category": "Media & music",
+          "question": "Which instrument plays the opening solo in George Gershwin's \"Rhapsody in Blue\"?",
+          "options": [
+            "Trumpet",
+            "Clarinet",
+            "Violin",
+            "Saxophone"
+          ],
+          "answer": 1,
+          "note": "The work opens with a clarinet trill that climbs into a long glissando.",
+          "source": "https://www.loc.gov/item/ihas.200156439/"
+        },
+        {
+          "category": "Media & music",
+          "question": "What was Mickey Mouse's first spoken phrase in a cartoon?",
+          "options": [
+            "Hot dogs!",
+            "Oh boy!",
+            "Gosh!",
+            "Hiya, folks!"
+          ],
+          "answer": 0,
+          "note": "Mickey first spoke in The Karnival Kid, where his first words were \"Hot dogs!\"",
+          "source": "https://d23.com/mickeys-hot-performance/"
+        },
+        {
+          "category": "Media & music",
+          "question": "Which singer wrote the Dolly Parton hit \"I Will Always Love You\"?",
+          "options": [
+            "Whitney Houston",
+            "Linda Ronstadt",
+            "Dolly Parton",
+            "Emmylou Harris"
+          ],
+          "answer": 2,
+          "note": "Dolly Parton wrote and first recorded the song years before Whitney Houston's version.",
+          "source": "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/IWillAlwaysLoveYou.pdf"
+        },
+        {
+          "category": "Media & music",
+          "question": "On Sesame Street, what is the Count's full title and name?",
+          "options": [
+            "Count Dracula",
+            "Count von Count",
+            "Count Numberton",
+            "Count Sesame"
+          ],
+          "answer": 1,
+          "note": "The number-loving vampire Muppet is formally named Count von Count.",
+          "source": "https://sesameworkshop.org/our-work/shows/sesame-street/sesame-street-characters/count-von-count/"
+        },
+        {
+          "category": "Media & music",
+          "question": "Which film introduced the song \"When You Wish Upon a Star\"?",
+          "options": [
+            "Dumbo",
+            "Fantasia",
+            "Pinocchio",
+            "Bambi"
+          ],
+          "answer": 2,
+          "note": "Jiminy Cricket sings the song at the beginning of Disney's Pinocchio.",
+          "source": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/pinocchio.pdf"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "How many strikes are rolled in a perfect ten-pin bowling game?",
+          "options": [
+            "10",
+            "11",
+            "12",
+            "13"
+          ],
+          "answer": 2,
+          "note": "A 300 game needs strikes in all ten frames plus two bonus deliveries in the tenth.",
+          "source": "https://bowl.com/welcome/understanding-bowling"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "May a chess king legally move onto a square attacked by an opponent?",
+          "options": [
+            "Yes, if it captures",
+            "Yes, once per game",
+            "No",
+            "Only when castling"
+          ],
+          "answer": 2,
+          "note": "A king may not move onto an attacked square because that would leave it in check.",
+          "source": "https://handbook.fide.com/chapter/E012023"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "How many points is a try worth in rugby union before any conversion?",
+          "options": [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
+          ],
+          "answer": 2,
+          "note": "World Rugby awards five points for grounding the ball for a try.",
+          "source": "https://www.world.rugby/the-game/laws/law/8"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "In baseball, a fly ball that strikes a foul pole is ruled what?",
+          "options": [
+            "A foul ball",
+            "A ground-rule double",
+            "A home run",
+            "A dead-ball strike"
+          ],
+          "answer": 2,
+          "note": "The foul poles stand in fair territory, so a fair fly striking one above the fence is a home run.",
+          "source": "https://www.mlb.com/glossary/rules/foul-pole"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "In boxing, where must the standing boxer wait during a knockdown count?",
+          "options": [
+            "Their own corner",
+            "A neutral corner",
+            "The center logo",
+            "Behind the referee"
+          ],
+          "answer": 1,
+          "note": "The boxer who scored the knockdown must go to the farthest neutral corner during the count.",
+          "source": "https://assets.contentstack.io/v3/assets/blteb7d012fc7ebef7f/bltb62c274469ad6a21/6875895c011d632fd770658b/2025_USA_Boxing_Official_s_Manual_7.14.2025.pdf"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "In table tennis, what happens when an otherwise legal serve clips the net and lands correctly?",
+          "options": [
+            "Server loses the point",
+            "Receiver loses the point",
+            "The serve is replayed",
+            "Play continues"
+          ],
+          "answer": 2,
+          "note": "That serve is a let, so no point is scored and the service is taken again.",
+          "source": "https://documents.ittf.sport/sites/default/files/public/2025-02/2025_ITTF_Statutes_clean_version.pdf"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "After a touchdown in American football, how far is a successful kick worth?",
+          "options": [
+            "One point",
+            "Two points",
+            "Three points",
+            "Six points"
+          ],
+          "answer": 0,
+          "note": "The kick try after a touchdown scores one additional point.",
+          "source": "https://operations.nfl.com/the-rules/nfl-rulebook/#rule11"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "In Formula 1, what does a black flag with an orange circle tell a driver?",
+          "options": [
+            "Rain has begun",
+            "A faster car is behind",
+            "The car has a mechanical problem",
+            "The race is stopped"
+          ],
+          "answer": 2,
+          "note": "The black-and-orange flag warns that a car has a mechanical problem likely to endanger others.",
+          "source": "https://www.fia.com/sites/default/files/fia_international_sporting_code_2026.pdf"
+        },
+        {
+          "category": "Sports & rules",
+          "question": "In basketball, how many personal fouls disqualify an NBA player?",
+          "options": [
+            "Four",
+            "Five",
+            "Six",
+            "Seven"
+          ],
+          "answer": 2,
+          "note": "An NBA player is disqualified after committing a sixth personal foul.",
+          "source": "https://official.nba.com/rule-no-3-players-substitutes-and-coaches/"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which part of a cinnamon tree becomes the familiar spice?",
+          "options": [
+            "Inner bark",
+            "Flower petals",
+            "Root hairs",
+            "Fruit pulp"
+          ],
+          "answer": 0,
+          "note": "Cinnamon is prepared from the dried inner bark of trees in the genus Cinnamomum.",
+          "source": "https://www.britannica.com/plant/cinnamon"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What gas traditionally creates the holes in Swiss cheese?",
+          "options": [
+            "Oxygen",
+            "Nitrogen",
+            "Carbon dioxide",
+            "Hydrogen"
+          ],
+          "answer": 2,
+          "note": "Bacteria release carbon dioxide during ripening, forming the holes known as eyes.",
+          "source": "https://www.britannica.com/topic/Emmentaler"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Aquafaba, used as an egg-white substitute, is usually the cooking liquid from what?",
+          "options": [
+            "Chickpeas",
+            "Potatoes",
+            "Oats",
+            "Almonds"
+          ],
+          "answer": 0,
+          "note": "Aquafaba is the protein- and starch-containing liquid left from cooking chickpeas or found in a can of them.",
+          "source": "https://www.britannica.com/topic/aquafaba"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Cloves are dried parts of a tree. Which parts?",
+          "options": [
+            "Leaf tips",
+            "Flower buds",
+            "Seed coats",
+            "Root nodules"
+          ],
+          "answer": 1,
+          "note": "Cloves are the dried unopened flower buds of the clove tree.",
+          "source": "https://www.britannica.com/plant/clove"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which cocoa component is absent from standard white chocolate?",
+          "options": [
+            "Cocoa butter",
+            "Milk solids",
+            "Sugar",
+            "Cocoa solids"
+          ],
+          "answer": 3,
+          "note": "White chocolate uses cocoa butter but contains no nonfat cocoa solids.",
+          "source": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163/subpart-B/section-163.124"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Brazil nuts develop inside what kind of structure?",
+          "options": [
+            "A large woody fruit",
+            "An underground pod",
+            "A flower bulb",
+            "A hollow stem"
+          ],
+          "answer": 0,
+          "note": "A Brazil-nut tree produces a hard, woody fruit that holds numerous seeds arranged inside.",
+          "source": "https://www.britannica.com/plant/Brazil-nut"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Tahini is a paste made chiefly from which seeds?",
+          "options": [
+            "Poppy",
+            "Sesame",
+            "Sunflower",
+            "Fennel"
+          ],
+          "answer": 1,
+          "note": "Tahini is made by grinding sesame seeds into a smooth paste.",
+          "source": "https://www.britannica.com/topic/tahini"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which part of broccoli do people mainly eat?",
+          "options": [
+            "Unopened flower buds and stems",
+            "Roots and bulbs",
+            "Fruit and seeds",
+            "Leaf stalks only"
+          ],
+          "answer": 0,
+          "note": "A broccoli head is a cluster of immature flower buds carried on branching stems.",
+          "source": "https://www.britannica.com/plant/broccoli"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Why are some traditional pretzels dipped in lye before baking?",
+          "options": [
+            "To make them rise",
+            "To create their dark crust",
+            "To sweeten the dough",
+            "To keep salt attached"
+          ],
+          "answer": 1,
+          "note": "The alkaline bath accelerates browning and creates the pretzel's distinctive crust and flavor.",
+          "source": "https://www.acs.org/education/chemmatters/past-issues/archive-2017-2018/pretzels.html"
+        },
+        {
+          "category": "Animals & science",
+          "question": "A cat uses its whiskers mainly as what kind of tool?",
+          "options": [
+            "A heat sensor",
+            "A touch sensor",
+            "A scent gland",
+            "A balance organ"
+          ],
+          "answer": 1,
+          "note": "Whiskers are specialized touch hairs that help cats sense nearby objects and air movement.",
+          "source": "https://www.loc.gov/everyday-mysteries/zoology/item/why-do-cats-have-whiskers/"
+        },
+        {
+          "category": "Animals & science",
+          "question": "A shark's skeleton is made mostly from what?",
+          "options": [
+            "Hollow bone",
+            "Keratin",
+            "Cartilage",
+            "Calcium shell"
+          ],
+          "answer": 2,
+          "note": "Sharks and other elasmobranchs have skeletons made of cartilage rather than bone.",
+          "source": "https://oceanservice.noaa.gov/facts/sharkseat.html"
+        },
+        {
+          "category": "Animals & science",
+          "question": "What shape are a goat's pupils in ordinary light?",
+          "options": [
+            "Round",
+            "Vertical slits",
+            "Horizontal rectangles",
+            "Star-shaped"
+          ],
+          "answer": 2,
+          "note": "Goats have horizontally elongated pupils that provide a broad view of their surroundings.",
+          "source": "https://news.berkeley.edu/2015/08/07/pupil-shape-and-ecological-niche/"
+        },
+        {
+          "category": "Animals & science",
+          "question": "How does a frog take in most of the water it needs?",
+          "options": [
+            "By drinking through its mouth",
+            "Through its skin",
+            "From food only",
+            "Through its nostrils"
+          ],
+          "answer": 1,
+          "note": "Frogs absorb water through a specialized patch of skin instead of drinking it normally.",
+          "source": "https://nationalzoo.si.edu/animals/news/how-frogs-drink-water"
+        },
+        {
+          "category": "Animals & science",
+          "question": "Where does a sea otter often store food while diving?",
+          "options": [
+            "In a cheek pouch",
+            "Under an armpit",
+            "Inside its tail",
+            "Between its teeth"
+          ],
+          "answer": 1,
+          "note": "Loose skin under each forearm forms a pocket where a sea otter can hold prey or a rock.",
+          "source": "https://www.montereybayaquarium.org/animals/animals-a-to-z/sea-otter"
+        },
+        {
+          "category": "Animals & science",
+          "question": "Which bird can sustain backward flight?",
+          "options": [
+            "Kingfisher",
+            "Hummingbird",
+            "Swift",
+            "Kestrel"
+          ],
+          "answer": 1,
+          "note": "A hummingbird can reverse the angle of its wings to fly backward as well as hover.",
+          "source": "https://nationalzoo.si.edu/migratory-birds/hummingbirds"
+        },
+        {
+          "category": "Animals & science",
+          "question": "Ants exchange oxygen without having which organs?",
+          "options": [
+            "Hearts",
+            "Lungs",
+            "Kidneys",
+            "Stomachs"
+          ],
+          "answer": 1,
+          "note": "Ants have no lungs; air moves through tiny openings into a network of tracheal tubes.",
+          "source": "https://askabiologist.asu.edu/how-insects-breathe"
+        },
+        {
+          "category": "Animals & science",
+          "question": "What type of blood vessel carries blood away from the heart?",
+          "options": [
+            "Vein",
+            "Capillary",
+            "Artery",
+            "Venule"
+          ],
+          "answer": 2,
+          "note": "Arteries carry blood away from the heart, regardless of its oxygen content.",
+          "source": "https://www.nhlbi.nih.gov/health/heart/blood-flow"
+        },
+        {
+          "category": "Animals & science",
+          "question": "Which clear part of the eye has no blood vessels and gets oxygen mainly from tears and air?",
+          "options": [
+            "Retina",
+            "Cornea",
+            "Iris",
+            "Optic nerve"
+          ],
+          "answer": 1,
+          "note": "The transparent cornea has no blood vessels; it receives oxygen from the air through the tear film.",
+          "source": "https://www.nei.nih.gov/learn-about-eye-health/eye-anatomy/cornea"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Which tree appears at the center of Lebanon's national flag?",
+          "options": [
+            "Olive",
+            "Cedar",
+            "Cypress",
+            "Palm"
+          ],
+          "answer": 1,
+          "note": "Lebanon's flag places a green cedar tree between two red horizontal bands.",
+          "source": "https://www.britannica.com/topic/flag-of-Lebanon"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Which city sits on both the European and Asian sides of the Bosporus?",
+          "options": [
+            "Athens",
+            "Istanbul",
+            "Cairo",
+            "Tbilisi"
+          ],
+          "answer": 1,
+          "note": "The Bosporus divides Istanbul between a European shore and an Asian shore.",
+          "source": "https://www.britannica.com/place/Istanbul"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Which national flag includes an open Bible in its coat of arms?",
+          "options": [
+            "Dominican Republic",
+            "Portugal",
+            "Mexico",
+            "Ecuador"
+          ],
+          "answer": 0,
+          "note": "The Dominican Republic's coat of arms, centered on its flag, includes an open Bible.",
+          "source": "https://www.britannica.com/topic/flag-of-the-Dominican-Republic"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Which present-day country contains the ancient city of Petra?",
+          "options": [
+            "Jordan",
+            "Egypt",
+            "Greece",
+            "Lebanon"
+          ],
+          "answer": 0,
+          "note": "The Nabataean rock-cut city of Petra lies in southern Jordan.",
+          "source": "https://whc.unesco.org/en/list/326/"
+        },
+        {
+          "category": "Geography & history",
+          "question": "What was the main purpose of the Inca road system?",
+          "options": [
+            "Chariot racing",
+            "Imperial communication and transport",
+            "Marking farm boundaries",
+            "Channeling floodwater"
+          ],
+          "answer": 1,
+          "note": "The Qhapaq Nan connected Inca territories for communication, trade, defense, and administration.",
+          "source": "https://whc.unesco.org/en/list/1459/"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Why does the Eiffel Tower become slightly taller in hot weather?",
+          "options": [
+            "Its elevators lift it",
+            "Its iron expands",
+            "Wind straightens it",
+            "Its foundations swell"
+          ],
+          "answer": 1,
+          "note": "Thermal expansion makes the iron structure grow by a few millimeters in summer heat.",
+          "source": "https://www.toureiffel.paris/en/news/history-and-culture/why-does-eiffel-tower-change-size"
+        },
+        {
+          "category": "Geography & history",
+          "question": "Which U.S. state is both the westernmost and easternmost by longitude?",
+          "options": [
+            "Hawaii",
+            "Florida",
+            "Alaska",
+            "Maine"
+          ],
+          "answer": 2,
+          "note": "Alaska's Aleutian Islands cross the 180th meridian, placing the state in both east and west longitudes.",
+          "source": "https://www.usgs.gov/faqs/what-are-farthest-points-united-states"
+        },
+        {
+          "category": "Geography & history",
+          "question": "The ancient city of Timbuktu is in which modern country?",
+          "options": [
+            "Morocco",
+            "Mali",
+            "Niger",
+            "Sudan"
+          ],
+          "answer": 1,
+          "note": "Timbuktu stands near the Niger River in the West African country of Mali.",
+          "source": "https://whc.unesco.org/en/list/119/"
+        },
+        {
+          "category": "Geography & history",
+          "question": "The Rosetta Stone repeats one decree in how many writing systems?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "answer": 1,
+          "note": "The decree appears in hieroglyphic, Demotic, and ancient Greek scripts.",
+          "source": "https://www.britishmuseum.org/collection/object/Y_EA24"
+        },
+        {
+          "category": "Books & games",
+          "question": "In Monopoly, may a player collect rent while in Jail?",
+          "options": [
+            "No, never",
+            "Yes, normally",
+            "Only after doubles",
+            "Only from railroads"
+          ],
+          "answer": 1,
+          "note": "The official rules allow a jailed player to buy and sell property, build, and collect rent.",
+          "source": "https://www.hasbro.com/common/instruct/00009.pdf"
+        },
+        {
+          "category": "Books & games",
+          "question": "How many points is a blank tile worth in Scrabble?",
+          "options": [
+            "Zero",
+            "One",
+            "Five",
+            "Ten"
+          ],
+          "answer": 0,
+          "note": "A blank may represent any letter but carries no point value.",
+          "source": "https://service.mattel.com/instruction_sheets/53639.pdf"
+        },
+        {
+          "category": "Books & games",
+          "question": "In standard chess, can a pawn promote to a second queen?",
+          "options": [
+            "No",
+            "Only after check",
+            "Yes",
+            "Only if the first queen was captured"
+          ],
+          "answer": 2,
+          "note": "Promotion is not limited by pieces already on the board, so multiple queens are legal.",
+          "source": "https://www.fide.com/FIDE/handbook/LawsOfChess.pdf"
+        },
+        {
+          "category": "Books & games",
+          "question": "Where are the original stuffed toys that inspired Winnie-the-Pooh displayed?",
+          "options": [
+            "The British Library",
+            "The New York Public Library",
+            "The Victoria and Albert Museum",
+            "The Library of Congress"
+          ],
+          "answer": 1,
+          "note": "Christopher Robin Milne's original Pooh, Tigger, Eeyore, Piglet, and Kanga toys are held by the New York Public Library.",
+          "source": "https://www.nypl.org/events/exhibitions/galleries/beginnings/item/3561"
+        },
+        {
+          "category": "Books & games",
+          "question": "What was Mario called in his first appearance in Donkey Kong?",
+          "options": [
+            "Mr. Video",
+            "Jumpman",
+            "Carpenter Joe",
+            "Red Cap"
+          ],
+          "answer": 1,
+          "note": "The arcade character later known as Mario was originally identified as Jumpman.",
+          "source": "https://www.nintendo.com/us/whatsnew/ask-the-developer-vol-11-super-mario-bros-wonder-part-1/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Every standard Tetris piece is built from how many equal squares?",
+          "options": [
+            "Three",
+            "Four",
+            "Five",
+            "Six"
+          ],
+          "answer": 1,
+          "note": "The name tetromino describes each shape made from four edge-connected squares.",
+          "source": "https://tetris.com/about"
+        },
+        {
+          "category": "Books & games",
+          "question": "In UNO, when may you legally play a Wild Draw Four card?",
+          "options": [
+            "At any time",
+            "Only when you have no card matching the current color",
+            "Only as your last card",
+            "Only after another wild card"
+          ],
+          "answer": 1,
+          "note": "The rules permit Wild Draw Four only when the player holds no card matching the current color.",
+          "source": "https://service.mattel.com/instruction_sheets/42001pr.pdf"
+        },
+        {
+          "category": "Books & games",
+          "question": "What object carries the inscription \"One Ring to rule them all\" in Tolkien's story?",
+          "options": [
+            "A sword blade",
+            "A gold ring",
+            "A stone door",
+            "A silver crown"
+          ],
+          "answer": 1,
+          "note": "The fiery inscription appears on the One Ring when it is heated.",
+          "source": "https://www.tolkienestate.com/writing/the-lord-of-the-rings/"
+        },
+        {
+          "category": "Books & games",
+          "question": "In the original Pac-Man arcade game, what restores one of the ghosts to normal after it is eaten?",
+          "options": [
+            "Its eyes returning to the ghost house",
+            "A new maze starting",
+            "Pac-Man eating fruit",
+            "The power pellet wearing off"
+          ],
+          "answer": 0,
+          "note": "An eaten ghost's eyes travel back to the central ghost house, where the ghost regenerates.",
+          "source": "https://www.arcade-museum.com/manuals-videogames/P/Pac-Man.pdf"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "What is the small sheath at the end of a shoelace called?",
+          "options": [
+            "A grommet",
+            "An aglet",
+            "A toggle",
+            "A welt"
+          ],
+          "answer": 1,
+          "note": "An aglet is the sheath that binds a shoelace end and helps it pass through eyelets.",
+          "source": "https://www.merriam-webster.com/dictionary/aglet"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "QR codes were first developed to track parts in which industry?",
+          "options": [
+            "Automotive manufacturing",
+            "Book publishing",
+            "Air travel",
+            "Banking"
+          ],
+          "answer": 0,
+          "note": "DENSO WAVE developed the QR Code in 1994 to improve component tracking in automobile manufacturing.",
+          "source": "https://www.qrcode.com/en/history/"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "In the original toilet-paper roll patent drawing, which way does the loose end hang?",
+          "options": [
+            "Over the top",
+            "Under the roll",
+            "Straight sideways",
+            "The drawing shows no holder"
+          ],
+          "answer": 0,
+          "note": "Seth Wheeler's 1891 patent drawing shows the perforated paper feeding over the top of the roll.",
+          "source": "https://patents.google.com/patent/US465588A/en"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "Which came first: the metal food can or the can opener?",
+          "options": [
+            "The can opener",
+            "They debuted together",
+            "The can",
+            "Their order is unknown"
+          ],
+          "answer": 2,
+          "note": "Canned food appeared decades before dedicated openers; early cans were opened with tools such as hammers and chisels.",
+          "source": "https://www.smithsonianmag.com/innovation/brief-history-can-opener-180975409/"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "What is the metal band that holds a pencil's eraser called?",
+          "options": [
+            "Ferrule",
+            "Nib",
+            "Tang",
+            "Bezel"
+          ],
+          "answer": 0,
+          "note": "The crimped metal sleeve joining an eraser to a pencil is called a ferrule.",
+          "source": "https://www.merriam-webster.com/dictionary/ferrule"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "In Grant Wood's American Gothic, what relationship did he imagine between the two figures?",
+          "options": [
+            "Husband and wife",
+            "Brother and sister",
+            "Father and daughter",
+            "Employer and servant"
+          ],
+          "answer": 2,
+          "note": "Wood described the stern pair as a farmer and his adult daughter, not a married couple.",
+          "source": "https://www.artic.edu/artworks/6565/american-gothic"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "Rodin originally designed The Thinker as part of which larger work?",
+          "options": [
+            "The Gates of Hell",
+            "The Burghers of Calais",
+            "The Kiss",
+            "The Age of Bronze"
+          ],
+          "answer": 0,
+          "note": "The seated poet first appeared above the doorway in Rodin's monumental Gates of Hell.",
+          "source": "https://www.musee-rodin.fr/en/musee/collections/oeuvres/thinker"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "How many canvases make up Andy Warhol's Campbell's Soup Cans?",
+          "options": [
+            "12",
+            "24",
+            "32",
+            "50"
+          ],
+          "answer": 2,
+          "note": "Warhol painted 32 separate canvases, one for each soup variety Campbell sold at the time.",
+          "source": "https://www.moma.org/collection/works/79809"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "In Edvard Munch's account behind The Scream, where did the scream come from?",
+          "options": [
+            "The figure",
+            "A nearby ship",
+            "Nature",
+            "The city below"
+          ],
+          "answer": 2,
+          "note": "Munch wrote that he sensed an infinite scream passing through nature while walking at sunset.",
+          "source": "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00939"
+        },
+        {
+          "category": "Everyday objects & art",
+          "question": "What does the zipper-maker name YKK abbreviate?",
+          "options": [
+            "Yoshida Kogyo Kabushikikaisha",
+            "Yokohama Key and Kit",
+            "Yield Keeping Knot",
+            "Yamato Kinetic Kogyo"
+          ],
+          "answer": 0,
+          "note": "YKK comes from the former company name Yoshida Kogyo Kabushikikaisha.",
+          "source": "https://www.ykk.com/english/corporate/g_outline.html"
+        }
+      ]
+    },
+    {
+      "key": "set-4",
+      "name": "Set 4",
+      "subtitle": "Familiar subjects, surprising details, and rules worth remembering.",
+      "questions": [
+        {
+          "category": "Screen & sound",
+          "question": "Which film was the first animated feature nominated for the Academy Award for Best Picture?",
+          "options": [
+            "Snow White and the Seven Dwarfs",
+            "Beauty and the Beast",
+            "Toy Story",
+            "The Lion King"
+          ],
+          "answer": 1,
+          "note": "Beauty and the Beast received a Best Picture nomination for the 1991 film year.",
+          "source": "https://www.oscars.org/oscars/ceremonies/1992"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What everyday object does Doctor Who's TARDIS resemble from the outside?",
+          "options": [
+            "Telephone booth",
+            "Police box",
+            "Garden shed",
+            "Railway signal box"
+          ],
+          "answer": 1,
+          "note": "Its faulty chameleon circuit leaves it disguised as a blue British police box.",
+          "source": "https://www.bbc.co.uk/programmes/profiles/1RmrT6x1C8WQCc5B0Hq3ZVf/the-tardis"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which feature film is credited with popularizing synchronized spoken dialogue?",
+          "options": [
+            "Metropolis",
+            "The Jazz Singer",
+            "City Lights",
+            "Nosferatu"
+          ],
+          "answer": 1,
+          "note": "The Jazz Singer, released in 1927, became the first feature-length motion picture with synchronized dialogue sequences.",
+          "source": "https://www.britannica.com/topic/The-Jazz-Singer-film-1927"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "At which televised event did Michael Jackson first perform his famous moonwalk?",
+          "options": [
+            "Live Aid",
+            "Motown 25",
+            "The Grammy Awards",
+            "Super Bowl XXVII"
+          ],
+          "answer": 1,
+          "note": "Jackson unveiled the move during Billie Jean on the Motown 25 television special.",
+          "source": "https://www.britannica.com/biography/Michael-Jackson"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Who supplied the distinctive speaking voice of E.T. in E.T. the Extra-Terrestrial?",
+          "options": [
+            "Pat Welsh",
+            "Debra Winger",
+            "Kathleen Turner",
+            "Penny Marshall"
+          ],
+          "answer": 0,
+          "note": "Pat Welsh provided E.T.'s principal speaking voice, with other sounds blended into the final track.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/56772"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What text is absent from the front cover of the Beatles album Abbey Road?",
+          "options": [
+            "The album title and band name",
+            "The record label",
+            "The track list",
+            "The photographer's credit"
+          ],
+          "answer": 0,
+          "note": "The iconic cover shows the four Beatles crossing Abbey Road without printing the band name or album title on the front.",
+          "source": "https://www.thebeatles.com/abbey-road"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "In The Matrix, which pill does Neo take to learn the truth?",
+          "options": [
+            "Blue",
+            "Green",
+            "Red",
+            "White"
+          ],
+          "answer": 2,
+          "note": "Neo chooses the red pill and wakes from the simulated world.",
+          "source": "https://www.britannica.com/topic/The-Matrix"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which television comedy follows the employees of the fictional Dunder Mifflin paper company?",
+          "options": [
+            "Parks and Recreation",
+            "30 Rock",
+            "The Office",
+            "Community"
+          ],
+          "answer": 2,
+          "note": "The US version of The Office centers on Dunder Mifflin's Scranton branch.",
+          "source": "https://www.britannica.com/topic/The-Office-American-television-program"
+        },
+        {
+          "category": "Sports",
+          "question": "In soccer, can a player be penalized for offside directly from a goal kick?",
+          "options": [
+            "Yes, always",
+            "Only in the penalty area",
+            "Only after halftime",
+            "No"
+          ],
+          "answer": 3,
+          "note": "The offside law specifically exempts players receiving the ball directly from a goal kick.",
+          "source": "https://www.theifab.com/laws/latest/offside/"
+        },
+        {
+          "category": "Sports",
+          "question": "In baseball, what happens when a batter bunts a foul ball with two strikes?",
+          "options": [
+            "It is ignored",
+            "The batter is out",
+            "The count stays the same",
+            "The batter gets another strike"
+          ],
+          "answer": 1,
+          "note": "Unlike an ordinary foul with two strikes, a foul bunt counts as strike three.",
+          "source": "https://www.mlb.com/official-information/official-rules"
+        },
+        {
+          "category": "Sports",
+          "question": "How many points are needed to win the deciding fifth set in indoor volleyball, barring deuce?",
+          "options": [
+            "11",
+            "15",
+            "21",
+            "25"
+          ],
+          "answer": 1,
+          "note": "The deciding fifth set is played to 15 points, with a two-point winning margin.",
+          "source": "https://www.fivb.com/volleyball/the-game/official-volleyball-rules/"
+        },
+        {
+          "category": "Sports",
+          "question": "Which restriction applies when castling in chess?",
+          "options": [
+            "The rook must be threatened",
+            "The king may not cross an attacked square",
+            "The queen must still be on the board",
+            "The king must begin in check"
+          ],
+          "answer": 1,
+          "note": "A king cannot castle out of, through, or into check.",
+          "source": "https://handbook.fide.com/chapter/E012023"
+        },
+        {
+          "category": "Sports",
+          "question": "In Olympic freestyle swimming, which stroke must competitors use?",
+          "options": [
+            "Front crawl only",
+            "Butterfly only",
+            "Any stroke",
+            "Breaststroke only"
+          ],
+          "answer": 2,
+          "note": "Freestyle permits any stroke, though competitors almost always choose the fastest front crawl.",
+          "source": "https://www.worldaquatics.com/rules/competition-regulations"
+        },
+        {
+          "category": "Sports",
+          "question": "How high is a tennis net at its center?",
+          "options": [
+            "2 feet 6 inches",
+            "3 feet",
+            "3 feet 6 inches",
+            "4 feet"
+          ],
+          "answer": 1,
+          "note": "The net is held down to 3 feet at the center, lower than its 3-foot-6-inch posts.",
+          "source": "https://www.itftennis.com/media/7221/2026-rules-of-tennis-english.pdf"
+        },
+        {
+          "category": "Sports",
+          "question": "How many goals by one player make a hat trick in ice hockey?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "answer": 1,
+          "note": "A player records a hat trick by scoring three goals in one game.",
+          "source": "https://www.nhl.com/info/hockey-glossary"
+        },
+        {
+          "category": "Sports",
+          "question": "Must a baseball player who hits a home run still touch every base?",
+          "options": [
+            "No, the ball is already dead",
+            "Only in extra innings",
+            "Yes",
+            "Only if a runner was on base"
+          ],
+          "answer": 2,
+          "note": "The batter-runner must legally touch each base even after sending the ball out of play.",
+          "source": "https://www.mlb.com/official-information/official-rules"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "A coffee \"bean\" is botanically what part of the coffee fruit?",
+          "options": [
+            "A seed",
+            "A root",
+            "A leaf bud",
+            "A shell"
+          ],
+          "answer": 0,
+          "note": "The so-called coffee bean is a seed found inside the coffee plant's fruit.",
+          "source": "https://www.britannica.com/plant/coffee-plant-genus"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Gelatin is produced by processing which animal protein?",
+          "options": [
+            "Keratin",
+            "Collagen",
+            "Hemoglobin",
+            "Casein"
+          ],
+          "answer": 1,
+          "note": "Gelatin forms when collagen from animal skin, bone, and connective tissue is processed and partially broken down.",
+          "source": "https://www.britannica.com/science/gelatin"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Traditional couscous granules are made chiefly from what?",
+          "options": [
+            "Semolina wheat",
+            "Ground chickpeas",
+            "Rice flour",
+            "Pearl barley"
+          ],
+          "answer": 0,
+          "note": "Couscous is traditionally made from moistened semolina rolled into tiny granules.",
+          "source": "https://www.britannica.com/topic/couscous"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Paprika is made by drying and grinding which plant part?",
+          "options": [
+            "Pepper fruits",
+            "Crocus stigmas",
+            "Mustard seeds",
+            "Ginger roots"
+          ],
+          "answer": 0,
+          "note": "Paprika is a powder made from dried fruits of Capsicum annuum peppers.",
+          "source": "https://www.britannica.com/topic/paprika"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which part of the rhubarb plant is normally eaten?",
+          "options": [
+            "Leaf stalks",
+            "Roots",
+            "Flowers",
+            "Leaf blades"
+          ],
+          "answer": 0,
+          "note": "Rhubarb is grown for its thick edible leaf stalks; its leaf blades contain high levels of oxalic acid.",
+          "source": "https://www.britannica.com/plant/rhubarb"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Compared with white chicken eggs, brown chicken eggs are generally what?",
+          "options": [
+            "More nutritious",
+            "Lower in cholesterol",
+            "Nutritionally similar",
+            "Naturally pasteurized"
+          ],
+          "answer": 2,
+          "note": "Shell color mostly reflects the hen's breed and does not make an egg more nutritious.",
+          "source": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/eggs/egg-products-and-food-safety"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What makes bread turn brown during toasting?",
+          "options": [
+            "Fermentation",
+            "The Maillard reaction",
+            "Freezing-point depression",
+            "Carbonation"
+          ],
+          "answer": 1,
+          "note": "Heat drives reactions between amino acids and sugars that create brown color and toasted flavors.",
+          "source": "https://www.britannica.com/science/Maillard-reaction"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What is the main ingredient in traditional Japanese miso?",
+          "options": [
+            "Fermented soybeans",
+            "Dried seaweed",
+            "Rice vinegar",
+            "Bonito flakes"
+          ],
+          "answer": 0,
+          "note": "Miso is a fermented paste usually based on soybeans, salt, and koji.",
+          "source": "https://www.britannica.com/topic/miso"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which appeared on Earth first: sharks or trees?",
+          "options": [
+            "Trees",
+            "Sharks",
+            "They appeared together",
+            "Scientists cannot tell"
+          ],
+          "answer": 1,
+          "note": "Shark ancestors predate the earliest known trees by tens of millions of years.",
+          "source": "https://ocean.si.edu/ocean-life/sharks-rays/shark-evolution"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Botanically, which fruit is a berry?",
+          "options": [
+            "Strawberry",
+            "Raspberry",
+            "Banana",
+            "Cherry"
+          ],
+          "answer": 2,
+          "note": "Bananas develop from one ovary and meet the botanical definition of a berry.",
+          "source": "https://www.britannica.com/science/berry-plant-reproductive-body"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What is the largest living species of fish?",
+          "options": [
+            "Great white shark",
+            "Whale shark",
+            "Ocean sunfish",
+            "Manta ray"
+          ],
+          "answer": 1,
+          "note": "The whale shark is the largest living fish species.",
+          "source": "https://www.britannica.com/animal/whale-shark"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What color is oxygen-poor human blood inside veins?",
+          "options": [
+            "Blue",
+            "Green",
+            "Dark red",
+            "Colorless"
+          ],
+          "answer": 2,
+          "note": "Human blood remains red; veins look blue because skin and tissue alter reflected light.",
+          "source": "https://www.loc.gov/everyday-mysteries/biology-and-human-anatomy/item/why-do-veins-look-blue/"
+        },
+        {
+          "category": "Nature & science",
+          "question": "How many legs does an adult dragonfly have?",
+          "options": [
+            "Four",
+            "Six",
+            "Eight",
+            "Ten"
+          ],
+          "answer": 1,
+          "note": "Dragonflies are insects and have six legs, although they use them mainly for perching and catching prey.",
+          "source": "https://www.britannica.com/animal/dragonfly"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Sound usually travels faster through which medium?",
+          "options": [
+            "Air",
+            "Water",
+            "A vacuum",
+            "It travels equally fast in all media"
+          ],
+          "answer": 1,
+          "note": "Particles transmit vibrations more quickly in water than in air; sound cannot cross a vacuum.",
+          "source": "https://oceanservice.noaa.gov/facts/sound.html"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What is Earth's largest desert?",
+          "options": [
+            "Sahara",
+            "Gobi",
+            "Arabian",
+            "Antarctic"
+          ],
+          "answer": 3,
+          "note": "Deserts are defined by low precipitation, making Antarctica the largest.",
+          "source": "https://www.britannica.com/science/desert"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Why does the Moon show nearly the same face to Earth?",
+          "options": [
+            "It does not rotate",
+            "Its rotation period matches its orbit",
+            "Earth blocks its far side",
+            "Its far side is heavier"
+          ],
+          "answer": 1,
+          "note": "The Moon rotates once in the same time it takes to orbit Earth, a state called synchronous rotation.",
+          "source": "https://www.britannica.com/place/Moon"
+        },
+        {
+          "category": "World & history",
+          "question": "The shortest recorded war, fought in 1896, involved Britain and which place?",
+          "options": [
+            "Zanzibar",
+            "Cyprus",
+            "Iceland",
+            "Malta"
+          ],
+          "answer": 0,
+          "note": "The Anglo-Zanzibar War ended after less than an hour of fighting.",
+          "source": "https://www.britannica.com/event/Anglo-Zanzibar-War"
+        },
+        {
+          "category": "World & history",
+          "question": "Why was Canberra selected as Australia's federal capital?",
+          "options": [
+            "It was the largest city",
+            "It was a compromise between Sydney and Melbourne",
+            "It had the only deep-water port",
+            "It was the first British settlement"
+          ],
+          "answer": 1,
+          "note": "Canberra was chosen as a compromise location after rivalry between Sydney and Melbourne.",
+          "source": "https://www.britannica.com/place/Canberra"
+        },
+        {
+          "category": "World & history",
+          "question": "What do the Panama Canal's locks do to ships?",
+          "options": [
+            "Tow them by cable across the ocean",
+            "Raise and lower them between water levels",
+            "Rotate them to face west",
+            "Unload their cargo"
+          ],
+          "answer": 1,
+          "note": "Lock chambers lift ships up to Gatun Lake and lower them again toward the opposite ocean.",
+          "source": "https://www.britannica.com/topic/Panama-Canal"
+        },
+        {
+          "category": "World & history",
+          "question": "Which country has no permanent natural rivers?",
+          "options": [
+            "Vietnam",
+            "Saudi Arabia",
+            "Poland",
+            "Argentina"
+          ],
+          "answer": 1,
+          "note": "Saudi Arabia has seasonal wadis but no permanent rivers.",
+          "source": "https://www.britannica.com/place/Saudi-Arabia/Drainage"
+        },
+        {
+          "category": "World & history",
+          "question": "Which statement about the Great Wall of China is accurate?",
+          "options": [
+            "It is plainly visible from the Moon",
+            "It is one continuous wall",
+            "It consists of many sections built over centuries",
+            "It was entirely built by one emperor"
+          ],
+          "answer": 2,
+          "note": "Many dynasties built separate walls and fortifications; naked-eye visibility from the Moon is a myth.",
+          "source": "https://whc.unesco.org/en/list/438/"
+        },
+        {
+          "category": "World & history",
+          "question": "Which ancient ruler lived closer in time to the Moon landing than to the building of the Great Pyramid?",
+          "options": [
+            "Cleopatra VII",
+            "Hammurabi",
+            "Sargon of Akkad",
+            "Khufu"
+          ],
+          "answer": 0,
+          "note": "Cleopatra died in 30 BCE, over two millennia after the Great Pyramid was built.",
+          "source": "https://www.britannica.com/biography/Cleopatra-queen-of-Egypt"
+        },
+        {
+          "category": "World & history",
+          "question": "Which country is completely surrounded by South Africa?",
+          "options": [
+            "Eswatini",
+            "Lesotho",
+            "Botswana",
+            "Namibia"
+          ],
+          "answer": 1,
+          "note": "Lesotho is an enclave whose entire boundary meets South Africa.",
+          "source": "https://www.britannica.com/place/Lesotho"
+        },
+        {
+          "category": "World & history",
+          "question": "Which sovereign state is the world's smallest by area?",
+          "options": [
+            "Monaco",
+            "Vatican City",
+            "San Marino",
+            "Liechtenstein"
+          ],
+          "answer": 1,
+          "note": "Vatican City occupies about 44 hectares and is the world's smallest independent state.",
+          "source": "https://www.britannica.com/place/Vatican-City"
+        },
+        {
+          "category": "Books & games",
+          "question": "What name does Mary Shelley give Frankenstein's creature in the novel?",
+          "options": [
+            "Adam",
+            "Victor",
+            "Prometheus",
+            "No personal name"
+          ],
+          "answer": 3,
+          "note": "The novel never gives the creature a personal name; Frankenstein is his creator.",
+          "source": "https://www.bl.uk/romantics-and-victorians/articles/an-introduction-to-frankenstein"
+        },
+        {
+          "category": "Books & games",
+          "question": "What was Nintendo's original product when the company began in 1889?",
+          "options": [
+            "Arcade cabinets",
+            "Playing cards",
+            "Toy robots",
+            "Mechanical puzzles"
+          ],
+          "answer": 1,
+          "note": "Nintendo began in Kyoto making handmade hanafuda playing cards.",
+          "source": "https://www.nintendo.co.jp/corporate/en/history/index.html"
+        },
+        {
+          "category": "Books & games",
+          "question": "In Clue, which rooms are connected by secret passages?",
+          "options": [
+            "The four corner rooms",
+            "The center rooms",
+            "Every room with a door",
+            "Only the Kitchen and Hall"
+          ],
+          "answer": 0,
+          "note": "The four corner rooms form two secret-passage pairs that let a player cross the board.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/clue-game"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which phrase does Sherlock Holmes never say exactly in Arthur Conan Doyle's original stories?",
+          "options": [
+            "The game is afoot",
+            "You know my methods",
+            "Elementary, my dear Watson",
+            "Data! Data! Data!"
+          ],
+          "answer": 2,
+          "note": "Holmes says similar words separately, but the famous full phrase came from later adaptations.",
+          "source": "https://www.smithsonianmag.com/arts-culture/the-case-of-the-misquoted-sherlock-holmes-180949346/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which board game evolved from The Landlord's Game, designed to criticize monopolies?",
+          "options": [
+            "Risk",
+            "Monopoly",
+            "Clue",
+            "The Game of Life"
+          ],
+          "answer": 1,
+          "note": "Elizabeth Magie patented The Landlord's Game decades before Monopoly became a commercial hit.",
+          "source": "https://americanhistory.si.edu/collections/object-groups/monopoly"
+        },
+        {
+          "category": "Books & games",
+          "question": "What is the highest possible score for a single dart in standard darts?",
+          "options": [
+            "50",
+            "60",
+            "75",
+            "100"
+          ],
+          "answer": 1,
+          "note": "The treble 20 scores 60, which is higher than the 50-point inner bull.",
+          "source": "https://www.pdc.tv/news/2019/05/22/darts-rules"
+        },
+        {
+          "category": "Books & games",
+          "question": "In Bram Stoker's Dracula, can Count Dracula move about during daylight?",
+          "options": [
+            "No, sunlight destroys him instantly",
+            "Yes, but his powers are reduced",
+            "Only while disguised as a wolf",
+            "Only on Sundays"
+          ],
+          "answer": 1,
+          "note": "Stoker's Dracula can appear by day, although daylight limits his supernatural abilities.",
+          "source": "https://www.gutenberg.org/files/345/345-h/345-h.htm"
+        },
+        {
+          "category": "Books & games",
+          "question": "In which work did Peter Pan first appear?",
+          "options": [
+            "Peter and Wendy",
+            "The Little White Bird",
+            "Peter Pan in Kensington Gardens",
+            "The Neverending Story"
+          ],
+          "answer": 1,
+          "note": "J. M. Barrie introduced Peter Pan in the 1902 adult novel The Little White Bird.",
+          "source": "https://www.britannica.com/topic/Peter-Pan-play-by-Barrie"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "The first webcam was aimed at what object?",
+          "options": [
+            "A coffee pot",
+            "A laboratory door",
+            "A weather vane",
+            "A printer tray"
+          ],
+          "answer": 0,
+          "note": "Cambridge researchers pointed an early network camera at the Trojan Room coffee pot so colleagues could check whether coffee remained.",
+          "source": "https://www.cl.cam.ac.uk/coffee/qsf/coffee.html"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "Bluetooth wireless technology was named after which historical ruler?",
+          "options": [
+            "Harald Bluetooth",
+            "William the Conqueror",
+            "Charlemagne",
+            "Cnut the Great"
+          ],
+          "answer": 0,
+          "note": "Bluetooth was named for Harald Bluetooth, a Danish king associated with uniting Denmark and Norway.",
+          "source": "https://www.bluetooth.com/about-us/bluetooth-origin/"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "What accidental observation helped Percy Spencer develop the microwave oven?",
+          "options": [
+            "A candy bar melted in his pocket",
+            "Water froze beside a radar tube",
+            "A spoon began to vibrate",
+            "Bread rose without yeast"
+          ],
+          "answer": 0,
+          "note": "A candy bar melted while Spencer worked near an active magnetron, prompting experiments with food.",
+          "source": "https://www.invent.org/inductees/percy-l-spencer"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "What does the distress signal SOS officially stand for?",
+          "options": [
+            "Save Our Ship",
+            "Save Our Souls",
+            "Send Out Succor",
+            "Nothing; it is not an abbreviation"
+          ],
+          "answer": 3,
+          "note": "SOS was selected as a simple, distinctive Morse signal and was not created as an abbreviation.",
+          "source": "https://www.britannica.com/topic/SOS"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "What does the name LEGO come from?",
+          "options": [
+            "The founder's initials",
+            "Latin for building block",
+            "Danish words meaning play well",
+            "A town in Denmark"
+          ],
+          "answer": 2,
+          "note": "Ole Kirk Kristiansen formed LEGO from the Danish phrase leg godt, meaning play well.",
+          "source": "https://www.lego.com/en-us/history/articles/b-the-lego-name"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "Which came first?",
+          "options": [
+            "The friction match",
+            "A practical lighter",
+            "They appeared in the same year",
+            "The electric stove"
+          ],
+          "answer": 1,
+          "note": "Dobereiner's hydrogen lighter appeared in 1823, before John Walker's friction matches in 1826.",
+          "source": "https://www.britannica.com/technology/match-tinder"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "A modern \"tin can\" is usually made mainly from what?",
+          "options": [
+            "Pure tin",
+            "Tin-plated steel",
+            "Aluminum foil",
+            "Zinc-coated copper"
+          ],
+          "answer": 1,
+          "note": "Traditional food cans use steel sheet with a thin protective coating of tin.",
+          "source": "https://www.britannica.com/technology/tinplate"
+        },
+        {
+          "category": "Inventions & objects",
+          "question": "What does CAPTCHA stand for?",
+          "options": [
+            "Computerized Access Test for Public Human Authentication",
+            "Completely Automated Public Turing test to tell Computers and Humans Apart",
+            "Central Authentication Protocol for Trusted Accounts",
+            "Computer Analysis Program That Checks Human Answers"
+          ],
+          "answer": 1,
+          "note": "CAPTCHA expands to Completely Automated Public Turing test to tell Computers and Humans Apart.",
+          "source": "https://www.britannica.com/technology/CAPTCHA"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "Which color was produced by the first widely used synthetic dye?",
+          "options": [
+            "Mauve",
+            "Navy blue",
+            "Lime green",
+            "Scarlet"
+          ],
+          "answer": 0,
+          "note": "William Perkin accidentally discovered the purple dye mauveine in 1856.",
+          "source": "https://www.sciencehistory.org/education/scientific-biographies/william-henry-perkin/"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "What was the Louvre before it became a museum?",
+          "options": [
+            "A university",
+            "A fortress and palace",
+            "A railway station",
+            "A cathedral"
+          ],
+          "answer": 1,
+          "note": "The site began as a medieval fortress and later became a royal palace.",
+          "source": "https://www.louvre.fr/en/explore/the-palace/from-the-palace-to-the-museum"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "Which common symbol was once called the octothorpe by telephone engineers?",
+          "options": [
+            "Ampersand (&)",
+            "At sign (@)",
+            "Hash sign (#)",
+            "Asterisk (*)"
+          ],
+          "answer": 2,
+          "note": "Bell Labs staff used octothorpe as a name for the # key on touch-tone telephones.",
+          "source": "https://www.merriam-webster.com/dictionary/octothorpe"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "The word \"robot\" entered popular use through a play written in which language?",
+          "options": [
+            "French",
+            "Czech",
+            "Russian",
+            "German"
+          ],
+          "answer": 1,
+          "note": "Karel Capek's Czech play R.U.R. popularized robot from a word related to forced labor.",
+          "source": "https://www.britannica.com/topic/RUR"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "Which number does a standard roulette wheel contain that is neither red nor black?",
+          "options": [
+            "One",
+            "Zero",
+            "Ten",
+            "Thirty-six"
+          ],
+          "answer": 1,
+          "note": "Zero is green; American wheels also include a green double zero.",
+          "source": "https://www.britannica.com/topic/roulette-gambling-game"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "Why did ancient Greek and Roman statues often appear white to later viewers?",
+          "options": [
+            "Artists avoided pigments",
+            "Their paint faded or wore away",
+            "White signified royalty",
+            "Museums bleached them"
+          ],
+          "answer": 1,
+          "note": "Many classical sculptures were brightly painted, but most surface pigment disappeared over time.",
+          "source": "https://www.metmuseum.org/toah/hd/prms/hd_prms.htm"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "What did the earliest known vending machine dispense?",
+          "options": [
+            "Bread",
+            "Holy water",
+            "Wine",
+            "Postage stamps"
+          ],
+          "answer": 1,
+          "note": "Hero of Alexandria described a coin-operated device that dispensed a measured amount of holy water.",
+          "source": "https://www.britannica.com/technology/vending-machine"
+        },
+        {
+          "category": "Culture & curiosities",
+          "question": "What is the dot above a lowercase i or j called?",
+          "options": [
+            "Tittle",
+            "Cedilla",
+            "Serif",
+            "Tilde"
+          ],
+          "answer": 0,
+          "note": "The small distinguishing mark above i and j is called a tittle.",
+          "source": "https://www.merriam-webster.com/dictionary/tittle"
+        }
+      ]
+    },
+    {
+      "key": "set-5",
+      "name": "Set 5",
+      "subtitle": "Familiar subjects, oddly specific facts",
+      "questions": [
+        {
+          "category": "Screen & sound",
+          "question": "The cascading green code in The Matrix was adapted from recipes for what?",
+          "options": [
+            "Sushi",
+            "Noodle soup",
+            "Green tea",
+            "Rice cakes"
+          ],
+          "answer": 0,
+          "note": "Designer Simon Whiteley scanned characters from his wife's Japanese sushi cookbooks.",
+          "source": "https://www.cnet.com/culture/entertainment/the-matrix-code-came-from-sushi-recipes/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "In 2001: A Space Odyssey, what is the name of the spacecraft's computer?",
+          "options": [
+            "SAL 9000",
+            "HAL 9000",
+            "MOTHER",
+            "Deep Thought"
+          ],
+          "answer": 1,
+          "note": "HAL 9000 controls the Discovery One and becomes the film's central antagonist.",
+          "source": "https://www.bfi.org.uk/film/cefccdb2-b558-5623-9c17-72b4be7bd4c1/2001-a-space-odyssey"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which often-quoted line is never said exactly that way in Casablanca?",
+          "options": [
+            "Here's looking at you, kid",
+            "Round up the usual suspects",
+            "Play it again, Sam",
+            "We'll always have Paris"
+          ],
+          "answer": 2,
+          "note": "Ilsa says \"Play it, Sam,\" while Rick says \"Play it\"; nobody says \"Play it again, Sam.\"",
+          "source": "https://www.afi.com/afis-100-years-100-movie-quotes/"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What is the name of Ripley's orange cat in Alien?",
+          "options": [
+            "Jones",
+            "Parker",
+            "Ash",
+            "Dallas"
+          ],
+          "answer": 0,
+          "note": "Jones, often called Jonesy, survives the Nostromo disaster with Ripley.",
+          "source": "https://www.bfi.org.uk/features/alien-40-ridley-scott"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which animation method gives a-ha's \"Take On Me\" video its pencilled movement?",
+          "options": [
+            "Claymation",
+            "Rotoscoping",
+            "Cutout animation",
+            "Motion capture"
+          ],
+          "answer": 1,
+          "note": "Artists traced filmed live-action frames to create the video's shifting pencil-drawn world.",
+          "source": "https://www.loc.gov/static/programs/national-film-preservation-board/documents/take-on-me.pdf"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What song wakes Phil each morning in Groundhog Day?",
+          "options": [
+            "Monday, Monday",
+            "I Got You Babe",
+            "Wake Up Little Susie",
+            "Then He Kissed Me"
+          ],
+          "answer": 1,
+          "note": "The clock radio repeatedly plays Sonny and Cher's \"I Got You Babe\" at 6:00 a.m.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/59532"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "The gangster movie watched by Kevin in Home Alone is what?",
+          "options": [
+            "A deleted 1930s film",
+            "A real James Cagney film",
+            "Footage made for Home Alone",
+            "A dubbed Italian film"
+          ],
+          "answer": 2,
+          "note": "Angels with Filthy Souls was a black-and-white scene created specially for Home Alone.",
+          "source": "https://www.vanityfair.com/hollywood/2015/11/home-alone-gangster-movie"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which Beatles album was recorded last, although it was not released last?",
+          "options": [
+            "Let It Be",
+            "Abbey Road",
+            "The White Album",
+            "Yellow Submarine"
+          ],
+          "answer": 1,
+          "note": "Abbey Road was the final album the four Beatles recorded together; Let It Be reached shops later.",
+          "source": "https://www.thebeatles.com/abbey-road"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which Ghostbusters villain begins as a smiling advertising mascot?",
+          "options": [
+            "Slimer",
+            "Gozer",
+            "Stay Puft Marshmallow Man",
+            "Vigo"
+          ],
+          "answer": 2,
+          "note": "Ray accidentally chooses the familiar Stay Puft mascot as the form of the destructor.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/57104"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "The famous tongue-and-lips logo was created for which rock band?",
+          "options": [
+            "The Who",
+            "The Rolling Stones",
+            "Led Zeppelin",
+            "The Kinks"
+          ],
+          "answer": 1,
+          "note": "John Pasche designed the tongue-and-lips emblem for the Rolling Stones in 1970.",
+          "source": "https://www.vam.ac.uk/articles/the-rolling-stones-logo-by-john-pasche"
+        },
+        {
+          "category": "Sports",
+          "question": "What is the minimum diameter of a regulation golf ball?",
+          "options": [
+            "1.48 inches",
+            "1.68 inches",
+            "1.88 inches",
+            "2.08 inches"
+          ],
+          "answer": 1,
+          "note": "The equipment rules require a golf ball to have a diameter of at least 1.680 inches.",
+          "source": "https://www.britannica.com/sports/golf/Equipment"
+        },
+        {
+          "category": "Sports",
+          "question": "Why are NHL hockey pucks kept cold before games?",
+          "options": [
+            "To make them heavier",
+            "To reduce bouncing",
+            "To brighten the logo",
+            "To prevent cracking"
+          ],
+          "answer": 1,
+          "note": "Chilled rubber is less lively, so a cold puck bounces less than a warm one.",
+          "source": "https://www.smithsonianmag.com/science-nature/the-composition-of-a-hockey-puck-75687749/"
+        },
+        {
+          "category": "Sports",
+          "question": "In fencing, which weapon allows touches anywhere on the opponent's body?",
+          "options": [
+            "Foil",
+            "Sabre",
+            "Epee",
+            "All three"
+          ],
+          "answer": 2,
+          "note": "The epee target is the entire body; foil and sabre use restricted target areas.",
+          "source": "https://olympics.com/en/news/fencing-rules-regulations-how-to-play"
+        },
+        {
+          "category": "Sports",
+          "question": "How high is the center of a regulation badminton net?",
+          "options": [
+            "1.224 metres",
+            "1.524 metres",
+            "1.724 metres",
+            "2.024 metres"
+          ],
+          "answer": 1,
+          "note": "Badminton laws set the net at 1.524 metres high in the center of the court.",
+          "source": "https://corporate.bwfbadminton.com/statutes/"
+        },
+        {
+          "category": "Sports",
+          "question": "Which swimming stroke gives the individual medley its final leg?",
+          "options": [
+            "Butterfly",
+            "Backstroke",
+            "Breaststroke",
+            "Freestyle"
+          ],
+          "answer": 3,
+          "note": "Individual medleys run butterfly, backstroke, breaststroke, then freestyle.",
+          "source": "https://resources.fina.org/fina/document/2024/07/01/8c79961d-8d8f-4b9b-aab0-51cc67c91f20/Competition-Regulations-version-July-2024-_FINAL.pdf"
+        },
+        {
+          "category": "Sports",
+          "question": "In basketball, what is the restricted-area arc under the basket commonly called?",
+          "options": [
+            "The keyhole",
+            "The no-charge semicircle",
+            "The bonus ring",
+            "The rebound zone"
+          ],
+          "answer": 1,
+          "note": "A secondary defender inside the no-charge semicircle normally cannot draw a charging foul.",
+          "source": "https://official.nba.com/rule-no-12-fouls-and-penalties/"
+        },
+        {
+          "category": "Sports",
+          "question": "In rugby union, how many points is a drop goal worth?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Five"
+          ],
+          "answer": 2,
+          "note": "A successful drop goal scores three points, the same as a penalty goal.",
+          "source": "https://www.world.rugby/the-game/laws/law/8"
+        },
+        {
+          "category": "Sports",
+          "question": "Which chess piece starts each game beside a rook?",
+          "options": [
+            "Bishop",
+            "Knight",
+            "Queen",
+            "King"
+          ],
+          "answer": 1,
+          "note": "The back rank begins rook, knight, bishop from each outer edge.",
+          "source": "https://handbook.fide.com/chapter/E012023"
+        },
+        {
+          "category": "Sports",
+          "question": "From where must a legal shot put be released?",
+          "options": [
+            "Behind the shoulder",
+            "Close to the neck or chin",
+            "Below the waist",
+            "With both hands overhead"
+          ],
+          "answer": 1,
+          "note": "The shot must begin close to the neck or chin and may not be dropped below that position during the putting action.",
+          "source": "https://worldathletics.org/disciplines/throws/shot-put"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Caesar salad was created in which country?",
+          "options": [
+            "Italy",
+            "Mexico",
+            "United States",
+            "France"
+          ],
+          "answer": 1,
+          "note": "Restaurateur Caesar Cardini devised the salad in Tijuana, Mexico, in the 1920s.",
+          "source": "https://www.britannica.com/topic/Caesar-salad"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "German chocolate cake is named after what?",
+          "options": [
+            "A German city",
+            "A chocolate maker's surname",
+            "The German royal family",
+            "A style of baking"
+          ],
+          "answer": 1,
+          "note": "Samuel German developed the sweet baking chocolate that gave the American cake its name.",
+          "source": "https://www.smithsonianmag.com/arts-culture/german-chocolate-cake-isnt-german-180961142/"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Traditional Japanese mochi is made chiefly from what?",
+          "options": [
+            "Glutinous rice",
+            "Buckwheat flour",
+            "Soybean paste",
+            "Sweet potato"
+          ],
+          "answer": 0,
+          "note": "Mochi is prepared by steaming and pounding glutinous rice into an elastic paste.",
+          "source": "https://www.britannica.com/topic/mochi"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Maple syrup is concentrated from which fluid collected from maple trees?",
+          "options": [
+            "Sap",
+            "Resin",
+            "Nectar",
+            "Latex"
+          ],
+          "answer": 0,
+          "note": "Producers tap maple trees for sap and boil away water to concentrate it into syrup.",
+          "source": "https://www.britannica.com/topic/maple-syrup"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What makes a traditional pound cake a \"pound\" cake?",
+          "options": [
+            "Its baked weight",
+            "A pound of each main ingredient",
+            "A pound of flour only",
+            "Its sale price"
+          ],
+          "answer": 1,
+          "note": "Early recipes used one pound each of flour, butter, sugar, and eggs.",
+          "source": "https://www.britannica.com/topic/pound-cake"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "The fruit now called a kiwifruit was once widely marketed as what?",
+          "options": [
+            "Chinese gooseberry",
+            "New Zealand melon",
+            "Pacific fig",
+            "Fuzzy lime"
+          ],
+          "answer": 0,
+          "note": "New Zealand exporters replaced \"Chinese gooseberry\" with kiwifruit as overseas sales grew.",
+          "source": "https://teara.govt.nz/en/kiwifruit"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Espresso is defined mainly by what?",
+          "options": [
+            "A species of coffee bean",
+            "A dark roast level",
+            "A pressurized brewing method",
+            "A country of origin"
+          ],
+          "answer": 2,
+          "note": "Espresso forces hot water under pressure through finely ground coffee; no special espresso bean is required.",
+          "source": "https://www.britannica.com/topic/espresso"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Cutting an onion releases an irritant that reaches which body part to trigger tears?",
+          "options": [
+            "The eyes",
+            "The inner ears",
+            "The tongue",
+            "The fingertips"
+          ],
+          "answer": 0,
+          "note": "Damaged onion cells release a volatile lachrymatory factor that reaches the eyes and stimulates tearing.",
+          "source": "https://www.loc.gov/everyday-mysteries/chemistry/item/why-does-chopping-an-onion-make-you-cry/"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What does crystallization usually mean for a jar of pure honey?",
+          "options": [
+            "It has spoiled",
+            "Sugar was secretly added",
+            "It has naturally formed glucose crystals",
+            "Water entered the jar"
+          ],
+          "answer": 2,
+          "note": "Crystallization is a normal physical change and does not mean the honey has gone bad.",
+          "source": "https://honey.com/honey-at-home/learn-about-honey"
+        },
+        {
+          "category": "Science & nature",
+          "question": "How can a dolphin sleep without completely stopping its breathing?",
+          "options": [
+            "It sleeps underwater for hours",
+            "One brain hemisphere rests at a time",
+            "Its gills take over",
+            "Its heart controls breathing"
+          ],
+          "answer": 1,
+          "note": "Dolphins use unihemispheric sleep, resting one side of the brain while the other remains alert enough to surface and breathe.",
+          "source": "https://oceanservice.noaa.gov/facts/dolphin_sleep.html"
+        },
+        {
+          "category": "Science & nature",
+          "question": "What color is horseshoe-crab blood?",
+          "options": [
+            "Red",
+            "Blue",
+            "Green",
+            "Clear"
+          ],
+          "answer": 1,
+          "note": "Copper-containing hemocyanin makes horseshoe-crab blood blue.",
+          "source": "https://ocean.si.edu/ocean-life/invertebrates/horseshoe-crabs-living-fossils-and-medical-marvels"
+        },
+        {
+          "category": "Science & nature",
+          "question": "Why can astronauts become slightly taller while in orbit?",
+          "options": [
+            "Their bones grow",
+            "Their spinal discs expand",
+            "Their posture is measured differently",
+            "Their spacesuits pull upward"
+          ],
+          "answer": 1,
+          "note": "With gravity no longer compressing the spine, the discs between vertebrae can expand.",
+          "source": "https://www.nasa.gov/humans-in-space/the-human-body-in-space/"
+        },
+        {
+          "category": "Science & nature",
+          "question": "Which planet has an average density lower than liquid water?",
+          "options": [
+            "Jupiter",
+            "Saturn",
+            "Uranus",
+            "Neptune"
+          ],
+          "answer": 1,
+          "note": "Saturn's average density is about 0.69 grams per cubic centimetre, less than water's.",
+          "source": "https://science.nasa.gov/saturn/facts/"
+        },
+        {
+          "category": "Science & nature",
+          "question": "How many permanent teeth does a typical adult have, including wisdom teeth?",
+          "options": [
+            "24",
+            "28",
+            "32",
+            "36"
+          ],
+          "answer": 2,
+          "note": "A complete adult dentition contains 32 permanent teeth when all four wisdom teeth are present.",
+          "source": "https://www.nidcr.nih.gov/health-info/tooth-decay/more-info"
+        },
+        {
+          "category": "Science & nature",
+          "question": "Under ultraviolet light, platypus fur can glow which color?",
+          "options": [
+            "Blue-green",
+            "Bright red",
+            "Golden yellow",
+            "Pure white"
+          ],
+          "answer": 0,
+          "note": "Researchers found that platypus fur absorbs ultraviolet light and fluoresces blue-green.",
+          "source": "https://www.fieldmuseum.org/blog/platypuses-glow-under-uv-light"
+        },
+        {
+          "category": "Science & nature",
+          "question": "What is the largest single bone in the human body?",
+          "options": [
+            "Tibia",
+            "Pelvis",
+            "Femur",
+            "Humerus"
+          ],
+          "answer": 2,
+          "note": "The thigh bone, or femur, is the body's longest and strongest single bone.",
+          "source": "https://www.britannica.com/science/femur"
+        },
+        {
+          "category": "Science & nature",
+          "question": "What keeps Apollo astronauts' footprints on the Moon from quickly eroding?",
+          "options": [
+            "Frozen soil",
+            "A protective glassy crust",
+            "Almost no wind or liquid water",
+            "Static electricity"
+          ],
+          "answer": 2,
+          "note": "The Moon has no weather like Earth's, although micrometeorites will disturb the prints over very long periods.",
+          "source": "https://science.nasa.gov/moon/moon-facts/"
+        },
+        {
+          "category": "Science & nature",
+          "question": "Which frog can survive with much of its body frozen during winter?",
+          "options": [
+            "Poison dart frog",
+            "Wood frog",
+            "Bullfrog",
+            "Glass frog"
+          ],
+          "answer": 1,
+          "note": "Wood frogs survive winter by allowing ice to form in much of the body while glucose helps protect their cells.",
+          "source": "https://www.nps.gov/gaar/learn/nature/wood-frog-page-2.htm"
+        },
+        {
+          "category": "World & history",
+          "question": "The town of Baarle is famous for a patchwork border between Belgium and which country?",
+          "options": [
+            "France",
+            "Netherlands",
+            "Germany",
+            "Luxembourg"
+          ],
+          "answer": 1,
+          "note": "Belgian enclaves and Dutch counter-enclaves create an intricate border through Baarle.",
+          "source": "https://www.britannica.com/place/Baarle-Hertog"
+        },
+        {
+          "category": "World & history",
+          "question": "Which country's national anthem has no official lyrics?",
+          "options": [
+            "Spain",
+            "Italy",
+            "Greece",
+            "Norway"
+          ],
+          "answer": 0,
+          "note": "Spain's Marcha Real is one of the few national anthems without official words.",
+          "source": "https://www.lamoncloa.gob.es/espana/simbolosdelestado/Paginas/index.aspx"
+        },
+        {
+          "category": "World & history",
+          "question": "Which city has hosted university teaching since before the Aztec Empire existed?",
+          "options": [
+            "Oxford",
+            "Boston",
+            "Berlin",
+            "Madrid"
+          ],
+          "answer": 0,
+          "note": "Teaching existed at Oxford by 1096; the Aztec Empire formed in the 15th century.",
+          "source": "https://www.ox.ac.uk/about/organisation/history"
+        },
+        {
+          "category": "World & history",
+          "question": "What is the southernmost national capital city?",
+          "options": [
+            "Canberra",
+            "Wellington",
+            "Buenos Aires",
+            "Cape Town"
+          ],
+          "answer": 1,
+          "note": "New Zealand's capital, Wellington, lies farther south than any other sovereign state capital.",
+          "source": "https://www.britannica.com/place/Wellington-New-Zealand"
+        },
+        {
+          "category": "World & history",
+          "question": "The Trans-Siberian Railway crosses how many time zones between Moscow and Vladivostok?",
+          "options": [
+            "Five",
+            "Six",
+            "Eight",
+            "Eleven"
+          ],
+          "answer": 2,
+          "note": "The route stretches across eight time zones on its journey through Russia.",
+          "source": "https://www.britannica.com/topic/Trans-Siberian-Railroad"
+        },
+        {
+          "category": "World & history",
+          "question": "Angel Falls, the world's highest uninterrupted waterfall, is in which country?",
+          "options": [
+            "Brazil",
+            "Venezuela",
+            "Peru",
+            "Colombia"
+          ],
+          "answer": 1,
+          "note": "Angel Falls drops from Auyan-tepui in southeastern Venezuela.",
+          "source": "https://www.britannica.com/place/Angel-Falls"
+        },
+        {
+          "category": "World & history",
+          "question": "Which country contains more ancient pyramids than Egypt?",
+          "options": [
+            "Sudan",
+            "Mexico",
+            "Iraq",
+            "Ethiopia"
+          ],
+          "answer": 0,
+          "note": "Sudan contains hundreds of Nubian pyramids, including major groups at Meroe.",
+          "source": "https://www.britannica.com/place/pyramids-of-Meroe"
+        },
+        {
+          "category": "World & history",
+          "question": "Mount Everest stands on the border between Nepal and which country?",
+          "options": [
+            "India",
+            "Bhutan",
+            "China",
+            "Pakistan"
+          ],
+          "answer": 2,
+          "note": "The summit of Everest lies on the Nepal-China border, with Tibet on the northern side.",
+          "source": "https://www.britannica.com/place/Mount-Everest"
+        },
+        {
+          "category": "World & history",
+          "question": "The word \"salary\" is historically linked to the Latin word for what?",
+          "options": [
+            "Silver",
+            "Salt",
+            "Service",
+            "Harvest"
+          ],
+          "answer": 1,
+          "note": "Salary comes through Latin salarium, a word derived from sal, meaning salt.",
+          "source": "https://www.merriam-webster.com/dictionary/salary"
+        },
+        {
+          "category": "Books & games",
+          "question": "What does the Monopoly mascot, Rich Uncle Pennybags, not wear?",
+          "options": [
+            "A top hat",
+            "A bow tie",
+            "A monocle",
+            "A moustache"
+          ],
+          "answer": 2,
+          "note": "The mascot has a top hat and moustache but no monocle, despite a common false memory.",
+          "source": "https://www.hasbro.com/common/instruct/00009.pdf"
+        },
+        {
+          "category": "Books & games",
+          "question": "What was Milton Bradley's 1860 precursor to The Game of Life called?",
+          "options": [
+            "The Checkered Game of Life",
+            "The Mansion of Happiness",
+            "The Landlord's Game",
+            "Life's Highway"
+          ],
+          "answer": 0,
+          "note": "Milton Bradley launched his company with The Checkered Game of Life in 1860.",
+          "source": "https://americanhistory.si.edu/collections/object/nmah_317221"
+        },
+        {
+          "category": "Books & games",
+          "question": "How many bonus points does a Scrabble player receive for using all seven rack tiles in one turn?",
+          "options": [
+            "25",
+            "40",
+            "50",
+            "100"
+          ],
+          "answer": 2,
+          "note": "Using all seven tiles in one play earns a 50-point bonus, commonly called a bingo.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/scrabble-game"
+        },
+        {
+          "category": "Books & games",
+          "question": "What is Oscar Wilde's only published novel?",
+          "options": [
+            "The Picture of Dorian Gray",
+            "The Importance of Being Earnest",
+            "Salome",
+            "De Profundis"
+          ],
+          "answer": 0,
+          "note": "The Picture of Dorian Gray is Oscar Wilde's only novel.",
+          "source": "https://www.britannica.com/topic/The-Picture-of-Dorian-Gray-novel-by-Wilde"
+        },
+        {
+          "category": "Books & games",
+          "question": "In the original British Cluedo, what is the murder victim called?",
+          "options": [
+            "Mr Boddy",
+            "Dr Black",
+            "Lord Scarlet",
+            "Professor White"
+          ],
+          "answer": 1,
+          "note": "The British game names the victim Dr Black; North American Clue renamed him Mr Boddy.",
+          "source": "https://www.vam.ac.uk/articles/a-brief-history-of-cluedo"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which number is opposite 20 on a standard dartboard?",
+          "options": [
+            "1",
+            "3",
+            "6",
+            "11"
+          ],
+          "answer": 1,
+          "note": "The standard board places 3 at the bottom, directly opposite 20 at the top.",
+          "source": "https://www.dartswdf.com/rules/"
+        },
+        {
+          "category": "Books & games",
+          "question": "In The Hobbit, what kind of mark does Gandalf put on Bilbo's door?",
+          "options": [
+            "A rune",
+            "A handprint",
+            "A star",
+            "A red circle"
+          ],
+          "answer": 0,
+          "note": "Gandalf scratches a secret sign on the green door so the dwarves can identify the burglar's home.",
+          "source": "https://www.tolkienestate.com/writing/the-hobbit/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which Alice in Wonderland character is a caricature of author Lewis Carroll?",
+          "options": [
+            "The Dodo",
+            "The White Rabbit",
+            "The Mad Hatter",
+            "The Dormouse"
+          ],
+          "answer": 0,
+          "note": "The stammering Dodo is widely understood as Carroll's self-caricature: Do-Do-Dodgson.",
+          "source": "https://www.bl.uk/collection-items/alices-adventures-in-wonderland-by-lewis-carroll"
+        },
+        {
+          "category": "Books & games",
+          "question": "In a standard deck of cards, which king is traditionally shown without a moustache?",
+          "options": [
+            "King of clubs",
+            "King of diamonds",
+            "King of hearts",
+            "King of spades"
+          ],
+          "answer": 2,
+          "note": "In the familiar Anglo-American design, the king of hearts is the lone clean-shaven king.",
+          "source": "https://www.metmuseum.org/art/collection/search/475513"
+        },
+        {
+          "category": "Objects & art",
+          "question": "What does the raised red flag on a rural U.S. mailbox signal?",
+          "options": [
+            "Outgoing mail awaits pickup",
+            "The box is full",
+            "Registered mail arrived",
+            "The address changed"
+          ],
+          "answer": 0,
+          "note": "A raised carrier-signal flag tells the postal carrier that outgoing mail is waiting in the box.",
+          "source": "https://about.usps.com/publications/engineering-standards-specifications/spusps-std-7c01/welcome.htm"
+        },
+        {
+          "category": "Objects & art",
+          "question": "What is the wavy inner layer of corrugated cardboard called?",
+          "options": [
+            "Fluting",
+            "Deckle",
+            "Sizing",
+            "Vellum"
+          ],
+          "answer": 0,
+          "note": "The arched paper between the flat linerboards is called fluting; its shape gives corrugated board rigidity.",
+          "source": "https://www.fefco.org/lca/dscription-of-production-system/corrugated-board-production"
+        },
+        {
+          "category": "Objects & art",
+          "question": "The side brushes along many escalators are intended mainly to do what?",
+          "options": [
+            "Polish shoes",
+            "Keep feet and clothing away from the edge",
+            "Sweep dirt into the steps",
+            "Measure passenger speed"
+          ],
+          "answer": 1,
+          "note": "Skirt brushes provide a tactile warning that encourages riders to keep away from the gap beside the moving steps.",
+          "source": "https://www.otis.com/en/us/tools-resources/escalator-moving-walk-safety"
+        },
+        {
+          "category": "Objects & art",
+          "question": "What do the black dots around a car windscreen mainly help do?",
+          "options": [
+            "Improve radio reception",
+            "Hide and protect the adhesive",
+            "Measure glass curvature",
+            "Defrost the edge"
+          ],
+          "answer": 1,
+          "note": "The ceramic frit shades the urethane sealant from ultraviolet light and creates a gradual visual edge.",
+          "source": "https://www.pilkington.com/en/global/knowledge-base/glass-technology/automotive-glazing"
+        },
+        {
+          "category": "Objects & art",
+          "question": "Why do ISO A-series paper sizes keep the same proportions when cut in half?",
+          "options": [
+            "Their sides use a square-root-of-two ratio",
+            "Their margins are equal",
+            "Their area is always one square metre",
+            "Their corners are rounded"
+          ],
+          "answer": 0,
+          "note": "The 1-to-square-root-of-two aspect ratio reproduces itself when the sheet is halved across its longer side.",
+          "source": "https://www.iso.org/obp/ui/#iso:std:iso:216:ed-2:v1:en"
+        },
+        {
+          "category": "Objects & art",
+          "question": "Why did paint in collapsible metal tubes matter to 19th-century painters?",
+          "options": [
+            "It dried paintings instantly",
+            "It made outdoor painting practical",
+            "It removed the need for brushes",
+            "It made every pigment cheaper"
+          ],
+          "answer": 1,
+          "note": "Portable, resealable tubes let artists carry fresh paint outdoors without preparing pigments on site.",
+          "source": "https://www.smithsonianmag.com/arts-culture/never-underestimate-the-power-of-a-paint-tube-36637764/"
+        },
+        {
+          "category": "Objects & art",
+          "question": "Who posed for the farmer and daughter in Grant Wood's American Gothic?",
+          "options": [
+            "Two hired actors",
+            "Wood and his wife",
+            "His dentist and his sister",
+            "A real farming couple"
+          ],
+          "answer": 2,
+          "note": "Wood used his dentist, Byron McKeeby, and his sister, Nan Wood Graham, as separate models.",
+          "source": "https://www.artic.edu/artworks/6565/american-gothic"
+        },
+        {
+          "category": "Objects & art",
+          "question": "Hokusai's The Great Wave was made using which printmaking method?",
+          "options": [
+            "Woodblock printing",
+            "Etching",
+            "Lithography",
+            "Screen printing"
+          ],
+          "answer": 0,
+          "note": "The Great Wave is a color woodblock print from Hokusai's series Thirty-six Views of Mount Fuji.",
+          "source": "https://www.metmuseum.org/art/collection/search/45434"
+        },
+        {
+          "category": "Objects & art",
+          "question": "In Magritte's The Treachery of Images, what appears below the painted pipe?",
+          "options": [
+            "A price tag",
+            "A shadow of a bird",
+            "Words saying it is not a pipe",
+            "The artist's signature only"
+          ],
+          "answer": 2,
+          "note": "The French sentence \"Ceci n'est pas une pipe\" reminds viewers that the painting is an image, not a pipe.",
+          "source": "https://collections.lacma.org/node/239578"
+        }
+      ]
+    },
+    {
+      "key": "set-6",
+      "name": "Set 6",
+      "subtitle": "A tougher final-deck mix of familiar facts and sharp details.",
+      "questions": [
+        {
+          "category": "Screen & sound",
+          "question": "In Jaws, what kind of shark is hunted off Amity Island?",
+          "options": [
+            "Tiger shark",
+            "Great white shark",
+            "Bull shark",
+            "Mako shark"
+          ],
+          "answer": 1,
+          "note": "The film calls the attacking animal a great white shark.",
+          "source": "https://www.britannica.com/topic/Jaws-film-by-Spielberg"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which Fleetwood Mac album includes \"Dreams\" and \"Go Your Own Way\"?",
+          "options": [
+            "Tusk",
+            "Mirage",
+            "Rumours",
+            "Fleetwood Mac"
+          ],
+          "answer": 2,
+          "note": "Both songs appeared on the band's 1977 album Rumours.",
+          "source": "https://www.grammy.com/news/fleetwood-mac-rumours-album-anniversary"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What is the name of the newspaper where Clark Kent works?",
+          "options": [
+            "Daily Bugle",
+            "Daily Planet",
+            "Gotham Gazette",
+            "Metropolis Times"
+          ],
+          "answer": 1,
+          "note": "Clark Kent works as a reporter for Metropolis's Daily Planet.",
+          "source": "https://www.dc.com/characters/superman"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which composer wrote the scores for Jaws, E.T., and Jurassic Park?",
+          "options": [
+            "Hans Zimmer",
+            "Ennio Morricone",
+            "John Williams",
+            "Howard Shore"
+          ],
+          "answer": 2,
+          "note": "John Williams composed the music for all three Steven Spielberg films.",
+          "source": "https://www.britannica.com/biography/John-Williams-American-composer-and-conductor"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which singer released the 1985 album Hounds of Love?",
+          "options": [
+            "Kate Bush",
+            "Annie Lennox",
+            "Cyndi Lauper",
+            "Patti Smith"
+          ],
+          "answer": 0,
+          "note": "Kate Bush wrote and produced Hounds of Love, which includes \"Running Up That Hill.\"",
+          "source": "https://www.britannica.com/biography/Kate-Bush"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "In Citizen Kane, what object bears the name \"Rosebud\"?",
+          "options": [
+            "A sled",
+            "A snow globe",
+            "A typewriter",
+            "A train"
+          ],
+          "answer": 0,
+          "note": "Rosebud is the name painted on Kane's childhood sled.",
+          "source": "https://catalog.afi.com/Catalog/moviedetails/27624"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which actor directed and starred in Unforgiven?",
+          "options": [
+            "Kevin Costner",
+            "Clint Eastwood",
+            "Robert Redford",
+            "Gene Hackman"
+          ],
+          "answer": 1,
+          "note": "Clint Eastwood directed the 1992 western and played William Munny.",
+          "source": "https://www.britannica.com/topic/Unforgiven"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "What was Freddie Mercury's birth name?",
+          "options": [
+            "Farrokh Bulsara",
+            "Reginald Dwight",
+            "David Jones",
+            "Richard Starkey"
+          ],
+          "answer": 0,
+          "note": "Freddie Mercury was born Farrokh Bulsara in Zanzibar.",
+          "source": "https://www.britannica.com/biography/Freddie-Mercury"
+        },
+        {
+          "category": "Screen & sound",
+          "question": "Which TV detective is known for saying \"Just one more thing\"?",
+          "options": [
+            "Kojak",
+            "Columbo",
+            "Morse",
+            "Poirot"
+          ],
+          "answer": 1,
+          "note": "Lieutenant Columbo often returns with the disarming phrase \"Just one more thing.\"",
+          "source": "https://www.britannica.com/topic/Columbo-American-television-series"
+        },
+        {
+          "category": "Sports",
+          "question": "In baseball, how many strikes normally retire a batter?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Five"
+          ],
+          "answer": 1,
+          "note": "A third strike completes a strikeout, subject to the uncaught-third-strike rule.",
+          "source": "https://www.mlb.com/glossary/rules/strikeout"
+        },
+        {
+          "category": "Sports",
+          "question": "How long is a standard Olympic swimming pool?",
+          "options": [
+            "25 metres",
+            "40 metres",
+            "50 metres",
+            "100 metres"
+          ],
+          "answer": 2,
+          "note": "World Aquatics specifies a 50-metre pool for long-course competition.",
+          "source": "https://www.worldaquatics.com/rules/competition-regulations"
+        },
+        {
+          "category": "Sports",
+          "question": "How many stumps make up a cricket wicket?",
+          "options": [
+            "Two",
+            "Three",
+            "Four",
+            "Six"
+          ],
+          "answer": 1,
+          "note": "A wicket consists of three wooden stumps topped by two bails.",
+          "source": "https://www.lords.org/mcc/the-laws-of-cricket/the-wickets"
+        },
+        {
+          "category": "Sports",
+          "question": "Which chess piece must stay on squares of one color?",
+          "options": [
+            "Rook",
+            "Knight",
+            "Bishop",
+            "Queen"
+          ],
+          "answer": 2,
+          "note": "A bishop moves diagonally, so it can never leave its starting square color.",
+          "source": "https://www.britannica.com/topic/chess/Movement-of-the-pieces"
+        },
+        {
+          "category": "Sports",
+          "question": "In Formula One, what flag orders a driver to stop because they are disqualified?",
+          "options": [
+            "Red",
+            "Black",
+            "White",
+            "Yellow"
+          ],
+          "answer": 1,
+          "note": "A black flag shown with a car number tells that driver to return to the pits.",
+          "source": "https://www.fia.com/sites/default/files/fia_international_sporting_code_2026.pdf"
+        },
+        {
+          "category": "Sports",
+          "question": "What is the maximum break in snooker without a free ball?",
+          "options": [
+            "137",
+            "147",
+            "155",
+            "167"
+          ],
+          "answer": 1,
+          "note": "Fifteen reds with blacks, followed by all six colors, totals 147.",
+          "source": "https://wpbsa.com/about-us/rules/"
+        },
+        {
+          "category": "Sports",
+          "question": "In basketball, how long may an NBA player remain in the opponents' lane on offense?",
+          "options": [
+            "Two seconds",
+            "Three seconds",
+            "Five seconds",
+            "Eight seconds"
+          ],
+          "answer": 1,
+          "note": "The offensive three-second rule limits a player in the lane while their team controls the ball.",
+          "source": "https://official.nba.com/rule-no-10-violations-and-penalties/"
+        },
+        {
+          "category": "Sports",
+          "question": "Which athletics event uses a 7.26-kilogram metal ball in the men's competition?",
+          "options": [
+            "Discus",
+            "Hammer throw",
+            "Shot put",
+            "Javelin"
+          ],
+          "answer": 2,
+          "note": "The senior men's shot weighs 7.26 kilograms, or 16 pounds.",
+          "source": "https://worldathletics.org/disciplines/throws/shot-put"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which French sauce is made by emulsifying egg yolks and butter?",
+          "options": [
+            "Bechamel",
+            "Hollandaise",
+            "Veloute",
+            "Espagnole"
+          ],
+          "answer": 1,
+          "note": "Hollandaise is a warm emulsion of egg yolks, butter, and an acid such as lemon juice.",
+          "source": "https://www.britannica.com/topic/hollandaise-sauce"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What grain is traditionally used to make Japanese sake?",
+          "options": [
+            "Barley",
+            "Rice",
+            "Millet",
+            "Buckwheat"
+          ],
+          "answer": 1,
+          "note": "Sake is brewed from polished rice with water, yeast, and koji mold.",
+          "source": "https://www.britannica.com/topic/sake"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which cheese is traditionally used in a Greek salad?",
+          "options": [
+            "Halloumi",
+            "Feta",
+            "Ricotta",
+            "Brie"
+          ],
+          "answer": 1,
+          "note": "The traditional horiatiki salad is topped with feta cheese.",
+          "source": "https://www.britannica.com/topic/feta-cheese"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What gives Earl Grey tea its characteristic flavor?",
+          "options": [
+            "Jasmine",
+            "Bergamot oil",
+            "Vanilla",
+            "Mint"
+          ],
+          "answer": 1,
+          "note": "Oil from bergamot citrus peel supplies Earl Grey's distinctive aroma.",
+          "source": "https://www.britannica.com/topic/Earl-Grey-tea"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which nut forms the base of traditional marzipan?",
+          "options": [
+            "Hazelnut",
+            "Almond",
+            "Walnut",
+            "Pistachio"
+          ],
+          "answer": 1,
+          "note": "Marzipan is a paste made chiefly from ground almonds and sugar.",
+          "source": "https://www.britannica.com/topic/marzipan"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "What type of pastry is used for profiteroles?",
+          "options": [
+            "Filo",
+            "Puff pastry",
+            "Choux",
+            "Shortcrust"
+          ],
+          "answer": 2,
+          "note": "Profiterole shells are baked from choux pastry, which puffs from steam.",
+          "source": "https://www.britannica.com/topic/profiterole"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "Which country is the origin of the cheese Gouda?",
+          "options": [
+            "Belgium",
+            "Denmark",
+            "Netherlands",
+            "Switzerland"
+          ],
+          "answer": 2,
+          "note": "Gouda is named for the Dutch city where the cheese was historically traded.",
+          "source": "https://www.britannica.com/topic/Gouda-cheese"
+        },
+        {
+          "category": "Food & kitchen",
+          "question": "In cooking, what does it mean to julienne a vegetable?",
+          "options": [
+            "Mash it smooth",
+            "Cut it into thin strips",
+            "Cook it in wine",
+            "Remove its skin"
+          ],
+          "answer": 1,
+          "note": "A julienne cut produces thin, matchstick-shaped strips.",
+          "source": "https://www.britannica.com/topic/julienne"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which blood cells carry most of the oxygen in the human body?",
+          "options": [
+            "Platelets",
+            "Red blood cells",
+            "White blood cells",
+            "Stem cells"
+          ],
+          "answer": 1,
+          "note": "Hemoglobin inside red blood cells binds and transports oxygen.",
+          "source": "https://www.nhlbi.nih.gov/health/blood"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What is the largest species of living penguin?",
+          "options": [
+            "King penguin",
+            "Emperor penguin",
+            "Gentoo penguin",
+            "Chinstrap penguin"
+          ],
+          "answer": 1,
+          "note": "The emperor penguin is the tallest and heaviest living penguin species.",
+          "source": "https://www.britannica.com/animal/emperor-penguin"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which element has the chemical symbol W?",
+          "options": [
+            "Tungsten",
+            "Tin",
+            "Titanium",
+            "Tantalum"
+          ],
+          "answer": 0,
+          "note": "Tungsten uses W from its older name, wolfram.",
+          "source": "https://www.britannica.com/science/tungsten-chemical-element"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What is the only mammal capable of sustained true flight?",
+          "options": [
+            "Flying squirrel",
+            "Sugar glider",
+            "Bat",
+            "Colugo"
+          ],
+          "answer": 2,
+          "note": "Bats generate powered flight; other so-called flying mammals only glide.",
+          "source": "https://www.britannica.com/animal/bat-mammal"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which layer of Earth is liquid?",
+          "options": [
+            "Crust",
+            "Mantle",
+            "Outer core",
+            "Inner core"
+          ],
+          "answer": 2,
+          "note": "Earth's outer core is liquid iron and nickel around a solid inner core.",
+          "source": "https://www.usgs.gov/programs/earthquake-hazards/science/inside-earth"
+        },
+        {
+          "category": "Nature & science",
+          "question": "A narwhal's tusk is actually an enlarged what?",
+          "options": [
+            "Horn",
+            "Tooth",
+            "Jawbone",
+            "Whisker"
+          ],
+          "answer": 1,
+          "note": "The spiral tusk is an elongated canine tooth, usually on the left side.",
+          "source": "https://oceanservice.noaa.gov/facts/narwhal.html"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which planet has the shortest day in the Solar System?",
+          "options": [
+            "Mars",
+            "Jupiter",
+            "Saturn",
+            "Uranus"
+          ],
+          "answer": 1,
+          "note": "Jupiter rotates in about 10 hours, faster than any other planet.",
+          "source": "https://science.nasa.gov/jupiter/facts/"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What is measured on the Mohs scale?",
+          "options": [
+            "Mineral hardness",
+            "Earthquake energy",
+            "Wind speed",
+            "Acidity"
+          ],
+          "answer": 0,
+          "note": "The Mohs scale ranks minerals by their resistance to scratching.",
+          "source": "https://www.nps.gov/articles/mohs-hardness-scale.htm"
+        },
+        {
+          "category": "Nature & science",
+          "question": "Which organ produces insulin in the human body?",
+          "options": [
+            "Liver",
+            "Pancreas",
+            "Kidney",
+            "Spleen"
+          ],
+          "answer": 1,
+          "note": "Beta cells in the pancreas produce the hormone insulin.",
+          "source": "https://www.niddk.nih.gov/health-information/diabetes/overview/what-is-diabetes/pancreas-insulin"
+        },
+        {
+          "category": "Nature & science",
+          "question": "What kind of animal is an axolotl?",
+          "options": [
+            "Lizard",
+            "Salamander",
+            "Fish",
+            "Frog"
+          ],
+          "answer": 1,
+          "note": "The axolotl is a salamander that normally retains aquatic larval traits as an adult.",
+          "source": "https://nationalzoo.si.edu/animals/axolotl"
+        },
+        {
+          "category": "World & history",
+          "question": "Which modern city was once called Constantinople?",
+          "options": [
+            "Athens",
+            "Istanbul",
+            "Sofia",
+            "Alexandria"
+          ],
+          "answer": 1,
+          "note": "Constantinople became the official name Istanbul in Turkey in 1930.",
+          "source": "https://www.britannica.com/place/Istanbul"
+        },
+        {
+          "category": "World & history",
+          "question": "Machu Picchu was built by which civilization?",
+          "options": [
+            "Maya",
+            "Aztec",
+            "Inca",
+            "Olmec"
+          ],
+          "answer": 2,
+          "note": "The Inca built Machu Picchu in the Andes during the 15th century.",
+          "source": "https://whc.unesco.org/en/list/274/"
+        },
+        {
+          "category": "World & history",
+          "question": "Which treaty formally ended World War I between Germany and the Allies?",
+          "options": [
+            "Treaty of Utrecht",
+            "Treaty of Versailles",
+            "Treaty of Paris",
+            "Treaty of Tordesillas"
+          ],
+          "answer": 1,
+          "note": "Germany and the Allies signed the Treaty of Versailles in 1919.",
+          "source": "https://www.britannica.com/event/Treaty-of-Versailles-1919"
+        },
+        {
+          "category": "World & history",
+          "question": "Which African country was formerly known as Abyssinia?",
+          "options": [
+            "Ethiopia",
+            "Eritrea",
+            "Sudan",
+            "Somalia"
+          ],
+          "answer": 0,
+          "note": "Abyssinia was a historical European name for Ethiopia.",
+          "source": "https://www.britannica.com/place/Ethiopia"
+        },
+        {
+          "category": "World & history",
+          "question": "Which country almost completely surrounds The Gambia?",
+          "options": [
+            "Guinea",
+            "Senegal",
+            "Mali",
+            "Mauritania"
+          ],
+          "answer": 1,
+          "note": "Senegal surrounds The Gambia on three sides; the country's western edge meets the Atlantic.",
+          "source": "https://www.britannica.com/place/The-Gambia"
+        },
+        {
+          "category": "World & history",
+          "question": "Which narrow sea lies entirely within Turkey and connects the Black Sea route to the Aegean?",
+          "options": [
+            "Sea of Marmara",
+            "Adriatic Sea",
+            "Aral Sea",
+            "Tyrrhenian Sea"
+          ],
+          "answer": 0,
+          "note": "The Sea of Marmara connects through the Bosporus to the Black Sea and through the Dardanelles to the Aegean.",
+          "source": "https://www.britannica.com/place/Sea-of-Marmara"
+        },
+        {
+          "category": "World & history",
+          "question": "Which empire used quipu, systems of knotted cords, for record keeping?",
+          "options": [
+            "Roman",
+            "Inca",
+            "Mongol",
+            "Ottoman"
+          ],
+          "answer": 1,
+          "note": "Inca administrators encoded numerical records on knotted quipu cords.",
+          "source": "https://www.britannica.com/technology/quipu"
+        },
+        {
+          "category": "World & history",
+          "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+          "options": [
+            "Bessie Coleman",
+            "Amelia Earhart",
+            "Amy Johnson",
+            "Jacqueline Cochran"
+          ],
+          "answer": 1,
+          "note": "Amelia Earhart completed the first female solo Atlantic crossing in 1932.",
+          "source": "https://www.si.edu/spotlight/amelia-earhart"
+        },
+        {
+          "category": "World & history",
+          "question": "Which national capital is widely recognized as the world's coldest?",
+          "options": [
+            "Helsinki",
+            "Ulaanbaatar",
+            "Reykjavik",
+            "Astana"
+          ],
+          "answer": 1,
+          "note": "Mongolia's Ulaanbaatar has an extremely cold continental climate and is commonly identified as the coldest national capital.",
+          "source": "https://www.britannica.com/place/Ulaanbaatar"
+        },
+        {
+          "category": "World & history",
+          "question": "Which material helped ancient Roman marine concrete harden under water?",
+          "options": [
+            "Volcanic ash",
+            "Beeswax",
+            "Ground marble",
+            "Pine resin"
+          ],
+          "answer": 0,
+          "note": "Roman builders mixed lime with volcanic ash, producing hydraulic concrete that could set under water.",
+          "source": "https://www.smithsonianmag.com/science-nature/why-roman-concrete-still-stands-180982805/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Who wrote The Name of the Rose?",
+          "options": [
+            "Italo Calvino",
+            "Umberto Eco",
+            "Primo Levi",
+            "Alberto Moravia"
+          ],
+          "answer": 1,
+          "note": "Italian scholar and novelist Umberto Eco published The Name of the Rose in 1980.",
+          "source": "https://www.britannica.com/biography/Umberto-Eco"
+        },
+        {
+          "category": "Books & games",
+          "question": "In Scrabble, how many points is the letter Q worth in English-language play?",
+          "options": [
+            "Eight",
+            "Ten",
+            "Twelve",
+            "Fifteen"
+          ],
+          "answer": 1,
+          "note": "Q and Z are the two 10-point tiles in English Scrabble.",
+          "source": "https://scrabble.hasbro.com/en-us/faq"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which Shakespeare play contains Rosencrantz and Guildenstern?",
+          "options": [
+            "Macbeth",
+            "Hamlet",
+            "King Lear",
+            "Othello"
+          ],
+          "answer": 1,
+          "note": "Rosencrantz and Guildenstern are Hamlet's former school friends.",
+          "source": "https://www.folger.edu/explore/shakespeares-works/hamlet/read/"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which novel opens with the line \"Call me Ishmael\"?",
+          "options": [
+            "Moby-Dick",
+            "The Old Man and the Sea",
+            "Treasure Island",
+            "The Sea-Wolf"
+          ],
+          "answer": 0,
+          "note": "Ishmael introduces himself in the first sentence of Herman Melville's Moby-Dick.",
+          "source": "https://www.gutenberg.org/files/2701/2701-h/2701-h.htm"
+        },
+        {
+          "category": "Books & games",
+          "question": "In standard Monopoly, which property comes immediately after Go?",
+          "options": [
+            "Baltic Avenue",
+            "Mediterranean Avenue",
+            "Reading Railroad",
+            "Oriental Avenue"
+          ],
+          "answer": 1,
+          "note": "Mediterranean Avenue is the first purchasable property after Go.",
+          "source": "https://instructions.hasbro.com/en-us/instruction/monopoly-game"
+        },
+        {
+          "category": "Books & games",
+          "question": "Who created the detective Hercule Poirot?",
+          "options": [
+            "Dorothy L. Sayers",
+            "Agatha Christie",
+            "Arthur Conan Doyle",
+            "Ngaio Marsh"
+          ],
+          "answer": 1,
+          "note": "Agatha Christie introduced Belgian detective Hercule Poirot in The Mysterious Affair at Styles.",
+          "source": "https://www.agathachristie.com/characters/hercule-poirot"
+        },
+        {
+          "category": "Books & games",
+          "question": "Which fantasy novel centers on the hobbit Bilbo Baggins?",
+          "options": [
+            "The Silmarillion",
+            "The Hobbit",
+            "The Two Towers",
+            "The Last Battle"
+          ],
+          "answer": 1,
+          "note": "Bilbo is the reluctant burglar and central character of J.R.R. Tolkien's The Hobbit.",
+          "source": "https://www.britannica.com/topic/The-Hobbit"
+        },
+        {
+          "category": "Books & games",
+          "question": "When may a pawn capture en passant in chess?",
+          "options": [
+            "At any later turn",
+            "Only on the immediately following move",
+            "Only while in check",
+            "Only after castling"
+          ],
+          "answer": 1,
+          "note": "An en passant capture is legal only on the move immediately after the opposing pawn advances two squares.",
+          "source": "https://handbook.fide.com/chapter/E012023"
+        },
+        {
+          "category": "Books & games",
+          "question": "What board game was originally called Lexiko?",
+          "options": [
+            "Boggle",
+            "Scrabble",
+            "Risk",
+            "Yahtzee"
+          ],
+          "answer": 1,
+          "note": "Alfred Mosher Butts developed Lexiko, which evolved into Scrabble.",
+          "source": "https://www.nationalww2museum.org/war/articles/scrabble-alfred-butts"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Who patented the first practical telephone in the United States?",
+          "options": [
+            "Thomas Edison",
+            "Alexander Graham Bell",
+            "Guglielmo Marconi",
+            "Nikola Tesla"
+          ],
+          "answer": 1,
+          "note": "Alexander Graham Bell received U.S. Patent No. 174,465 for the telephone in 1876.",
+          "source": "https://www.loc.gov/item/today-in-history/march-07/"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Which artist painted The Persistence of Memory?",
+          "options": [
+            "Rene Magritte",
+            "Salvador Dali",
+            "Joan Miro",
+            "Pablo Picasso"
+          ],
+          "answer": 1,
+          "note": "Salvador Dali painted the famous melting clocks in 1931.",
+          "source": "https://www.moma.org/collection/works/79018"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "What did Johannes Gutenberg's European press use to reproduce text?",
+          "options": [
+            "Wooden stencils",
+            "Movable metal type",
+            "Lithographic stones",
+            "Copper photographs"
+          ],
+          "answer": 1,
+          "note": "Gutenberg combined movable metal type with a mechanical press in 15th-century Europe.",
+          "source": "https://www.britannica.com/biography/Johannes-Gutenberg"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Which architect designed the large glass pyramid at the Louvre?",
+          "options": [
+            "I. M. Pei",
+            "Frank Gehry",
+            "Norman Foster",
+            "Renzo Piano"
+          ],
+          "answer": 0,
+          "note": "I. M. Pei designed the glass pyramid that opened at the Louvre in 1989.",
+          "source": "https://www.louvre.fr/en/explore/the-palace/the-louvre-pyramid"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Who painted the ceiling of the Sistine Chapel?",
+          "options": [
+            "Raphael",
+            "Michelangelo",
+            "Titian",
+            "Botticelli"
+          ],
+          "answer": 1,
+          "note": "Michelangelo painted the chapel ceiling between 1508 and 1512.",
+          "source": "https://www.vaticanmuseums.va/content/vaticanmuseums/en/collezioni/musei/cappella-sistina.html"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "What phrase did Thomas Edison recite in his early demonstration of recorded sound?",
+          "options": [
+            "Mary had a little lamb",
+            "To be or not to be",
+            "Hello, world",
+            "God save the Queen"
+          ],
+          "answer": 0,
+          "note": "Edison recited \"Mary had a little lamb\" into his tinfoil phonograph during an early demonstration.",
+          "source": "https://www.loc.gov/item/today-in-history/november-21/"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Which photographic process gave blueprints their characteristic blue color?",
+          "options": [
+            "Cyanotype",
+            "Daguerreotype",
+            "Tintype",
+            "Collodion"
+          ],
+          "answer": 0,
+          "note": "The cyanotype process uses iron compounds to produce a stable Prussian-blue image and became the basis of blueprint copying.",
+          "source": "https://www.britannica.com/technology/cyanotype"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "Which photography company introduced the Brownie camera in 1900?",
+          "options": [
+            "Polaroid",
+            "Kodak",
+            "Leica",
+            "Fujifilm"
+          ],
+          "answer": 1,
+          "note": "Eastman Kodak sold the simple Brownie camera for one dollar at launch.",
+          "source": "https://americanhistory.si.edu/collections/object/nmah_760118"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "What are the individual small pieces in a mosaic called?",
+          "options": [
+            "Tesserae",
+            "Gesso",
+            "Frescoes",
+            "Intaglio"
+          ],
+          "answer": 0,
+          "note": "Mosaics form images from small pieces of stone, glass, or other material called tesserae.",
+          "source": "https://www.britannica.com/art/mosaic-art"
+        },
+        {
+          "category": "Inventions & art",
+          "question": "What was the first synthetic plastic called?",
+          "options": [
+            "Nylon",
+            "Bakelite",
+            "Cellophane",
+            "Perspex"
+          ],
+          "answer": 1,
+          "note": "Leo Baekeland patented Bakelite, the first fully synthetic plastic, in 1909.",
+          "source": "https://www.acs.org/education/whatischemistry/landmarks/bakelite.html"
+        }
+      ]
+    }
+  ],
+  "total": 384
+}

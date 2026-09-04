@@ -1,0 +1,12 @@
+{
+  "name": "rebase-recall-room",
+  "version": "1.0.0",
+  "description": "A fast-recall trivia trainer with six general-knowledge decks of 64 questions, spaced review, and a timed simulation mode.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "bun server.ts",
+    "dev": "bun server.ts",
+    "export": "bun scripts/export-questions.ts"
+  }
+}
