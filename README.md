@@ -1,8 +1,19 @@
 # Rebase Recall Room
 
-A fast-recall trivia trainer for the browser. Six general-knowledge decks of 64 questions each, spaced review, per-deck stats, a timed simulation mode, and a dark theme by default. No build step, no framework, no accounts.
+A fast-recall trivia trainer for the browser. Six general-knowledge decks and four Star Wars decks, each with 64 questions. Includes spaced review, per-deck stats, a timed simulation mode, and a dark theme by default. No build step, no framework, no accounts.
 
-The 384 questions are general trivia, not tied to any show or exam, and are open data. See [data/](data/) for JSON and CSV exports under CC0.
+The library has 640 practice questions, including 256 Star Wars questions. See [data/](data/) for JSON and CSV exports under CC0.
+
+## Star Wars prep
+
+Choose **Star Wars prep · 256 cards** in the sidebar to start. New browsers start on the Foundations deck; returning browsers keep their selected deck and saved progress.
+
+1. **Foundations**, Set 7: main characters, places, ships, film basics, and common mix-ups.
+2. **Film details**, Set 8: scene-level facts from the trilogies, Rogue One, and Solo.
+3. **TV & series**, Set 9: The Clone Wars, Rebels, The Mandalorian, Andor, The Bad Batch, Ahsoka, and other series.
+4. **Deep cuts**, Set 10: lore, aliens, equipment, production, actors, games, and books.
+
+Read [the Star Wars study sheet](STAR-WARS-PREP.md) for a four-session plan and a compact reference. Every question includes a public source. These are independently written practice questions, not predictions of an event's question list. The decks contain spoilers; the TV deck includes Andor season 2 and Skeleton Crew season 1. Legends-specific material is labeled.
 
 ## Run it
 
@@ -45,9 +56,9 @@ Each deck lives in `sets/set-N.js` and registers itself on `window.REBASE_EXTRA_
 }
 ```
 
-Categories: Screen & sound, Sports, Food & kitchen, Nature, Science, World.
+Categories are defined within each deck. The answer wall's category filter follows the selected deck.
 
-Regenerate the exports after editing a deck:
+Register new decks with a script tag in `index.html`. The exporter reads that same list. Regenerate the exports after editing a deck:
 
 ```sh
 bun run export

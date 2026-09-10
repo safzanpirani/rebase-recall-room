@@ -139,6 +139,7 @@
     .rail { position: sticky; top: 18px; display: grid; gap: 14px; }
     .rail-card, .stage, .library { border: var(--border); background: var(--color-white); box-shadow: var(--shadow); }
     .rail-card { padding: 16px; }
+    #starWarsGuide { margin-bottom: 20px; }
     .eyebrow { margin: 0 0 8px; font: 500 10px var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--color-muted); }
     .rail h2 { margin: 0 0 12px; font-size: 21px; line-height: 1; }
     .deck-select {
@@ -295,7 +296,7 @@
       .stat-chip:first-child { display: none; }
       .shell { width: min(100% - 20px, 1220px); margin-top: 18px; }
       .rail { grid-template-columns: 1fr; }
-      .rail-card:nth-child(n+2) { display: none; }
+      .rail .rail-card:nth-child(n+2) { display: none; }
       .mode-list { grid-template-columns: 1fr 1fr; }
       .mode-btn { padding: 7px 4px; font-size: 12px; }
       .mode-btn small { display: none; }
@@ -326,7 +327,7 @@
   <header class="topbar">
     <div class="brand">
       <div class="brand-mark">R</div>
-      <div><div class="brand-name">REBASE RECALL ROOM</div><div class="brand-sub">Six general decks · 384 cards</div></div>
+      <div><div class="brand-name">REBASE RECALL ROOM</div><div class="brand-sub" id="libraryCount"></div></div>
     </div>
     <div class="top-stats" aria-label="Lifetime statistics">
       <div class="stat-chip">Accuracy<strong id="accuracy">0%</strong></div>
@@ -342,6 +343,7 @@
         <p class="eyebrow">Choose a deck</p>
         <select class="deck-select" id="setSelect" aria-label="Choose a question deck"></select>
         <p class="deck-subtitle" id="setSubtitle"></p>
+        <button class="small-btn" id="starWarsBtn">Star Wars prep · 256 cards</button>
         <div class="rail-rule"></div>
         <p class="eyebrow">Choose a drill</p>
         <div class="mode-list">
@@ -368,6 +370,22 @@
       <section class="intro">
         <h1>TRAIN THE <span>ODD DETAIL.</span></h1>
         <p>Rebase questions hide a precise fact inside a familiar subject. Guess first. Read the one-line reason. Recycle every miss.</p>
+      </section>
+
+      <section class="rail-card" id="starWarsGuide" hidden>
+        <p class="eyebrow">Star Wars study plan</p>
+        <p class="tip">Start with Foundations. Work through Film details, TV &amp; series, then Deep cuts. Each deck has 64 cards. Try an Adaptive 12 before reading the answer wall.</p>
+        <details>
+          <summary>Five mix-ups to learn first</summary>
+          <ul class="tip">
+            <li>Anakin becomes Vader. Ben Solo becomes Kylo Ren.</li>
+            <li>Luke grows up on Tatooine. Rey grows up on Jakku.</li>
+            <li>Luke destroys Death Star I. Lando and Wedge attack Death Star II's reactor.</li>
+            <li>Vader says “No, I am your father.” A parsec measures distance.</li>
+            <li>Release order starts IV, V, VI. Episode order starts I, II, III.</li>
+          </ul>
+          <p class="tip">Allow 25–35 minutes per deck: answer unseen cards, read the notes, then review due cards. Finish with a timed simulation. These are practice questions based on public sources; the announcement only specifies the theme.</p>
+        </details>
       </section>
 
       <section class="stage" aria-live="polite">
@@ -398,9 +416,9 @@
       </section>
 
       <section class="readout">
-        <div class="readout-head"><div><p class="eyebrow">Learning diagnosis</p><h2>Your readout</h2><p>Updates after every answer across the full 384-card library.</p></div></div>
+        <div class="readout-head"><div><p class="eyebrow">Learning diagnosis</p><h2>Your readout</h2><p>Updates after every answer across all decks.</p></div></div>
         <div class="readout-grid">
-          <div class="readout-card"><span class="eyebrow">Coverage</span><strong class="readout-value" id="coverageValue">0 / 384</strong><span class="readout-note" id="coverageNote">Unseen cards stay in rotation.</span></div>
+          <div class="readout-card"><span class="eyebrow">Coverage</span><strong class="readout-value" id="coverageValue">0</strong><span class="readout-note" id="coverageNote">Unseen cards stay in rotation.</span></div>
           <div class="readout-card"><span class="eyebrow">Due now</span><strong class="readout-value" id="dueValue">0</strong><span class="readout-note">Wrong cards return quickly; correct cards spread out.</span></div>
           <div class="readout-card"><span class="eyebrow">Weakest topic</span><strong class="readout-value" id="weakValue">—</strong><span class="readout-note" id="weakNote">Answer a few cards to diagnose.</span></div>
           <div class="readout-card"><span class="eyebrow">Next move</span><strong class="readout-value" id="nextMoveValue">Start</strong><span class="readout-note" id="nextMoveNote">Adaptive 12 begins with unseen cards.</span></div>
@@ -425,11 +443,15 @@
   <script src="sets/set-4.js"></script>
   <script src="sets/set-5.js"></script>
   <script src="sets/set-6.js"></script>
+  <script src="sets/set-7.js"></script>
+  <script src="sets/set-8.js"></script>
+  <script src="sets/set-9.js"></script>
+  <script src="sets/set-10.js"></script>
   <script>
 
     // Decks are loaded from sets/set-N.js and register on window.REBASE_EXTRA_SETS.
     const setData = { ...(window.REBASE_EXTRA_SETS || {}) };
-    let currentSetKey = localStorage.getItem('rebase-current-set') || 'set-1';
+    let currentSetKey = localStorage.getItem('rebase-current-set') || 'set-7';
     if (!setData[currentSetKey]) currentSetKey = 'set-1';
     let questions = [];
     let categories = [];
@@ -593,6 +615,7 @@
       categories = [...new Set(questions.map(q => q.category))];
       $('setSelect').value = key;
       $('setSubtitle').textContent = setData[key].subtitle;
+      $('starWarsGuide').hidden = !['set-7', 'set-8', 'set-9', 'set-10'].includes(key);
       $('categorySelect').innerHTML = '<option value="all">All topics</option>' + categories.map(c => `<option value="${c}">${c}</option>`).join('');
       $('search').value = '';
       updateStats();
@@ -821,6 +844,8 @@
     }
 
     $('setSelect').innerHTML = Object.entries(setData).map(([key, set]) => `<option value="${key}">${set.name}</option>`).join('');
+    $('libraryCount').textContent = `${Object.keys(setData).length} decks · ${allQuestions().length} cards`;
+    $('starWarsBtn').addEventListener('click', () => selectSet('set-7'));
     $('setSelect').addEventListener('change', event => selectSet(event.target.value));
     $('connectFileBtn').addEventListener('click', connectProgressFile);
     $('themeToggle').addEventListener('click', () => applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'));

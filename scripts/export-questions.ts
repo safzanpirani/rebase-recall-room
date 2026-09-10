@@ -7,13 +7,13 @@ type Deck = { key: string; name: string; subtitle?: string; questions: Question[
 
 async function loadDecks(): Promise<Deck[]> {
   const decks: Deck[] = [];
-  for (let i = 1; i <= 6; i++) {
-    const src = await Bun.file(`${ROOT}/sets/set-${i}.js`).text();
+  const html = await Bun.file(`${ROOT}/index.html`).text();
+  for (const [, key] of html.matchAll(/<script src="sets\/(set-\d+)\.js"><\/script>/g)) {
+    const src = await Bun.file(`${ROOT}/sets/${key}.js`).text();
     const win: { REBASE_EXTRA_SETS: Record<string, Omit<Deck, "key">> } = { REBASE_EXTRA_SETS: {} };
     new Function("window", src)(win);
-    const key = `set-${i}`;
     const deck = win.REBASE_EXTRA_SETS[key];
-    if (!deck) throw new Error(`sets/set-${i}.js did not define ${key}`);
+    if (!deck) throw new Error(`sets/${key}.js did not define ${key}`);
     decks.push({ key, ...deck });
   }
   return decks;

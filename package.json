@@ -1,7 +1,7 @@
 {
   "name": "rebase-recall-room",
   "version": "1.0.0",
-  "description": "A fast-recall trivia trainer with six general-knowledge decks of 64 questions, spaced review, and a timed simulation mode.",
+  "description": "A fast-recall trivia trainer with 640 questions across six general decks and four Star Wars decks, spaced review, and timed simulation.",
   "license": "MIT",
   "type": "module",
   "scripts": {
